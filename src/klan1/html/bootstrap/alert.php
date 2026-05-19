@@ -1,0 +1,51 @@
+<?php
+
+namespace k1\lib\html\bootstrap;
+
+/**
+ * Bootstrap 5 Alert component
+ *
+ * Provides contextual feedback messages for typical user actions.
+ *
+ * @author  Alejandro Trujillo J. (J0hnd03)
+ * @link    https://github.com/klan1/k1.lib-bootstrap
+ * @license Apache-2.0
+ * @version BETA
+ */
+class alert extends \k1lib\html\div {
+
+    use bootstrap_methods;
+
+    protected $dismissible = FALSE;
+
+    /**
+     * @param string $message Alert text content
+     * @param string $type Color type (primary, secondary, success, danger, warning, info, light, dark)
+     * @param bool $dismissible Enable dismiss button
+     */
+    public function __construct($message, $type = 'primary', $dismissible = FALSE) {
+        parent::__construct("alert alert-{$type}", NULL);
+        $this->dismissible = $dismissible;
+
+        if ($dismissible) {
+            $this->set_attrib('role', 'alert');
+            $close_btn = new \k1lib\html\button(NULL, 'btn-close');
+            $close_btn->set_attrib('data-bs-dismiss', 'alert');
+            $close_btn->set_attrib('aria-label', 'Close');
+            $this->append_child_tail($close_btn);
+        }
+
+        $this->set_value($message);
+    }
+
+    /**
+     * @param string $heading Optional alert heading
+     * @return $this
+     */
+    public function set_heading($heading) {
+        $h4 = new \k1lib\html\h4($heading, NULL);
+        $h4->set_class('alert-heading');
+        $this->prepend_child($h4);
+        return $this;
+    }
+}
