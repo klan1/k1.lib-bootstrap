@@ -169,11 +169,11 @@ echo $bread->generate();') ?></code></div>
                     <div class="preview-box">
                         <?php
                         use k1\lib\html\bootstrap\button_group;
-                        use k1\lib\html\button;
+                        use k1\lib\html\button as btn;
 
-                        $btn1 = new button('Left', 'btn-primary');
-                        $btn2 = new button('Center', 'btn-primary');
-                        $btn3 = new button('Right', 'btn-primary');
+                        $btn1 = new btn('Left', 'btn-primary');
+                        $btn2 = new btn('Center', 'btn-primary');
+                        $btn3 = new btn('Right', 'btn-primary');
 
                         $group = new button_group([$btn1, $btn2, $btn3]);
                         echo $group->generate();
@@ -182,11 +182,11 @@ echo $bread->generate();') ?></code></div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
 use k1\lib\html\bootstrap\button_group;
-use k1\lib\html\button;
+use k1\lib\html\button as btn;
 
-$btn1 = new button(\'Left\', \'btn-primary\');
-$btn2 = new button(\'Center\', \'btn-primary\');
-$btn3 = new button(\'Right\', \'btn-primary\');
+$btn1 = new btn(\'Left\', \'btn-primary\');
+$btn2 = new btn(\'Center\', \'btn-primary\');
+$btn3 = new btn(\'Right\', \'btn-primary\');
 
 $group = new button_group([$btn1, $btn2, $btn3]);
 echo $group->generate();') ?></code></div>
@@ -250,9 +250,9 @@ echo $callout->generate();') ?></code></div>
                     <div class="preview-box">
                         <?php
                         use k1\lib\html\bootstrap\collapse;
-                        use k1\lib\html\button;
+                        use k1\lib\html\button as btn;
 
-                        $trigger = new button('Toggle Content', 'btn-primary');
+                        $trigger = new btn('Toggle Content', 'btn-primary');
                         $collapse_content = '<p>This is some collapsible content that reveals when you click the button above. It uses Bootstrap\'s collapse functionality.</p><p>You can put any HTML content here.</p>';
                         $collapse = new collapse('demo', $trigger, $collapse_content);
                         echo $trigger->generate() . ' ';
@@ -262,9 +262,9 @@ echo $callout->generate();') ?></code></div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
 use k1\lib\html\bootstrap\collapse;
-use k1\lib\html\button;
+use k1\lib\html\button as btn;
 
-$trigger = new button(\'Toggle Content\', \'btn-primary\');
+$trigger = new btn(\'Toggle Content\', \'btn-primary\');
 $collapse_content = \'<p>Your content here...</p>\';
 $collapse = new collapse(\'demo\', $trigger, $collapse_content);
 echo $trigger->generate() . \' \';
@@ -410,7 +410,7 @@ echo $demo_menu->generate();') ?></code></div>
                     <div class="preview-box">
                         <?php
                         use k1\lib\html\bootstrap\modal;
-                        use k1\lib\html\button;
+                        use k1\lib\html\button as btn;
 
                         $modal = new modal('Modal Title', '<p>This is the modal body content. You can put any HTML here.</p>', 'Cancel', 'Confirm');
                         echo $modal->generate();
