@@ -66,15 +66,14 @@ class callout extends \k1lib\html\div {
     }
 
     public function generate($with_childs = \TRUE, $n_childs = 0) {
+        $content = '';
         if (!empty($this->title)) {
-            $h6 = new \k1lib\html\h6($this->title);
-            $h6->set_class('alert-heading');
-            $this->append_child($h6);
+            $content .= "<h6 class=\"alert-heading\">{$this->title}</h6>";
         }
-
         if (!empty($this->message)) {
-            $this->append_child($this->message);
+            $content .= $this->message;
         }
+        $this->set_value($content);
 
         if (!empty($this->margin)) {
             $this->set_attrib("style", "margin: {$this->margin}");
