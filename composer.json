@@ -21,5 +21,8 @@
         "psr-4": {
             "k1lib\\html\\bootstrap\\": "src/klan1/html/bootstrap/"
         }
+    },
+    "extra": {
+        "demo": "php -S localhost:8000 -t demo"
     }
 }
