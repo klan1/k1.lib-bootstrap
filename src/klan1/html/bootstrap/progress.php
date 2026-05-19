@@ -1,6 +1,6 @@
 <?php
 
-namespace k1\lib\html\bootstrap;
+namespace k1lib\html\bootstrap;
 
 /**
  * Bootstrap 5 Progress component
@@ -42,7 +42,7 @@ class progress extends \k1lib\html\div {
             }
             if (!empty($bar['animated'])) {
                 $bar_div->set_class('progress-bar-striped', TRUE);
-                $bar_div->set_class('animate', TRUE);
+                $bar_div->set_class('progress-bar-animated', TRUE);
             }
 
             $this->append_child($bar_div);

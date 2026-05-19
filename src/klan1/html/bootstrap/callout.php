@@ -1,6 +1,6 @@
 <?php
 
-namespace k1\lib\html\bootstrap;
+namespace k1lib\html\bootstrap;
 
 /**
  * Bootstrap 5 Callout component
@@ -26,22 +26,21 @@ class callout extends \k1lib\html\div {
         $this->message = $message;
         $this->title = $title;
 
-        parent::__construct("callout", NULL);
-        $this->set_attrib("data-closable", TRUE);
+        parent::__construct("alert alert-{$type}", NULL);
+        $this->set_attrib("role", "alert");
         if ($closable) {
-            $close_button = new \k1lib\html\button(NULL, "close-button");
-            $close_button->set_attrib("data-close", TRUE);
-            $close_button->set_attrib("aria-label", "Close reveal");
-            $close_button->append_span()->set_attrib("aria-hidden", TRUE)->set_value("&times;");
+            $close_button = new \k1lib\html\button(NULL, "btn-close");
+            $close_button->set_attrib("data-bs-dismiss", "alert");
+            $close_button->set_attrib("aria-label", "Close");
             $this->append_child_tail($close_button);
         }
 
-        $this->set_class($type);
+        $this->set_class("alert-{$type}");
     }
 
     public function set_class($class, $append = FALSE) {
         if ($append === FALSE) {
-            $class = "callout {$class}";
+            $class = "alert {$class}";
         }
         parent::set_class($class, $append);
     }
@@ -69,11 +68,13 @@ class callout extends \k1lib\html\div {
     public function generate($with_childs = \TRUE, $n_childs = 0) {
         if (!empty($this->title)) {
             $h6 = new \k1lib\html\h6($this->title);
-        } else {
-            $h6 = "";
+            $h6->set_class('alert-heading');
+            $this->prepend_child($h6);
         }
 
-        $this->set_value("{$h6}{$this->message}");
+        if (!empty($this->message)) {
+            $this->append_child($this->message);
+        }
 
         if (!empty($this->margin)) {
             $this->set_attrib("style", "margin: {$this->margin}");

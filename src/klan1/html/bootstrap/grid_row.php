@@ -1,6 +1,6 @@
 <?php
 
-namespace k1\lib\html\bootstrap;
+namespace k1lib\html\bootstrap;
 
 /**
  * Bootstrap 5 Grid Row component

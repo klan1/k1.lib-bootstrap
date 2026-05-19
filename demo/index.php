@@ -427,7 +427,7 @@ echo $modal->generate();') ?></code></div>
                     <div class="preview-box">
                         <?php
 
-                        $demo_nav = new nav([
+                        $demo_nav = new nav_component([
                             ['text' => 'Home', 'href' => '#', 'active' => true],
                             ['text' => 'Features', 'href' => '#'],
                             ['text' => 'Pricing', 'href' => '#'],
