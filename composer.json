@@ -22,7 +22,7 @@
             "k1lib\\html\\bootstrap\\": "src/klan1/html/bootstrap/"
         }
     },
-    "extra": {
+    "scripts": {
         "demo": "php -S localhost:8000 -t demo"
     }
 }
