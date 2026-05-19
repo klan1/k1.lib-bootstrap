@@ -17,6 +17,8 @@ class alert extends \k1lib\html\div {
     use bootstrap_methods;
 
     protected $dismissible = FALSE;
+    protected $heading = NULL;
+    protected $message = '';
 
     /**
      * @param string $message Alert text content
@@ -26,6 +28,7 @@ class alert extends \k1lib\html\div {
     public function __construct($message, $type = 'primary', $dismissible = FALSE) {
         parent::__construct("alert alert-{$type}", NULL);
         $this->dismissible = $dismissible;
+        $this->message = $message;
 
         if ($dismissible) {
             $this->set_attrib('role', 'alert');
@@ -34,8 +37,6 @@ class alert extends \k1lib\html\div {
             $close_btn->set_attrib('aria-label', 'Close');
             $this->append_child_tail($close_btn);
         }
-
-        $this->set_value($message);
     }
 
     /**
@@ -43,9 +44,16 @@ class alert extends \k1lib\html\div {
      * @return $this
      */
     public function set_heading($heading) {
-        $h4 = new \k1lib\html\h4($heading, NULL);
-        $h4->set_class('alert-heading');
-        $this->prepend_child($h4);
+        $this->heading = new \k1lib\html\h4($heading, NULL);
+        $this->heading->set_class('alert-heading');
+        $this->append_child($this->heading);
         return $this;
+    }
+
+    public function generate($with_childs = \TRUE, $n_childs = 0) {
+        if (empty($this->heading)) {
+            $this->append_child($this->message);
+        }
+        return parent::generate($with_childs, $n_childs);
     }
 }

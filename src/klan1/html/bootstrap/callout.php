@@ -69,7 +69,7 @@ class callout extends \k1lib\html\div {
         if (!empty($this->title)) {
             $h6 = new \k1lib\html\h6($this->title);
             $h6->set_class('alert-heading');
-            $this->prepend_child($h6);
+            $this->append_child($h6);
         }
 
         if (!empty($this->message)) {
