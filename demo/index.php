@@ -11,6 +11,15 @@
  */
 
 require_once __DIR__ . '/../vendor/autoload.php';
+
+
+
+
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -83,8 +92,6 @@ require_once __DIR__ . '/../vendor/autoload.php';
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\alert;
-
                         $demo_alert = new alert('This is a primary alert—check it out!', 'primary', true);
                         $demo_alert->set_heading('Important Message');
                         echo $demo_alert->generate();
@@ -92,7 +99,6 @@ require_once __DIR__ . '/../vendor/autoload.php';
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\alert;
 
 $demo_alert = new alert(
     \'This is a primary alert—check it out!\',
@@ -109,7 +115,6 @@ echo $demo_alert->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box badge-demo">
                         <?php
-                        use k1\lib\html\bootstrap\badge;
 
                         echo (new badge('Primary'))->generate() . ' ';
                         echo (new badge('Secondary', 'secondary'))->generate() . ' ';
@@ -124,7 +129,6 @@ echo $demo_alert->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\badge;
 
 echo (new badge(\'Primary\'))->generate() . \' \';
 echo (new badge(\'Secondary\', \'secondary\'))->generate() . \' \';
@@ -138,7 +142,6 @@ echo (new badge(\'Pill Badge\', \'primary\', true))->generate();') ?></code></di
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\breadcrumb;
 
                         $bread = new breadcrumb([
                             ['text' => 'Home', 'href' => '#'],
@@ -151,7 +154,6 @@ echo (new badge(\'Pill Badge\', \'primary\', true))->generate();') ?></code></di
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\breadcrumb;
 
 $bread = new breadcrumb([
     [\'text\' => \'Home\', \'href\' => \'#\'],
@@ -168,21 +170,15 @@ echo $bread->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\button_group;
-                        use k1\lib\html\button as btn;
-
                         $btn1 = new btn('Left', 'btn-primary');
                         $btn2 = new btn('Center', 'btn-primary');
                         $btn3 = new btn('Right', 'btn-primary');
-
                         $group = new button_group([$btn1, $btn2, $btn3]);
                         echo $group->generate();
                         ?>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\button_group;
-use k1\lib\html\button as btn;
 
 $btn1 = new btn(\'Left\', \'btn-primary\');
 $btn2 = new btn(\'Center\', \'btn-primary\');
@@ -198,7 +194,6 @@ echo $group->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box" style="max-width: 400px;">
                         <?php
-                        use k1\lib\html\bootstrap\card;
 
                         $demo_card = new card('Card Title', 'Card Subtitle', 'Some quick example text to build on the card title and make up the bulk of the card\'s content.');
                         $demo_card->body()->append_a('#', 'Go somewhere', 'btn btn-primary');
@@ -207,7 +202,6 @@ echo $group->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\card;
 
 $demo_card = new card(
     \'Card Title\',
@@ -224,7 +218,6 @@ echo $demo_card->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\callout;
 
                         $callout = new callout('This is a dismissible callout message.', 'Callout Title', true, 'primary');
                         echo $callout->generate();
@@ -232,7 +225,6 @@ echo $demo_card->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\callout;
 
 $callout = new callout(
     \'This is a dismissible callout message.\',
@@ -249,9 +241,6 @@ echo $callout->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\collapse;
-                        use k1\lib\html\button as btn;
-
                         $trigger = new btn('Toggle Content', 'btn-primary');
                         $collapse_content = '<p>This is some collapsible content that reveals when you click the button above. It uses Bootstrap\'s collapse functionality.</p><p>You can put any HTML content here.</p>';
                         $collapse = new collapse('demo', $trigger, $collapse_content);
@@ -261,8 +250,6 @@ echo $callout->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\collapse;
-use k1\lib\html\button as btn;
 
 $trigger = new btn(\'Toggle Content\', \'btn-primary\');
 $collapse_content = \'<p>Your content here...</p>\';
@@ -277,7 +264,6 @@ echo $collapse->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\dropdown;
 
                         $dropdown = new dropdown('Actions', [
                             ['text' => 'Action', 'href' => '#'],
@@ -290,7 +276,6 @@ echo $collapse->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\dropdown;
 
 $dropdown = new dropdown(\'Actions\', [
     [\'text\' => \'Action\', \'href\' => \'#\'],
@@ -307,8 +292,7 @@ echo $dropdown->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\grid;
-                        use k1\lib\html\bootstrap\grid_cell;
+
 
                         $demo_grid = new grid(2, 3);
                         $row1 = $demo_grid->row(1);
@@ -328,7 +312,6 @@ echo $dropdown->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\grid;
 
 $demo_grid = new grid(2, 3);
 $row1 = $demo_grid->row(1);
@@ -348,7 +331,6 @@ echo $demo_grid->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box" style="max-width: 400px;">
                         <?php
-                        use k1\lib\html\bootstrap\list_group;
 
                         $list = new list_group([
                             ['text' => 'First item', 'href' => '#'],
@@ -361,7 +343,6 @@ echo $demo_grid->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\list_group;
 
 $list = new list_group([
     [\'text\' => \'First item\', \'href\' => \'#\'],
@@ -378,7 +359,6 @@ echo $list->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\menu;
 
                         $demo_menu = new menu('dropdown');
                         $demo_menu->add_menu_item('#', 'Home');
@@ -393,7 +373,6 @@ echo $list->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\menu;
 
 $demo_menu = new menu(\'dropdown\');
 $demo_menu->add_menu_item(\'#\', \'Home\');
@@ -409,8 +388,6 @@ echo $demo_menu->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\modal;
-                        use k1\lib\html\button as btn;
 
                         $modal = new modal('Modal Title', '<p>This is the modal body content. You can put any HTML here.</p>', 'Cancel', 'Confirm');
                         echo $modal->generate();
@@ -418,7 +395,6 @@ echo $demo_menu->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\modal;
 
 $modal = new modal(
     \'Modal Title\',
@@ -435,7 +411,6 @@ echo $modal->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\nav;
 
                         $demo_nav = new nav([
                             ['text' => 'Home', 'href' => '#', 'active' => true],
@@ -448,7 +423,6 @@ echo $modal->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\nav;
 
 $demo_nav = new nav([
     [\'text\' => \'Home\', \'href\' => \'#\', \'active\' => true],
@@ -464,8 +438,7 @@ echo $demo_nav->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\navbar;
-                        use k1\lib\html\bootstrap\nav as nav_component;
+
 
                         $demo_navbar = new navbar('Brand Name', 'demoNav', 'light', 'lg');
                         $nav_links = new nav_component([
@@ -479,8 +452,7 @@ echo $demo_nav->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\navbar;
-use k1\lib\html\bootstrap\nav as nav_component;
+
 
 $demo_navbar = new navbar(\'Brand Name\', \'demoNav\', \'light\', \'lg\');
 $nav_links = new nav_component([
@@ -497,7 +469,6 @@ echo $demo_navbar->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\pagination;
 
                         $pager = new pagination(3, 10, '/page', true);
                         echo $pager->generate();
@@ -505,7 +476,6 @@ echo $demo_navbar->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\pagination;
 
 $pager = new pagination(3, 10, \'/page\', true);
 echo $pager->generate();') ?></code></div>
@@ -517,7 +487,6 @@ echo $pager->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box progress-demo">
                         <?php
-                        use k1\lib\html\bootstrap\progress;
 
                         $prog = new progress([
                             ['value' => 25, 'type' => 'primary'],
@@ -530,7 +499,6 @@ echo $pager->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\progress;
 
 $prog = new progress([
     [\'value\' => 25, \'type\' => \'primary\'],
@@ -547,7 +515,6 @@ echo $prog->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box spinner-demo">
                         <?php
-                        use k1\lib\html\bootstrap\spinner;
 
                         echo (new spinner('border', 'primary'))->generate() . ' ';
                         echo (new spinner('border', 'secondary'))->generate() . ' ';
@@ -566,7 +533,6 @@ echo $prog->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\spinner;
 
 // Border spinner
 echo (new spinner(\'border\', \'primary\'))->generate();
@@ -581,7 +547,6 @@ echo (new spinner(\'grow\', \'success\'))->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\table_from_data;
 
                         $table = new table_from_data();
                         $table->set_data([
@@ -594,7 +559,6 @@ echo (new spinner(\'grow\', \'success\'))->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\table_from_data;
 
 $table = new table_from_data();
 $table->set_data([
@@ -611,7 +575,6 @@ echo $table->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\toast;
 
                         $toast = new toast('Notification Header', 'This is the toast body message.', true, 5000);
                         echo $toast->generate();
@@ -619,7 +582,6 @@ echo $table->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\toast;
 
 $toast = new toast(
     \'Notification Header\',
@@ -636,7 +598,6 @@ echo $toast->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\title_bar;
 
                         $title_bar = new title_bar('demo-title');
                         $title_bar->title()->set_value('Page Title');
@@ -645,7 +606,6 @@ echo $toast->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\title_bar;
 
 $title_bar = new title_bar(\'demo-title\');
 $title_bar->title()->set_value(\'Page Title\');
@@ -658,7 +618,6 @@ echo $title_bar->generate();') ?></code></div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        use k1\lib\html\bootstrap\top_bar;
 
                         $top = new top_bar('main-top');
                         $top->title()->set_value('My Application');
@@ -671,7 +630,6 @@ echo $title_bar->generate();') ?></code></div>
                     </div>
                     <div class="preview-label">Code</div>
                     <div class="code-block"><code><?php echo htmlspecialchars('<?php
-use k1\lib\html\bootstrap\top_bar;
 
 $top = new top_bar(\'main-top\');
 $top->title()->set_value(\'My Application\');
