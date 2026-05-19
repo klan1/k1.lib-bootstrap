@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "k1\\lib\\html\\bootstrap\\": "src/classes/html/bootstrap/"
+            "k1lib\\html\\bootstrap\\": "src/klan1/html/bootstrap/"
         }
     }
 }
