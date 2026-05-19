@@ -12,29 +12,29 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use k1\lib\html\button as btn;
-use k1\lib\html\bootstrap\alert;
-use k1\lib\html\bootstrap\badge;
-use k1\lib\html\bootstrap\breadcrumb;
-use k1\lib\html\bootstrap\button_group;
-use k1\lib\html\bootstrap\card;
-use k1\lib\html\bootstrap\callout;
-use k1\lib\html\bootstrap\collapse;
-use k1\lib\html\bootstrap\dropdown;
-use k1\lib\html\bootstrap\grid;
-use k1\lib\html\bootstrap\grid_cell;
-use k1\lib\html\bootstrap\list_group;
-use k1\lib\html\bootstrap\menu;
-use k1\lib\html\bootstrap\modal;
-use k1\lib\html\bootstrap\nav as nav_component;
-use k1\lib\html\bootstrap\navbar;
-use k1\lib\html\bootstrap\pagination;
-use k1\lib\html\bootstrap\progress;
-use k1\lib\html\bootstrap\spinner;
-use k1\lib\html\bootstrap\table_from_data;
-use k1\lib\html\bootstrap\toast;
-use k1\lib\html\bootstrap\title_bar;
-use k1\lib\html\bootstrap\top_bar;
+use k1lib\html\button as btn;
+use k1lib\html\bootstrap\alert;
+use k1lib\html\bootstrap\badge;
+use k1lib\html\bootstrap\breadcrumb;
+use k1lib\html\bootstrap\button_group;
+use k1lib\html\bootstrap\card;
+use k1lib\html\bootstrap\callout;
+use k1lib\html\bootstrap\collapse;
+use k1lib\html\bootstrap\dropdown;
+use k1lib\html\bootstrap\grid;
+use k1lib\html\bootstrap\grid_cell;
+use k1lib\html\bootstrap\list_group;
+use k1lib\html\bootstrap\menu;
+use k1lib\html\bootstrap\modal;
+use k1lib\html\bootstrap\nav as nav_component;
+use k1lib\html\bootstrap\navbar;
+use k1lib\html\bootstrap\pagination;
+use k1lib\html\bootstrap\progress;
+use k1lib\html\bootstrap\spinner;
+use k1lib\html\bootstrap\table_from_data;
+use k1lib\html\bootstrap\toast;
+use k1lib\html\bootstrap\title_bar;
+use k1lib\html\bootstrap\top_bar;
 ?>
 <!DOCTYPE html>
 <html lang="en">
