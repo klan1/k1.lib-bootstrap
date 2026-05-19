@@ -26,13 +26,13 @@ class alert extends \k1lib\html\div {
      * @param bool $dismissible Enable dismiss button
      */
     public function __construct($message, $type = 'primary', $dismissible = FALSE) {
-        parent::__construct("alert alert-{$type}", NULL);
+        parent::__construct("alert alert-{$type}" . ($dismissible ? ' alert-dismissible fade show position-relative' : ''), NULL);
         $this->dismissible = $dismissible;
         $this->message = $message;
 
         if ($dismissible) {
             $this->set_attrib('role', 'alert');
-            $close_btn = new \k1lib\html\button(NULL, 'btn-close');
+            $close_btn = new \k1lib\html\button(NULL, 'btn-close position-absolute top-0 end-0');
             $close_btn->set_attrib('data-bs-dismiss', 'alert');
             $close_btn->set_attrib('aria-label', 'Close');
             $this->append_child_tail($close_btn);
