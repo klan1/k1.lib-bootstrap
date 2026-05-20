@@ -890,13 +890,35 @@ use k1lib\html\bootstrap\top_bar;
                 <div class="component-body">
                     <div class="preview-container">
                         <span class="preview-label">Preview</span>
-                        <?php
-                        $btn1 = new button('Left', button::VARIANT_PRIMARY);
-                        $btn2 = new button('Center', button::VARIANT_PRIMARY);
-                        $btn3 = new button('Right', button::VARIANT_PRIMARY);
-                        $group = new button_group([$btn1, $btn2, $btn3]);
-                        echo $group->generate();
-                        ?>
+                        <div>
+                            <h6 class="text-muted mb-2">Basic Group</h6>
+                            <?php
+                            $group = new button_group();
+                            $group->add_button(new button('Left', button::VARIANT_PRIMARY))
+                                  ->add_button(new button('Center', button::VARIANT_PRIMARY))
+                                  ->add_button(new button('Right', button::VARIANT_PRIMARY));
+                            echo $group->generate();
+                            ?>
+                            <h6 class="text-muted mb-2 mt-3">Sizes</h6>
+                            <?php
+                            $group_sm = new button_group('sm');
+                            $group_sm->add_button(new button('Small', button::VARIANT_SECONDARY))
+                                     ->add_button(new button('Small', button::VARIANT_SECONDARY));
+                            echo $group_sm->generate() . ' ';
+                            $group_lg = new button_group('lg');
+                            $group_lg->add_button(new button('Large', button::VARIANT_SECONDARY))
+                                     ->add_button(new button('Large', button::VARIANT_SECONDARY));
+                            echo $group_lg->generate();
+                            ?>
+                            <h6 class="text-muted mb-2 mt-3">Vertical</h6>
+                            <?php
+                            $group_v = new button_group('md', TRUE);
+                            $group_v->add_button(new button('Top', button::VARIANT_INFO))
+                                     ->add_button(new button('Middle', button::VARIANT_INFO))
+                                     ->add_button(new button('Bottom', button::VARIANT_INFO));
+                            echo $group_v->generate();
+                            ?>
+                        </div>
                     </div>
                     <div class="code-block">
                         <div class="code-header">
@@ -907,12 +929,21 @@ use k1lib\html\bootstrap\top_bar;
                             </div>
                             <span class="code-language">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="code-keyword">$btn1</span> = <span class="code-keyword">new</span> <span class="code-function">btn</span>(<span class="code-string">'Left'</span>, <span class="code-string">'btn-primary'</span>);
-<span class="code-keyword">$btn2</span> = <span class="code-keyword">new</span> <span class="code-function">btn</span>(<span class="code-string">'Center'</span>, <span class="code-string">'btn-primary'</span>);
-<span class="code-keyword">$btn3</span> = <span class="code-keyword">new</span> <span class="code-function">btn</span>(<span class="code-string">'Right'</span>, <span class="code-string">'btn-primary'</span>);
+                        <pre class="code-content"><code><span class="code-comment">// Basic group</span>
+<span class="code-keyword">$group</span> = <span class="code-keyword">new</span> <span class="code-function">button_group</span>();
+<span class="code-function">$group</span>-><span class="code-function">add_button</span>(<span class="code-keyword">new</span> <span class="code-function">button</span>(<span class="code-string">'Left'</span>, <span class="code-function">button</span>::<span class="code-function">VARIANT_PRIMARY</span>))
+      -><span class="code-function">add_button</span>(<span class="code-keyword">new</span> <span class="code-function">button</span>(<span class="code-string">'Center'</span>, <span class="code-function">button</span>::<span class="code-function">VARIANT_PRIMARY</span>))
+      -><span class="code-function">add_button</span>(<span class="code-keyword">new</span> <span class="code-function">button</span>(<span class="code-string">'Right'</span>, <span class="code-function">button</span>::<span class="code-function">VARIANT_PRIMARY</span>));
 
-<span class="code-keyword">$group</span> = <span class="code-keyword">new</span> <span class="code-function">button_group</span>([<span class="code-function">$btn1</span>, <span class="code-function">$btn2</span>, <span class="code-function">$btn3</span>]);
-<span class="code-keyword">echo</span> <span class="code-function">$group</span>-><span class="code-function">generate</span>();</code></pre>
+<span class="code-comment">// Size variants</span>
+<span class="code-keyword">$group_sm</span> = <span class="code-keyword">new</span> <span class="code-function">button_group</span>(<span class="code-string">'sm'</span>);
+<span class="code-keyword">$group_lg</span> = <span class="code-keyword">new</span> <span class="code-function">button_group</span>(<span class="code-string">'lg'</span>);
+
+<span class="code-comment">// Vertical group</span>
+<span class="code-keyword">$group_v</span> = <span class="code-keyword">new</span> <span class="code-function">button_group</span>(<span class="code-string">'md'</span>, <span class="code-keyword">true</span>);
+
+<span class="code-comment">// Access buttons</span>
+<span class="code-function">$group</span>-><span class="code-function">button</span>(<span class="code-string">0</span>); <span class="code-comment">// Returns first button</span></code></pre>
                     </div>
                 </div>
             </section>
