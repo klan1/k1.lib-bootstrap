@@ -7,6 +7,9 @@ namespace k1lib\html\bootstrap;
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
  * @link    https://github.com/klan1/k1.lib-bootstrap
+ * @link    https://github.com/k1lib/k1.lib-bootstrap
+ * @link    https://github.com/k1lib/k1.lib-bootstrap
+ * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/callout.mdx
  * @license Apache-2.0
  */
 
