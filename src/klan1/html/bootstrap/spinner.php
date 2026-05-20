@@ -8,7 +8,6 @@ namespace k1lib\html\bootstrap;
  * Animated loading indicator with grow and border variants.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
- * @link    https://github.com/klan1/k1.lib-bootstrap
  * @link    https://github.com/k1lib/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/spinners.mdx
  * @license Apache-2.0
@@ -23,14 +22,20 @@ class spinner extends \k1lib\html\div {
      * @param bool $centered Center the spinner
      */
     public function __construct($type = 'border', $color = 'primary', $size = 'md', $centered = FALSE) {
-        $size_class = $size === 'sm' ? 'spinner-' . $size : '';
-        $class = "spinner-{$type} {$size_class} text-{$color}";
-        $id = $centered ? 'spinner-' . uniqid() : NULL;
-        parent::__construct($class, $id);
+        $size_class = '';
+        if ($size === 'sm') {
+            $size_class = 'spinner-' . $size;
+        } elseif ($size === 'lg') {
+            $size_class = 'spinner-lg';
+        }
+        $class = trim("spinner-{$type} {$size_class} text-{$color}");
+        parent::__construct($class, NULL);
+        $this->set_attrib('role', 'status');
+        $this->append_child(new \k1lib\html\span('visually-hidden', NULL, 'Loading...'));
 
         if ($centered) {
-            $parent = new \k1lib\html\div('d-flex justify-content-center');
-            $parent->append_child($this);
+            $wrapper = new \k1lib\html\div('d-flex justify-content-center align-items-center');
+            $wrapper->append_child($this);
         }
     }
 }

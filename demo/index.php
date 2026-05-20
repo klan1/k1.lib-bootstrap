@@ -136,11 +136,9 @@ use k1lib\html\bootstrap\top_bar;
             margin-right: .25rem;
         }
 
-        .spinner-demo, .spinner-grow-demo {
-            display: inline-block;
-            width: 2rem;
-            height: 2rem;
-            vertical-align: text-bottom;
+        .spinner-demo > div {
+            display: inline-block !important;
+            margin-right: .5rem;
         }
 
         .progress-demo .progress {
