@@ -29,6 +29,7 @@ class card extends \k1lib\html\div {
         parent::__construct('card', NULL);
 
         $this->body = new \k1lib\html\div('card-body');
+        $this->append_child($this->body);
 
         if ($title) {
             $this->body->append_h5($title, 'card-title');
