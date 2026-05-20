@@ -107,9 +107,11 @@ use k1lib\html\bootstrap\top_bar;
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        $demo_alert = new alert('This is a primary alert—check it out!', 'primary', true);
-                        $demo_alert->set_heading('Important Message');
-                        echo $demo_alert->generate();
+                        $types = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'];
+                        foreach ($types as $type) {
+                            $a = new alert("A simple {$type} alert—check it out!", $type, false);
+                            echo $a->generate();
+                        }
                         ?>
                     </div>
                     <div class="preview-label">Code</div>

@@ -27,11 +27,11 @@ class alert extends \k1lib\html\div {
      */
     public function __construct($message, $type = 'primary', $dismissible = FALSE) {
         parent::__construct("alert alert-{$type}" . ($dismissible ? ' alert-dismissible fade show position-relative' : ''), NULL);
+        $this->set_attrib('role', 'alert');
         $this->dismissible = $dismissible;
         $this->message = $message;
 
         if ($dismissible) {
-            $this->set_attrib('role', 'alert');
             $close_btn = new \k1lib\html\button(NULL, 'btn-close position-absolute top-0 end-0');
             $close_btn->set_attrib('data-bs-dismiss', 'alert');
             $close_btn->set_attrib('aria-label', 'Close');
@@ -51,8 +51,12 @@ class alert extends \k1lib\html\div {
     }
 
     public function generate($with_childs = \TRUE, $n_childs = 0) {
-        if (empty($this->heading)) {
-            $this->append_child($this->message);
+        if (!empty($this->heading)) {
+            $this->append_child($this->heading);
+            $p = new \k1lib\html\p($this->message);
+            $this->append_child($p);
+        } else {
+            $this->set_value($this->message);
         }
         return parent::generate($with_childs, $n_childs);
     }
