@@ -8,7 +8,7 @@ namespace k1lib\html\bootstrap;
  * Flexible and extensible content container with multiple variants and options.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
- * @link    https://github.com/klan1/k1.lib-bootstrap
+ * @link    https://github.com/k1lib-bootstrap
  * @license Apache-2.0
  * @version BETA
  */
@@ -26,13 +26,7 @@ class card extends \k1lib\html\div {
     public function __construct($title = NULL, $subtitle = NULL, $text = NULL) {
         parent::__construct('card', NULL);
 
-        $this->header = new \k1lib\html\div('card-header');
         $this->body = new \k1lib\html\div('card-body');
-        $this->footer = new \k1lib\html\div('card-footer');
-
-        $this->append_child($this->header);
-        $this->append_child($this->body);
-        $this->append_child($this->footer);
 
         if ($title) {
             $this->body->append_h5($title, 'card-title');
@@ -46,10 +40,26 @@ class card extends \k1lib\html\div {
     }
 
     /**
-     * @return \k1lib\html\div
+     * @param string $content Header content
+     * @return $this
      */
-    public function header() {
-        return $this->header;
+    public function set_header($content) {
+        $this->header = new \k1lib\html\div('card-header');
+        $this->header->set_value($content);
+        $this->append_child($this->header);
+        $this->append_child($this->body);
+        return $this;
+    }
+
+    /**
+     * @param string $content Footer content
+     * @return $this
+     */
+    public function set_footer($content) {
+        $this->footer = new \k1lib\html\div('card-footer');
+        $this->footer->set_value($content);
+        $this->append_child($this->footer);
+        return $this;
     }
 
     /**
@@ -57,12 +67,5 @@ class card extends \k1lib\html\div {
      */
     public function body() {
         return $this->body;
-    }
-
-    /**
-     * @return \k1lib\html\div
-     */
-    public function footer() {
-        return $this->footer;
     }
 }
