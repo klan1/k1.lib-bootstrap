@@ -337,12 +337,11 @@ use k1lib\html\bootstrap\top_bar;
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        $bread = new breadcrumb([
-                            ['text' => 'Home', 'href' => '#'],
-                            ['text' => 'Library', 'href' => '#'],
-                            ['text' => 'Data', 'href' => '#'],
-                            ['text' => 'Current Page']
-                        ]);
+                        $bread = new breadcrumb();
+                        $bread->add_item('Home', '#')
+                              ->add_item('Library', '#')
+                              ->add_item('Data', '#')
+                              ->add_item('Current Page');
                         echo $bread->generate();
                         ?>
                     </div>
@@ -351,11 +350,10 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$bread</span> = <span class="text-info">new</span> breadcrumb([
-    [<span class="text-success">'text'</span> => <span class="text-success">'Home'</span>, <span class="text-success">'href'</span> => <span class="text-success">'#'</span>],
-    [<span class="text-success">'text'</span> => <span class="text-success">'Library'</span>, <span class="text-success">'href'</span> => <span class="text-success">'#'</span>],
-    [<span class="text-success">'text'</span> => <span class="text-success">'Current Page'</span>]
-]);
+                        <pre class="code-content"><code><span class="text-warning">$bread</span> = <span class="text-info">new</span> breadcrumb();
+<span class="text-warning">$bread</span>-><span class="text-light">add_item</span>(<span class="text-success">'Home'</span>, <span class="text-success">'#'</span>)
+      -><span class="text-light">add_item</span>(<span class="text-success">'Library'</span>, <span class="text-success">'#'</span>)
+      -><span class="text-light">add_item</span>(<span class="text-success">'Current Page'</span>);
 <span class="text-warning">echo</span> <span class="text-warning">$bread</span>-><span class="text-light">generate</span>();</code></pre>
                     </div>
                 </section>
