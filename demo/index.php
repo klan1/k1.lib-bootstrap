@@ -24,7 +24,6 @@ use k1lib\html\bootstrap\dropdown;
 use k1lib\html\bootstrap\grid;
 use k1lib\html\bootstrap\grid_cell;
 use k1lib\html\bootstrap\list_group;
-use k1lib\html\bootstrap\menu;
 use k1lib\html\bootstrap\modal;
 use k1lib\html\bootstrap\nav as nav_component;
 use k1lib\html\bootstrap\navbar;
@@ -192,7 +191,6 @@ use k1lib\html\bootstrap\top_bar;
                     <a class="nav-link" href="#dropdown">Dropdown</a>
                     <a class="nav-link" href="#grid">Grid</a>
                     <a class="nav-link" href="#list-group">List Group</a>
-                    <a class="nav-link" href="#menu">Menu</a>
                     <a class="nav-link" href="#modal">Modal</a>
                     <a class="nav-link" href="#nav">Nav</a>
                     <a class="nav-link" href="#navbar">Navbar</a>
@@ -576,32 +574,6 @@ use k1lib\html\bootstrap\top_bar;
     [<span class="text-success">'text'</span> => <span class="text-success">'Third'</span>, <span class="text-success">'href'</span> => <span class="text-success">'#'</span>]
 ]);
 <span class="text-warning">echo</span> <span class="text-warning">$list</span>-><span class="text-light">generate</span>();</code></pre>
-                    </div>
-                </section>
-
-                <!-- Menu -->
-                <section id="menu" class="component-section">
-                    <h2 class="component-title">Menu</h2>
-                    <div class="preview-label">Preview</div>
-                    <div class="preview-box">
-                        <?php
-                        $demo_menu = new menu('dropdown');
-                        $demo_menu->add_menu_item('#', 'Home');
-                        $demo_menu->add_menu_item('#', 'About');
-                        $demo_menu->add_menu_item('#', 'Services');
-                        $demo_menu->add_menu_item('#', 'Contact');
-                        echo $demo_menu->generate();
-                        ?>
-                    </div>
-                    <div class="code-block">
-                        <div class="code-header">
-                            <div class="code-dots"><span></span><span></span><span></span></div>
-                            <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
-                        </div>
-                        <pre class="code-content"><code><span class="text-warning">$menu</span> = <span class="text-info">new</span> menu(<span class="text-success">'dropdown'</span>);
-<span class="text-warning">$menu</span>-><span class="text-light">add_menu_item</span>(<span class="text-success">'#'</span>, <span class="text-success">'Home'</span>);
-<span class="text-warning">$menu</span>-><span class="text-light">add_menu_item</span>(<span class="text-success">'#'</span>, <span class="text-success">'About'</span>);
-<span class="text-warning">echo</span> <span class="text-warning">$menu</span>-><span class="text-light">generate</span>();</code></pre>
                     </div>
                 </section>
 
