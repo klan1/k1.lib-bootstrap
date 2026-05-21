@@ -37,9 +37,15 @@ class list_group extends \k1lib\html\ul {
 
             if (!empty($item['href'])) {
                 $a = $li->append_a($item['href'], $item['text'] ?? '');
+                $a->set_class('list-group-item-action');
+                if (!empty($item['active'])) {
+                    $a->set_class('active', TRUE);
+                    $a->set_attrib('aria-current', 'true');
+                }
                 if (!empty($item['disabled'])) {
                     $a->set_attrib('tabindex', '-1');
                     $a->set_attrib('aria-disabled', 'true');
+                    $a->set_class('disabled', TRUE);
                 }
             } else {
                 $li->set_value($item['text'] ?? '');
