@@ -25,7 +25,7 @@ use k1lib\html\bootstrap\grid;
 use k1lib\html\bootstrap\grid_cell;
 use k1lib\html\bootstrap\list_group;
 use k1lib\html\bootstrap\modal;
-use k1lib\html\bootstrap\nav as nav_component;
+use k1lib\html\componentes\nav as nav_component;
 use k1lib\html\bootstrap\navbar;
 use k1lib\html\bootstrap\pagination;
 use k1lib\html\bootstrap\progress;
@@ -118,11 +118,6 @@ use k1lib\html\bootstrap\top_bar;
 
         .nav-sticky {
             top: 80px;
-        }
-
-        .nav-link.active {
-            background-color: #0d6efd !important;
-            color: #fff !important;
         }
 
         h2.section-title {
@@ -582,8 +577,11 @@ use k1lib\html\bootstrap\top_bar;
                     <h2 class="component-title">Modal</h2>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal">
+                            Open Modal
+                        </button>
                         <?php
-                        $modal = new modal('Modal Title', '<p>This is the modal body content.</p>', 'Cancel', 'Confirm');
+                        $modal = new modal('Modal Title', '<p>This is the modal body content.</p>', 'Cancel', 'Confirm', 'demoModal');
                         echo $modal->generate();
                         ?>
                     </div>
@@ -605,28 +603,167 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Nav -->
                 <section id="nav" class="component-section">
                     <h2 class="component-title">Nav</h2>
-                    <div class="preview-label">Preview</div>
+
+                    <div class="preview-label">Tabs</div>
                     <div class="preview-box">
                         <?php
-                        $demo_nav = new nav_component([
+                        $demo_nav_tabs = new nav_component([
+                            ['text' => 'Home', 'href' => '#', 'active' => true],
+                            ['text' => 'Features', 'href' => '#'],
+                            ['text' => 'Pricing', 'href' => '#'],
+                            ['text' => 'Disabled', 'href' => '#', 'disabled' => true]
+                        ], 'tabs');
+                        echo $demo_nav_tabs->generate();
+                        ?>
+                    </div>
+
+                    <div class="preview-label">Pills</div>
+                    <div class="preview-box">
+                        <?php
+                        $demo_nav_pills = new nav_component([
                             ['text' => 'Home', 'href' => '#', 'active' => true],
                             ['text' => 'Features', 'href' => '#'],
                             ['text' => 'Pricing', 'href' => '#'],
                             ['text' => 'Disabled', 'href' => '#', 'disabled' => true]
                         ], 'pills');
-                        echo $demo_nav->generate();
+                        echo $demo_nav_pills->generate();
                         ?>
                     </div>
+
+                    <div class="preview-label">Underline</div>
+                    <div class="preview-box">
+                        <?php
+                        $demo_nav_underline = new nav_component([
+                            ['text' => 'Home', 'href' => '#', 'active' => true],
+                            ['text' => 'Features', 'href' => '#'],
+                            ['text' => 'Pricing', 'href' => '#'],
+                            ['text' => 'Disabled', 'href' => '#', 'disabled' => true]
+                        ], 'underline');
+                        echo $demo_nav_underline->generate();
+                        ?>
+                    </div>
+
+                    <div class="preview-label">Vertical Pills</div>
+                    <div class="preview-box">
+                        <?php
+                        $demo_nav_vertical = new nav_component([
+                            ['text' => 'Home', 'href' => '#', 'active' => true],
+                            ['text' => 'Features', 'href' => '#'],
+                            ['text' => 'Pricing', 'href' => '#'],
+                            ['text' => 'Disabled', 'href' => '#', 'disabled' => true]
+                        ], 'pills', true);
+                        echo $demo_nav_vertical->generate();
+                        ?>
+                    </div>
+
+                    <div class="preview-label">Centered</div>
+                    <div class="preview-box">
+                        <?php
+                        $demo_nav_centered = new nav_component([
+                            ['text' => 'Home', 'href' => '#', 'active' => true],
+                            ['text' => 'Features', 'href' => '#'],
+                            ['text' => 'Pricing', 'href' => '#']
+                        ], 'pills', false, 'center');
+                        echo $demo_nav_centered->generate();
+                        ?>
+                    </div>
+
+                    <div class="preview-label">Right Aligned</div>
+                    <div class="preview-box">
+                        <?php
+                        $demo_nav_right = new nav_component([
+                            ['text' => 'Home', 'href' => '#'],
+                            ['text' => 'Features', 'href' => '#'],
+                            ['text' => 'Pricing', 'href' => '#', 'active' => true]
+                        ], 'pills', false, 'end');
+                        echo $demo_nav_right->generate();
+                        ?>
+                    </div>
+
+                    <div class="preview-label">Fill and Justify</div>
+                    <div class="preview-box">
+                        <?php
+                        $demo_nav_fill = new nav_component([
+                            ['text' => 'Home', 'href' => '#', 'active' => true],
+                            ['text' => 'Much longer nav link', 'href' => '#'],
+                            ['text' => 'Link', 'href' => '#'],
+                            ['text' => 'Disabled', 'href' => '#', 'disabled' => true]
+                        ], 'pills', false, 'start', true, false);
+                        echo $demo_nav_fill->generate();
+                        ?>
+                    </div>
+
+                    <div class="preview-label">Justified</div>
+                    <div class="preview-box">
+                        <?php
+                        $demo_nav_justified = new nav_component([
+                            ['text' => 'Home', 'href' => '#', 'active' => true],
+                            ['text' => 'Much longer nav link', 'href' => '#'],
+                            ['text' => 'Link', 'href' => '#'],
+                            ['text' => 'Disabled', 'href' => '#', 'disabled' => true]
+                        ], 'pills', false, 'start', false, true);
+                        echo $demo_nav_justified->generate();
+                        ?>
+                    </div>
+
+                    <div class="preview-label">With Dropdown</div>
+                    <div class="preview-box">
+                        <?php
+                        $demo_nav_dropdown = new nav_component([
+                            ['text' => 'Home', 'href' => '#', 'active' => true],
+                            ['text' => 'Dropdown', 'dropdown' => [
+                                ['text' => 'Action', 'href' => '#'],
+                                ['text' => 'Another action', 'href' => '#'],
+                                ['text' => 'Something else here', 'href' => '#'],
+                                ['divider' => true],
+                                ['text' => 'Separated link', 'href' => '#']
+                            ]],
+                            ['text' => 'Link', 'href' => '#'],
+                            ['text' => 'Disabled', 'href' => '#', 'disabled' => true]
+                        ], 'pills');
+                        echo $demo_nav_dropdown->generate();
+                        ?>
+                    </div>
+
+                    <div class="preview-label">Tabs with JavaScript Behavior</div>
+                    <div class="preview-box">
+                        <?php
+                        $tabs = nav_component::create_tabs('demo', [
+                            ['id' => 'home', 'label' => 'Home', 'content' => '<p>This is the Home tab content.</p>'],
+                            ['id' => 'profile', 'label' => 'Profile', 'content' => '<p>This is the Profile tab content.</p>'],
+                            ['id' => 'contact', 'label' => 'Contact', 'content' => '<p>This is the Contact tab content.</p>'],
+                            ['id' => 'disabled', 'label' => 'Disabled', 'content' => '', 'disabled' => true]
+                        ]);
+                        echo $tabs['nav']->generate();
+                        echo $tabs['content']->generate();
+                        ?>
+                    </div>
+
                     <div class="code-block">
                         <div class="code-header">
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$nav</span> = <span class="text-info">new</span> nav([
-    [<span class="text-success">'text'</span> => <span class="text-success">'Home'</span>, <span class="text-success">'active'</span> => <span class="text-info">true</span>],
+                        <pre class="code-content"><code><span class="text-primary">// Basic tabs</span>
+<span class="text-warning">$nav</span> = <span class="text-info">new</span> nav_component([
+    [<span class="text-success">'text'</span> => <span class="text-success">'Home'</span>, <span class="text-success">'href'</span> => <span class="text-success">'#'</span>, <span class="text-success">'active'</span> => <span class="text-info">true</span>],
     [<span class="text-success">'text'</span> => <span class="text-success">'Features'</span>, <span class="text-success">'href'</span> => <span class="text-success">'#'</span>]
+], <span class="text-success">'tabs'</span>);
+
+<span class="text-primary">// Vertical pills</span>
+<span class="text-warning">$nav</span> = <span class="text-info">new</span> nav_component([...], <span class="text-success">'pills'</span>, <span class="text-info">true</span>);
+
+<span class="text-primary">// With dropdown</span>
+<span class="text-warning">$nav</span> = <span class="text-info">new</span> nav_component([
+    [<span class="text-success">'text'</span> => <span class="text-success">'Dropdown'</span>, <span class="text-success">'dropdown'</span> => [[<span class="text-success">'text'</span> => <span class="text-success">'Action'</span>], ...]]
 ], <span class="text-success">'pills'</span>);
-<span class="text-warning">echo</span> <span class="text-warning">$nav</span>-><span class="text-light">generate</span>();</code></pre>
+
+<span class="text-primary">// Tabbed interface with content</span>
+<span class="text-warning">$tabs</span> = nav_component::<span class="text-light">create_tabs</span>(<span class="text-success">'myTabs'</span>, [
+    [<span class="text-success">'id'</span> => <span class="text-success">'home'</span>, <span class="text-success">'label'</span> => <span class="text-success">'Home'</span>, <span class="text-success">'content'</span> => <span class="text-success">'<p>Content</p>'</span>]
+]);
+<span class="text-warning">echo</span> <span class="text-warning">$tabs</span>[<span class="text-success">'nav'</span>]-><span class="text-light">generate</span>();
+<span class="text-warning">echo</span> <span class="text-warning">$tabs</span>[<span class="text-success">'content'</span>]-><span class="text-light">generate</span>();</code></pre>
                     </div>
                 </section>
 

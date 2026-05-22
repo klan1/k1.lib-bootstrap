@@ -25,8 +25,9 @@ class modal extends div {
      * @param integer $class
      * @param integer $id
      *  */
-    public function __construct($modal_title, $content, $cancel = 'Cancelar', $ok = 'OK') {
-        parent::__construct('modal fade vh-100', 'staticBackdrop');
+    public function __construct($modal_title, $content, $cancel = 'Cancelar', $ok = 'OK', $id = null) {
+        $id = $id ?? uniqid('modal_');
+        parent::__construct('modal fade vh-100', $id);
         $this->set_attrib('data-bs-backdrop', 'static');
         $this->set_attrib('data-bs-keyboard', 'false');
         $this->set_attrib('tabindex', '-1');
