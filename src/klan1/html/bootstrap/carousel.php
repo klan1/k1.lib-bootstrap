@@ -2,33 +2,68 @@
 
 namespace k1lib\html\bootstrap;
 
-/**
- * Bootstrap 5 Carousel component
- *
- * Slideshow component for cycling through elements (images, text, etc.).
- *
- * @author  Alejandro Trujillo J. (J0hnd03)
- * @link    https://github.com/klan1/k1.lib-bootstrap
- * @link    https://github.com/k1lib/k1.lib-bootstrap
- * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/carousel.mdx
- * @license Apache-2.0
- * @version BETA
- */
 class carousel extends \k1lib\html\div {
 
     protected $slides = [];
-    protected $indicators = NULL;
-    protected $controls = NULL;
 
     /**
-     * @param array $slides Array of slide data ['image' => '', 'caption' => '', 'active' => bool]
+     * @param array $slides Array of slide data ['image' => '', 'caption' => '', 'active' => bool, 'interval' => int]
      * @param bool $indicators Show slide indicators
      * @param bool $controls Show prev/next controls
-     * @param bool $autoplay Enable auto-sliding
+     * @param bool $autoplay Enable auto-sliding (data-bs-ride="carousel")
+     * @param array $options Additional options: crossfade, dark, touch, interval
      */
-    public function __construct($slides = [], $indicators = TRUE, $controls = TRUE, $autoplay = FALSE) {
-        parent::__construct('carousel slide', 'mainCarousel');
-        $this->set_attrib('data-bs-ride', $autoplay ? 'carousel' : 'false');
+    public function __construct($slides = [], $indicators = TRUE, $controls = TRUE, $autoplay = FALSE, $options = []) {
+        $options = array_merge([
+            'crossfade' => FALSE,
+            'dark' => FALSE,
+            'touch' => TRUE,
+            'interval' => 5000,
+        ], $options);
+
+        $classes = 'carousel slide';
+        if ($options['crossfade']) {
+            $classes .= ' carousel-fade';
+        }
+        if ($options['dark']) {
+            $classes .= ' carousel-dark';
+        }
+
+        parent::__construct($classes, 'mainCarousel');
+
+        if ($autoplay) {
+            $this->set_attrib('data-bs-ride', 'carousel');
+            if ($options['interval']) {
+                $this->set_attrib('data-bs-interval', $options['interval']);
+            }
+        } else {
+            $this->set_attrib('data-bs-ride', 'false');
+        }
+
+        if (!$options['touch']) {
+            $this->set_attrib('data-bs-touch', 'false');
+        }
+
+        $this->set_attrib('tabindex', '0');
+
+        if ($indicators) {
+            $indicatorsDiv = new \k1lib\html\div('carousel-indicators');
+            foreach ($slides as $index => $slide) {
+                $indicatorBtn = new \k1lib\html\button();
+                if (!empty($slide['active'])) {
+                    $indicatorBtn->set_class('active', TRUE);
+                }
+                $indicatorBtn->set_attrib('type', 'button');
+                $indicatorBtn->set_attrib('data-bs-target', '#mainCarousel');
+                $indicatorBtn->set_attrib('data-bs-slide-to', $index);
+                if ($index === 0) {
+                    $indicatorBtn->set_attrib('aria-current', 'true');
+                }
+                $indicatorBtn->set_attrib('aria-label', 'Slide ' . ($index + 1));
+                $indicatorsDiv->append_child($indicatorBtn);
+            }
+            $this->append_child($indicatorsDiv);
+        }
 
         $inner = new \k1lib\html\div('carousel-inner');
 
@@ -37,19 +72,55 @@ class carousel extends \k1lib\html\div {
             if (!empty($slide['active'])) {
                 $item->set_class('active', TRUE);
             }
+            if (!empty($slide['interval'])) {
+                $item->set_attrib('data-bs-interval', $slide['interval']);
+            }
             if (!empty($slide['image'])) {
-                $img = new \k1lib\html\img($slide['image'], NULL);
+                $img = new \k1lib\html\img($slide['image']);
+                $img->set_class('d-block w-100');
                 $img->set_attrib('alt', $slide['caption'] ?? '');
                 $item->append_child($img);
             }
             if (!empty($slide['caption'])) {
-                $caption = new \k1lib\html\div('carousel-caption');
-                $caption->append_h5($slide['caption']);
+                $caption = new \k1lib\html\div('carousel-caption d-none d-md-block');
+                $caption_h5 = $caption->append_h5($slide['caption']);
+                if (!empty($slide['text'])) {
+                    $caption->append_p($slide['text']);
+                }
                 $item->append_child($caption);
             }
             $inner->append_child($item);
         }
 
         $this->append_child($inner);
+
+        if ($controls) {
+            $prevBtn = new \k1lib\html\button();
+            $prevBtn->set_class('carousel-control-prev');
+            $prevBtn->set_attrib('type', 'button');
+            $prevBtn->set_attrib('data-bs-target', '#mainCarousel');
+            $prevBtn->set_attrib('data-bs-slide', 'prev');
+            $prevIcon = new \k1lib\html\span('carousel-control-prev-icon');
+            $prevIcon->set_attrib('aria-hidden', 'true');
+            $prevBtn->append_child($prevIcon);
+            $prevLabel = new \k1lib\html\span('visually-hidden');
+            $prevLabel->set_value('Previous');
+            $prevBtn->append_child($prevLabel);
+
+            $nextBtn = new \k1lib\html\button();
+            $nextBtn->set_class('carousel-control-next');
+            $nextBtn->set_attrib('type', 'button');
+            $nextBtn->set_attrib('data-bs-target', '#mainCarousel');
+            $nextBtn->set_attrib('data-bs-slide', 'next');
+            $nextIcon = new \k1lib\html\span('carousel-control-next-icon');
+            $nextIcon->set_attrib('aria-hidden', 'true');
+            $nextBtn->append_child($nextIcon);
+            $nextLabel = new \k1lib\html\span('visually-hidden');
+            $nextLabel->set_value('Next');
+            $nextBtn->append_child($nextLabel);
+
+            $this->append_child($prevBtn);
+            $this->append_child($nextBtn);
+        }
     }
 }

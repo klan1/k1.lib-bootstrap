@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Badge';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -10,24 +10,24 @@ require_once __DIR__ . '/_header.php';
     <div class="preview-label">Basic</div>
     <div class="preview-box badge-demo">
         <?php
-        echo (new badge('Primary'))->generate() . ' ';
-        echo (new badge('Secondary', 'secondary'))->generate() . ' ';
-        echo (new badge('Success', 'success'))->generate() . ' ';
-        echo (new badge('Danger', 'danger'))->generate() . ' ';
-        echo (new badge('Warning', 'warning'))->generate() . ' ';
-        echo (new badge('Info', 'info'))->generate() . ' ';
-        echo (new badge('Light', 'light'))->generate() . ' ';
-        echo (new badge('Dark', 'dark'))->generate();
+        echo (new \k1lib\html\bootstrap\badge('Primary'))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\badge('Secondary', 'secondary'))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\badge('Success', 'success'))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\badge('Danger', 'danger'))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\badge('Warning', 'warning'))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\badge('Info', 'info'))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\badge('Light', 'light'))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\badge('Dark', 'dark'))->generate();
         ?>
     </div>
 
     <div class="preview-label">Pill Badges</div>
     <div class="preview-box badge-demo">
         <?php
-        echo (new badge('Primary', 'primary', true))->generate() . ' ';
-        echo (new badge('Secondary', 'secondary', true))->generate() . ' ';
-        echo (new badge('Success', 'success', true))->generate() . ' ';
-        echo (new badge('Danger', 'danger', true))->generate();
+        echo (new \k1lib\html\bootstrap\badge('Primary', 'primary', true))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\badge('Secondary', 'secondary', true))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\badge('Success', 'success', true))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\badge('Danger', 'danger', true))->generate();
         ?>
     </div>
 

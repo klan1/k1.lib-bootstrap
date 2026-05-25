@@ -34,9 +34,11 @@ class alert extends \k1lib\html\div {
         $this->message = $message;
 
         if ($dismissible) {
-            $close_btn = new \k1lib\html\button(NULL, 'btn-close position-absolute top-0 end-0');
+            $close_btn = new \k1lib\html\button();
+            $close_btn->set_class('btn-close position-absolute top-0 end-0');
             $close_btn->set_attrib('data-bs-dismiss', 'alert');
             $close_btn->set_attrib('aria-label', 'Close');
+            $close_btn->set_attrib('type', 'button');
             $this->append_child_tail($close_btn);
         }
     }

@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Breadcrumb';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -10,7 +10,7 @@ require_once __DIR__ . '/_header.php';
     <div class="preview-label">Basic</div>
     <div class="preview-box">
         <?php
-        $bread = new breadcrumb();
+        $bread = new \k1lib\html\bootstrap\breadcrumb();
         $bread->add_item('Home', '#')
               ->add_item('Library', '#')
               ->add_item('Data', '#')

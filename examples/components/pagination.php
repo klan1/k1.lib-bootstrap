@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Pagination';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -10,7 +10,7 @@ require_once __DIR__ . '/_header.php';
     <div class="preview-label">Basic</div>
     <div class="preview-box">
         <?php
-        $pager = new pagination(3, 10, '/page', true);
+        $pager = new \k1lib\html\bootstrap\pagination(3, 10, '/page', true);
         echo $pager->generate();
         ?>
     </div>

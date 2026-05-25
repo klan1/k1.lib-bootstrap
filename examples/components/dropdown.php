@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Dropdown';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -10,7 +10,7 @@ require_once __DIR__ . '/_header.php';
     <div class="preview-label">Basic</div>
     <div class="preview-box">
         <?php
-        $dropdown = new dropdown('Actions', [
+        $dropdown = new \k1lib\html\bootstrap\dropdown('Actions', [
             ['text' => 'Action', 'href' => '#'],
             ['text' => 'Another Action', 'href' => '#'],
             ['divider' => true],

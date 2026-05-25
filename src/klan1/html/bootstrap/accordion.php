@@ -97,13 +97,13 @@ class accordion extends \k1lib\html\div {
 
         $item = new \k1lib\html\div('accordion-item');
 
-        $header = new \k1lib\html\h2('accordion-header');
+        $header = new \k1lib\html\h2(NULL, 'accordion-header');
 
         $button = new \k1lib\html\button();
         $button->set_attrib('type', 'button');
-        $button->add_class('accordion-button');
+        $button->set_class('accordion-button');
         if (!$is_open) {
-            $button->add_class('collapsed');
+            $button->set_class('collapsed', TRUE);
         }
         $button->set_attrib('data-bs-toggle', 'collapse');
         $button->set_attrib('data-bs-target', '#' . $collapse_id);
@@ -112,14 +112,14 @@ class accordion extends \k1lib\html\div {
         if (isset($button_id)) {
             $button->set_attrib('id', $button_id);
         }
-        $button->append_content($title);
+        $button->set_value($title);
 
         $header->append_child($button);
         $item->append_child($header);
 
         $collapse = new \k1lib\html\div('accordion-collapse collapse');
         if ($is_open) {
-            $collapse->add_class('show');
+            $collapse->set_class('show', TRUE);
         }
         $collapse->set_attrib('id', $collapse_id);
         if ($this->mode === self::MODE_DEFAULT) {
@@ -133,10 +133,10 @@ class accordion extends \k1lib\html\div {
             if ($content_html instanceof \k1lib\html\tag) {
                 $body->append_child($content_html);
             } else {
-                $body->append_content($content_html);
+                $body->set_value($content_html);
             }
         } else {
-            $body->append_content($content);
+            $body->set_value($content);
         }
 
         $collapse->append_child($body);

@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Title Bar';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">

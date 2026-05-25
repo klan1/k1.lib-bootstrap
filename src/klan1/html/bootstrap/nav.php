@@ -1,6 +1,6 @@
 <?php
 
-namespace k1lib\html\componentes;
+namespace k1lib\html\bootstrap;
 
 use k1lib\html\div;
 use k1lib\html\button;

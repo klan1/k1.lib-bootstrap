@@ -14,6 +14,7 @@ use k1lib\html\bootstrap\badge;
 use k1lib\html\bootstrap\breadcrumb;
 use k1lib\html\bootstrap\button;
 use k1lib\html\bootstrap\button_group;
+use k1lib\html\bootstrap\carousel;
 use k1lib\html\bootstrap\card;
 use k1lib\html\bootstrap\callout;
 use k1lib\html\bootstrap\collapse;
@@ -22,6 +23,7 @@ use k1lib\html\bootstrap\grid;
 use k1lib\html\bootstrap\grid_cell;
 use k1lib\html\bootstrap\list_group;
 use k1lib\html\bootstrap\modal;
+use k1lib\html\bootstrap\offcanvas;
 use k1lib\html\componentes\nav as nav_component;
 use k1lib\html\bootstrap\navbar;
 use k1lib\html\bootstrap\pagination;
@@ -31,6 +33,37 @@ use k1lib\html\bootstrap\table_from_data;
 use k1lib\html\bootstrap\toast;
 use k1lib\html\bootstrap\title_bar;
 use k1lib\html\bootstrap\top_bar;
+
+$components_list = [
+    'accordion' => 'Accordion',
+    'alert' => 'Alert',
+    'badge' => 'Badge',
+    'breadcrumb' => 'Breadcrumb',
+    'button' => 'Button',
+    'button_group' => 'Button Group',
+    'card' => 'Card',
+    'callout' => 'Callout',
+    'carousel' => 'Carousel',
+    'collapse' => 'Collapse',
+    'dropdown' => 'Dropdown',
+    'grid' => 'Grid',
+    'list_group' => 'List Group',
+    'modal' => 'Modal',
+    'nav' => 'Nav',
+    'navbar' => 'Navbar',
+    'offcanvas' => 'Offcanvas',
+    'pagination' => 'Pagination',
+    'progress' => 'Progress',
+    'spinner' => 'Spinner',
+    'table_from_data' => 'Table',
+    'title_bar' => 'Title Bar',
+    'toast' => 'Toast',
+];
+
+$current_file = basename($_SERVER['REQUEST_URI'], '.php');
+$current_index = array_search($current_file, array_keys($components_list));
+$prev_file = $current_index > 0 ? array_keys($components_list)[$current_index - 1] : null;
+$next_file = $current_index < count($components_list) - 1 ? array_keys($components_list)[$current_index + 1] : null;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -91,27 +124,67 @@ use k1lib\html\bootstrap\top_bar;
             background: #f8f9fa; padding: .25rem .5rem; border-radius: .25rem;
             display: inline-block; margin-bottom: 1rem;
         }
-        .back-link {
-            position: fixed; bottom: 20px; right: 20px;
-            background: #0d6efd; color: #fff; padding: .5rem 1rem;
-            border-radius: 2rem; text-decoration: none; box-shadow: 0 .25rem .5rem rgba(0,0,0,.15);
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+            z-index: 1000;
         }
-        .back-link:hover { background: #0b5ed7; color: #fff; }
+        .nav-buttons .btn { border-radius: 2rem; }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-dark bg-primary fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.php">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="../index.php">
                 <i class="bi bi-grid-3x3-gap me-2"></i> k1.lib-bootstrap
             </a>
-            <span class="navbar-text text-white-50"><?= $component_name ?? 'Component' ?></span>
+            <span class="navbar-text text-white-50 me-auto ms-3"><?= $component_name ?? 'Component' ?></span>
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-list"></i> Components
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <?php foreach ($components_list as $file => $name): ?>
+                        <li>
+                            <a class="dropdown-item <?= $file === $current_file ? 'active' : '' ?>" 
+                               href="<?= $file ?>.php">
+                                <?= $name ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <a href="index.php" class="back-link">
+                <a href="../index.php" class="back-link">
                     <i class="bi bi-arrow-left me-1"></i> All Components
                 </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <?php if ($prev_file): ?>
+            <a href="<?= $prev_file ?>.php" class="btn btn-outline-primary">
+                <i class="bi bi-chevron-left"></i> Prev
+            </a>
+        <?php endif; ?>
+        <?php if ($next_file): ?>
+            <a href="<?= $next_file ?>.php" class="btn btn-primary">
+                Next <i class="bi bi-chevron-right"></i>
+            </a>
+        <?php endif; ?>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

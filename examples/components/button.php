@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Button';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -24,7 +24,7 @@ require_once __DIR__ . '/_header.php';
         foreach ($variants as $variant) {
             if ($variant !== 'link') {
                 $v = constant("k1lib\\html\\bootstrap\\button::VARIANT_" . strtoupper($variant));
-                echo (new \k1lib\html\bootstrap\button(ucfirst($variant), $v, button::SIZE_MD, TRUE))->generate() . ' ';
+                echo (new \k1lib\html\bootstrap\button(ucfirst($variant), $v, \k1lib\html\bootstrap\button::SIZE_MD, TRUE))->generate() . ' ';
             }
         }
         ?>
@@ -33,24 +33,24 @@ require_once __DIR__ . '/_header.php';
     <div class="preview-label">Sizes</div>
     <div class="preview-box">
         <?php
-        echo (new \k1lib\html\bootstrap\button('Large', button::VARIANT_PRIMARY, button::SIZE_LG))->generate() . ' ';
-        echo (new \k1lib\html\bootstrap\button('Default', button::VARIANT_PRIMARY))->generate() . ' ';
-        echo (new \k1lib\html\bootstrap\button('Small', button::VARIANT_PRIMARY, button::SIZE_SM))->generate();
+        echo (new \k1lib\html\bootstrap\button('Large', \k1lib\html\bootstrap\button::VARIANT_PRIMARY, \k1lib\html\bootstrap\button::SIZE_LG))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\button('Default', \k1lib\html\bootstrap\button::VARIANT_PRIMARY))->generate() . ' ';
+        echo (new \k1lib\html\bootstrap\button('Small', \k1lib\html\bootstrap\button::VARIANT_PRIMARY, \k1lib\html\bootstrap\button::SIZE_SM))->generate();
         ?>
     </div>
 
     <div class="preview-label">States</div>
     <div class="preview-box">
         <?php
-        $disabled_btn = new \k1lib\html\bootstrap\button('Disabled', button::VARIANT_PRIMARY);
+        $disabled_btn = new \k1lib\html\bootstrap\button('Disabled', \k1lib\html\bootstrap\button::VARIANT_PRIMARY);
         $disabled_btn->set_disabled();
         echo $disabled_btn->generate() . ' ';
 
-        $active_btn = new \k1lib\html\bootstrap\button('Active', button::VARIANT_PRIMARY);
+        $active_btn = new \k1lib\html\bootstrap\button('Active', \k1lib\html\bootstrap\button::VARIANT_PRIMARY);
         $active_btn->set_active();
         echo $active_btn->generate() . ' ';
 
-        $toggle_btn = new \k1lib\html\bootstrap\button('Toggle', button::VARIANT_PRIMARY, button::SIZE_MD, TRUE);
+        $toggle_btn = new \k1lib\html\bootstrap\button('Toggle', \k1lib\html\bootstrap\button::VARIANT_PRIMARY, \k1lib\html\bootstrap\button::SIZE_MD, TRUE);
         $toggle_btn->set_toggle();
         echo $toggle_btn->generate();
         ?>

@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Card';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -10,8 +10,8 @@ require_once __DIR__ . '/_header.php';
     <div class="preview-label">Basic Card</div>
     <div class="preview-box" style="max-width: 400px;">
         <?php
-        $demo_card = new card('Card Title', 'Card Subtitle', 'Some quick example text to build on the card title and make up the bulk of the card\'s content.');
-        $demo_card->body()->append_child(new \k1lib\html\bootstrap\button('Go somewhere', button::VARIANT_PRIMARY));
+        $demo_card = new \k1lib\html\bootstrap\card('Card Title', 'Card Subtitle', 'Some quick example text to build on the card title and make up the bulk of the card\'s content.');
+        $demo_card->body()->append_child(new \k1lib\html\bootstrap\button('Go somewhere', \k1lib\html\bootstrap\button::VARIANT_PRIMARY));
         echo $demo_card->generate();
         ?>
     </div>
@@ -27,7 +27,7 @@ require_once __DIR__ . '/_header.php';
     <span class="text-success">'Card content text'</span>
 );
 <span class="text-warning">$card</span>-><span class="text-light">body</span>()-><span class="text-light">append_child</span>(
-    <span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Go somewhere'</span>, \k1lib\html\bootstrap\button::<span class="text-light">VARIANT_PRIMARY</span>)
+    <span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Go somewhere'</span>, \k1lib\html\bootstrap\\k1lib\html\bootstrap\button::<span class="text-light">VARIANT_PRIMARY</span>)
 );
 <span class="text-warning">echo</span> <span class="text-warning">$card</span>-><span class="text-light">generate</span>();</code></pre>
     </div>

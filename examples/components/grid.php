@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Grid';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -10,7 +10,7 @@ require_once __DIR__ . '/_header.php';
     <div class="preview-label">Basic Grid</div>
     <div class="preview-box">
         <?php
-        $demo_grid = new grid(2, 3);
+        $demo_grid = new \k1lib\html\bootstrap\grid(2, 3);
         $row1 = $demo_grid->row(1);
         $row1->general(4)->small(6)->medium(4);
         $row1->get_child(0)->set_value('Row 1, Col 1');

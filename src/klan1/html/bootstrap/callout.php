@@ -29,12 +29,15 @@ class callout extends \k1lib\html\div {
         $this->message = $message;
         $this->title = $title;
 
-        parent::__construct("alert alert-{$type}" . ($closable ? ' alert-dismissible fade show position-relative' : ''), NULL);
+        parent::__construct("alert alert-{$type}" . ($closable ? ' alert-dismissible fade show' : ''), NULL);
         $this->set_attrib("role", "alert");
         if ($closable) {
-            $close_button = new \k1lib\html\button(NULL, "btn-close position-absolute top-0 end-0");
+            $this->set_class('position-relative', TRUE);
+            $close_button = new \k1lib\html\button();
+            $close_button->set_class('btn-close position-absolute top-0 end-0');
             $close_button->set_attrib("data-bs-dismiss", "alert");
             $close_button->set_attrib("aria-label", "Close");
+            $close_button->set_attrib("type", "button");
             $this->append_child_tail($close_button);
         }
 

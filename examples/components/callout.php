@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Callout';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -10,7 +10,7 @@ require_once __DIR__ . '/_header.php';
     <div class="preview-label">Dismissible Callout</div>
     <div class="preview-box">
         <?php
-        $callout = new callout('This is a dismissible callout message.', 'Callout Title', true, 'primary');
+        $callout = new \k1lib\html\bootstrap\callout('This is a dismissible callout message.', 'Callout Title', true, 'primary');
         echo $callout->generate();
         ?>
     </div>

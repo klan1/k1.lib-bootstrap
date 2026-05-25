@@ -1,10 +1,312 @@
 {
-  "version": "1",
-  "files": {
-    "code": [],
-    "document": [],
-    "paper": [],
-    "image": [],
-    "video": []
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/session-export.json": {
+    "mtime": 1779502403.7756672,
+    "ast_hash": "1d67ec399f061622398edfdf27dae13b",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/composer.json": {
+    "mtime": 1779729700.2410476,
+    "ast_hash": "91f6f6b454fc747db90b7238c5a6d293",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/index.php": {
+    "mtime": 1779731322.9160779,
+    "ast_hash": "ac429ad35c2cbd6b0feb7218040b8ebe",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/_header.php": {
+    "mtime": 1779735217.7458425,
+    "ast_hash": "6558e3ad5bb34b13df278717e3f2145c",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/card.php": {
+    "mtime": 1779735236.7946863,
+    "ast_hash": "eae64e4dc8611e61925fef5685756825",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/collapse.php": {
+    "mtime": 1779735236.8012607,
+    "ast_hash": "606752dbd04cf0d5f60423e9774248b6",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/progress.php": {
+    "mtime": 1779735236.8301525,
+    "ast_hash": "6dbceb3925398d1ed9fb9d49a09e5c2e",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/navbar.php": {
+    "mtime": 1779739182.896004,
+    "ast_hash": "954cf9b7fa38906986aa279c7123f299",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/nav.php": {
+    "mtime": 1779736676.5818832,
+    "ast_hash": "4aa6e3c6f486e81ee26769a136e15f63",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/button_group.php": {
+    "mtime": 1779735236.7876434,
+    "ast_hash": "cc831e1c6a9a9c5c4531364ea5b8bce4",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/pagination.php": {
+    "mtime": 1779735236.8265696,
+    "ast_hash": "02371221393788604de80cb80440b779",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/accordion.php": {
+    "mtime": 1779735236.7692337,
+    "ast_hash": "8250256b063cce9a31ccfdf5f7a6968c",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/title_bar.php": {
+    "mtime": 1779742446.9490685,
+    "ast_hash": "c62865f258dc5a7f181127982c3807ac",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/alert.php": {
+    "mtime": 1779735236.7740471,
+    "ast_hash": "461241fd84d1587fb4f4475a108e1fac",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/grid.php": {
+    "mtime": 1779735236.8079383,
+    "ast_hash": "6631b27447c290280cfc303b20507fe8",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/table_from_data.php": {
+    "mtime": 1779735236.8365004,
+    "ast_hash": "5570540a88327a3d22816f8500f907a8",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/list_group.php": {
+    "mtime": 1779742423.9031515,
+    "ast_hash": "31f4b59e365644f245c1c2affaaef0cb",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/breadcrumb.php": {
+    "mtime": 1779735236.7812853,
+    "ast_hash": "7c43eebf9743c97ce464a88a7998af3a",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/dropdown.php": {
+    "mtime": 1779735236.804623,
+    "ast_hash": "8f402aef8ec488080ead69ef06972965",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/callout.php": {
+    "mtime": 1779735236.791401,
+    "ast_hash": "564014ea8e9bf8226ad3a4d4d99bebce",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/spinner.php": {
+    "mtime": 1779735236.8335226,
+    "ast_hash": "175a99e6478a0dff2cbe59da4cf37431",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/badge.php": {
+    "mtime": 1779735236.7778335,
+    "ast_hash": "2739c04619ba71284f65b4fc02e75042",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/modal.php": {
+    "mtime": 1779742375.400458,
+    "ast_hash": "b40298f102847af4f8180d22b97a4d0d",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/toast.php": {
+    "mtime": 1779735236.8417702,
+    "ast_hash": "d863103b57ff210d9ab3366a9c8e4c78",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/button.php": {
+    "mtime": 1779735236.7844558,
+    "ast_hash": "bba0209b2a60094ecf89a30d75203a6c",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/card.php": {
+    "mtime": 1779302003.4617589,
+    "ast_hash": "268e2e760936a3458a82baeef6cf1b27",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/collapse.php": {
+    "mtime": 1779258316.7283998,
+    "ast_hash": "649764960317002c314bbffa9f6bef64",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/progress.php": {
+    "mtime": 1779259297.098577,
+    "ast_hash": "518ab02479663230aa7c91b7eaf47dfd",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/navbar.php": {
+    "mtime": 1779740096.0177126,
+    "ast_hash": "b3cdc64ccfc3e4a5bde75d7ef52c289a",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/button_group.php": {
+    "mtime": 1779301809.4657419,
+    "ast_hash": "e3ad6b2ec5850d9b1ff3db92f772ea8b",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/grid_row.php": {
+    "mtime": 1779259220.8515804,
+    "ast_hash": "07965efbbead0a854401775f9cc387ea",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/pagination.php": {
+    "mtime": 1779259292.636946,
+    "ast_hash": "e98ce8887779ad3d7d06c56a1f0e4792",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/accordion.php": {
+    "mtime": 1779733411.0824947,
+    "ast_hash": "824813f8174af9a0fe5b6f93fdd9e790",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/title_bar.php": {
+    "mtime": 1779259066.0031927,
+    "ast_hash": "20705ceb3422246dd3407b8517d2f775",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/alert.php": {
+    "mtime": 1779732067.4590578,
+    "ast_hash": "7e7531472ed4995841d32f50104b195b",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/tooltip.php": {
+    "mtime": 1779259314.86558,
+    "ast_hash": "76dd30ddbc141bec9b5a0402c416fe07",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/grid.php": {
+    "mtime": 1779259257.982237,
+    "ast_hash": "f826a25578673a099d0b2d53dd987079",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/table_from_data.php": {
+    "mtime": 1779259323.2337606,
+    "ast_hash": "071c43e2102bb08e9722fea2e399400a",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/bootstrap_methods.php": {
+    "mtime": 1779225674.1465182,
+    "ast_hash": "1e988337303821fb648fb0928622d63d",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/top_bar.php": {
+    "mtime": 1779259074.7040417,
+    "ast_hash": "22bbc9d15cb05d4775e7a45d5f56a6c0",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/menu.php": {
+    "mtime": 1779259271.8268518,
+    "ast_hash": "3566be8fd68d6fbc6d4759f5ca006a5b",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/list_group.php": {
+    "mtime": 1779737535.6100204,
+    "ast_hash": "c1123b6ccc20e7c6b35580af19b1e8a1",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/top_bar_.php": {
+    "mtime": 1779259163.3830285,
+    "ast_hash": "cc81e342f75555ce79634a224e4a6ec4",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/breadcrumb.php": {
+    "mtime": 1779400825.2371762,
+    "ast_hash": "826df667ebc4bf26b3455ee3ca15de15",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/dropdown.php": {
+    "mtime": 1779734889.4152548,
+    "ast_hash": "bc68296fe8d70ded3f04bfde3d3995e8",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/input_text_with_icon.php": {
+    "mtime": 1779259261.3872797,
+    "ast_hash": "39c92d99114cdf3ccefa1a6039c75868",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/grid_cell.php": {
+    "mtime": 1779259231.4540286,
+    "ast_hash": "276ffcb98876c9e80d675ea5b648aa68",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/offcanvas.php": {
+    "mtime": 1779731923.7942166,
+    "ast_hash": "a5841c470fa5e4e61f7e257d9628b9a1",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/callout.php": {
+    "mtime": 1779734800.8092232,
+    "ast_hash": "020aeddd8f11e9d0029b688e957c49db",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/spinner.php": {
+    "mtime": 1779733450.308033,
+    "ast_hash": "f1a7e8028d87c674ffc0f0ecb59f03a0",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/carousel.php": {
+    "mtime": 1779742328.1752682,
+    "ast_hash": "c0b2b5942ba65acfbb10ad53ed0c6420",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/label_value_row.php": {
+    "mtime": 1779259264.088855,
+    "ast_hash": "980341d232e0cfc70a4aa6a72c10fd7b",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/bar.php": {
+    "mtime": 1779259054.8499112,
+    "ast_hash": "849239a4f23449ced7024a98141c8dc0",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/badge.php": {
+    "mtime": 1779259246.8401933,
+    "ast_hash": "769ae295454008663e03519bfc689add",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/modal.php": {
+    "mtime": 1779742283.8770778,
+    "ast_hash": "dda397fc6e05d2c43ac06edf6edb2f2d",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/toast.php": {
+    "mtime": 1779731968.6142526,
+    "ast_hash": "6ef12e0b725d9dff1aeb1f612d8e4c08",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/button.php": {
+    "mtime": 1779260778.130157,
+    "ast_hash": "cb03d755a5a795009b869a8e524b675c",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/README.md": {
+    "mtime": 1779659483.791595,
+    "ast_hash": "3a8d8775e8d02d862d3eefdde9a77f2a",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/AGENTS.md": {
+    "mtime": 1779724738.4438756,
+    "ast_hash": "62c05a2bf20bf036a0b2633478663e64",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/offcanvas.php": {
+    "mtime": 1779742407.413324,
+    "ast_hash": "bedff213b5ca16e3318fe27078282aa6",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/examples/components/carousel.php": {
+    "mtime": 1779742384.0368109,
+    "ast_hash": "34b1b9712df76e84ddb8bfb60c13678e",
+    "semantic_hash": ""
+  },
+  "/Users/j0hnd003/Develop/GitHub/server/k1lib-project/k1.lib-bootstrap/src/klan1/html/bootstrap/nav.php": {
+    "mtime": 1779736632.3624306,
+    "ast_hash": "562ceaa610b483c4ce500baf1e649a90",
+    "semantic_hash": ""
   }
 }

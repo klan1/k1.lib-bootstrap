@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Collapse';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -10,9 +10,9 @@ require_once __DIR__ . '/_header.php';
     <div class="preview-label">Button Trigger</div>
     <div class="preview-box">
         <?php
-        $trigger = new \k1lib\html\bootstrap\button('Toggle Content', button::VARIANT_PRIMARY);
+        $trigger = new \k1lib\html\bootstrap\button('Toggle Content', \k1lib\html\bootstrap\button::VARIANT_PRIMARY);
         $collapse_content = '<p>This is collapsible content that can be shown or hidden.</p>';
-        $collapse = new collapse('demo', $trigger, $collapse_content);
+        $collapse = new \k1lib\html\bootstrap\collapse('demo', $trigger, $collapse_content);
         echo $trigger->generate() . ' ';
         echo $collapse->generate();
         ?>
@@ -23,7 +23,7 @@ require_once __DIR__ . '/_header.php';
             <div class="code-dots"><span></span><span></span><span></span></div>
             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
         </div>
-        <pre class="code-content"><code><span class="text-warning">$trigger</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Toggle'</span>, \k1lib\html\bootstrap\button::<span class="text-light">VARIANT_PRIMARY</span>);
+        <pre class="code-content"><code><span class="text-warning">$trigger</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Toggle'</span>, \k1lib\html\bootstrap\\k1lib\html\bootstrap\button::<span class="text-light">VARIANT_PRIMARY</span>);
 <span class="text-warning">$collapse</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\collapse(<span class="textsuccess">'demo'</span>, <span class="text-warning">$trigger</span>, <span class="textsuccess">'<p>Content</p>'</span>);
 <span class="text-warning">echo</span> <span class="text-warning">$collapse</span>-><span class="text-light">generate</span>();</code></pre>
     </div>

@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Spinner';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -10,14 +10,14 @@ require_once __DIR__ . '/_header.php';
     <div class="preview-label">Border Spinner</div>
     <div class="preview-box">
         <?php
-        echo (new spinner())->generate();
+        echo (new \k1lib\html\bootstrap\spinner())->generate();
         ?>
     </div>
 
     <div class="preview-label">Growing Spinner</div>
     <div class="preview-box">
         <?php
-        echo (new spinner('grow'))->generate();
+        echo (new \k1lib\html\bootstrap\spinner('grow'))->generate();
         ?>
     </div>
 
@@ -26,7 +26,7 @@ require_once __DIR__ . '/_header.php';
         <?php
         $colors = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'];
         foreach ($colors as $color) {
-            echo (new spinner())->set_color($color)->generate() . ' ';
+            echo (new \k1lib\html\bootstrap\spinner())->set_color($color)->generate() . ' ';
         }
         ?>
     </div>

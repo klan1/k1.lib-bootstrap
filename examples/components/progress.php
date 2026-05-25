@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Progress';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -10,7 +10,7 @@ require_once __DIR__ . '/_header.php';
     <div class="preview-label">Basic</div>
     <div class="preview-box">
         <?php
-        $prog = new progress([
+        $prog = new \k1lib\html\bootstrap\progress([
             ['value' => 25, 'type' => 'primary'],
             ['value' => 50, 'type' => 'success', 'striped' => true],
             ['value' => 75, 'type' => 'warning', 'animated' => true],

@@ -24,18 +24,19 @@ class spinner extends \k1lib\html\div {
     public function __construct($type = 'border', $color = 'primary', $size = 'md', $centered = FALSE) {
         $size_class = '';
         if ($size === 'sm') {
-            $size_class = 'spinner-' . $size;
-        } elseif ($size === 'lg') {
-            $size_class = 'spinner-lg';
+            $size_class = 'spinner-' . $type . '-sm';
         }
         $class = trim("spinner-{$type} {$size_class} text-{$color}");
         parent::__construct($class, NULL);
         $this->set_attrib('role', 'status');
-        $this->append_child(new \k1lib\html\span('visually-hidden', NULL, 'Loading...'));
+        $visuallyHidden = new \k1lib\html\span('visually-hidden');
+        $visuallyHidden->set_value('Loading...');
+        $this->append_child($visuallyHidden);
 
         if ($centered) {
             $wrapper = new \k1lib\html\div('d-flex justify-content-center align-items-center');
             $wrapper->append_child($this);
+            return;
         }
     }
 }

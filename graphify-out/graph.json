@@ -4,6 +4,402 @@
   "graph": {},
   "nodes": [
     {
+      "label": "composer.json",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L1",
+      "id": "composer_json",
+      "community": 32,
+      "norm_label": "composer.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L2",
+      "id": "k1_lib_bootstrap_composer_name",
+      "community": 32,
+      "norm_label": "name"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L3",
+      "id": "k1_lib_bootstrap_composer_description",
+      "community": 32,
+      "norm_label": "description"
+    },
+    {
+      "label": "license",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L4",
+      "id": "k1_lib_bootstrap_composer_license",
+      "community": 32,
+      "norm_label": "license"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L5",
+      "id": "k1_lib_bootstrap_composer_type",
+      "community": 32,
+      "norm_label": "type"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L6",
+      "id": "k1_lib_bootstrap_composer_version",
+      "community": 32,
+      "norm_label": "version"
+    },
+    {
+      "label": "homepage",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L7",
+      "id": "k1_lib_bootstrap_composer_homepage",
+      "community": 32,
+      "norm_label": "homepage"
+    },
+    {
+      "label": "minimum-stability",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L8",
+      "id": "k1_lib_bootstrap_composer_minimum_stability",
+      "community": 32,
+      "norm_label": "minimum-stability"
+    },
+    {
+      "label": "prefer-stable",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L9",
+      "id": "k1_lib_bootstrap_composer_prefer_stable",
+      "community": 32,
+      "norm_label": "prefer-stable"
+    },
+    {
+      "label": "authors",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L10",
+      "id": "k1_lib_bootstrap_composer_authors",
+      "community": 32,
+      "norm_label": "authors"
+    },
+    {
+      "label": "require",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L16",
+      "id": "k1_lib_bootstrap_composer_require",
+      "community": 32,
+      "norm_label": "require"
+    },
+    {
+      "label": "php",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L17",
+      "id": "k1_lib_bootstrap_composer_require_php",
+      "community": 32,
+      "norm_label": "php"
+    },
+    {
+      "label": "klan1/k1lib.html",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L18",
+      "id": "k1_lib_bootstrap_composer_require_klan1_k1lib_html",
+      "community": 32,
+      "norm_label": "klan1/k1lib.html"
+    },
+    {
+      "label": "autoload",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L20",
+      "id": "k1_lib_bootstrap_composer_autoload",
+      "community": 32,
+      "norm_label": "autoload"
+    },
+    {
+      "label": "psr-4",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L21",
+      "id": "k1_lib_bootstrap_composer_autoload_psr_4",
+      "community": 32,
+      "norm_label": "psr-4"
+    },
+    {
+      "label": "k1lib\\\\html\\\\bootstrap\\\\",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L22",
+      "id": "k1_lib_bootstrap_composer_psr_4_k1lib_html_bootstrap",
+      "community": 32,
+      "norm_label": "k1lib\\\\html\\\\bootstrap\\\\"
+    },
+    {
+      "label": "k1lib\\\\html\\\\componentes\\\\",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L23",
+      "id": "k1_lib_bootstrap_composer_psr_4_k1lib_html_componentes",
+      "community": 32,
+      "norm_label": "k1lib\\\\html\\\\componentes\\\\"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L26",
+      "id": "k1_lib_bootstrap_composer_scripts",
+      "community": 32,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "examples",
+      "file_type": "code",
+      "source_file": "composer.json",
+      "source_location": "L27",
+      "id": "k1_lib_bootstrap_composer_scripts_examples",
+      "community": 32,
+      "norm_label": "examples"
+    },
+    {
+      "label": "index.php",
+      "file_type": "code",
+      "source_file": "examples/index.php",
+      "source_location": "L1",
+      "id": "examples_index_php",
+      "community": 57,
+      "norm_label": "index.php"
+    },
+    {
+      "label": "_header.php",
+      "file_type": "code",
+      "source_file": "examples/_header.php",
+      "source_location": "L1",
+      "id": "examples_header_php",
+      "community": 56,
+      "norm_label": "_header.php"
+    },
+    {
+      "label": "card.php",
+      "file_type": "code",
+      "source_file": "examples/components/card.php",
+      "source_location": "L1",
+      "id": "examples_components_card_php",
+      "community": 42,
+      "norm_label": "card.php"
+    },
+    {
+      "label": "collapse.php",
+      "file_type": "code",
+      "source_file": "examples/components/collapse.php",
+      "source_location": "L1",
+      "id": "examples_components_collapse_php",
+      "community": 43,
+      "norm_label": "collapse.php"
+    },
+    {
+      "label": "progress.php",
+      "file_type": "code",
+      "source_file": "examples/components/progress.php",
+      "source_location": "L1",
+      "id": "examples_components_progress_php",
+      "community": 51,
+      "norm_label": "progress.php"
+    },
+    {
+      "label": "navbar.php",
+      "file_type": "code",
+      "source_file": "examples/components/navbar.php",
+      "source_location": "L1",
+      "id": "examples_components_navbar_php",
+      "community": 49,
+      "norm_label": "navbar.php"
+    },
+    {
+      "label": "nav.php",
+      "file_type": "code",
+      "source_file": "examples/components/nav.php",
+      "source_location": "L1",
+      "id": "examples_components_nav_php",
+      "community": 48,
+      "norm_label": "nav.php"
+    },
+    {
+      "label": "button_group.php",
+      "file_type": "code",
+      "source_file": "examples/components/button_group.php",
+      "source_location": "L1",
+      "id": "examples_components_button_group_php",
+      "community": 39,
+      "norm_label": "button_group.php"
+    },
+    {
+      "label": "pagination.php",
+      "file_type": "code",
+      "source_file": "examples/components/pagination.php",
+      "source_location": "L1",
+      "id": "examples_components_pagination_php",
+      "community": 50,
+      "norm_label": "pagination.php"
+    },
+    {
+      "label": "accordion.php",
+      "file_type": "code",
+      "source_file": "examples/components/accordion.php",
+      "source_location": "L1",
+      "id": "examples_components_accordion_php",
+      "community": 35,
+      "norm_label": "accordion.php"
+    },
+    {
+      "label": "title_bar.php",
+      "file_type": "code",
+      "source_file": "examples/components/title_bar.php",
+      "source_location": "L1",
+      "id": "examples_components_title_bar_php",
+      "community": 54,
+      "norm_label": "title_bar.php"
+    },
+    {
+      "label": "alert.php",
+      "file_type": "code",
+      "source_file": "examples/components/alert.php",
+      "source_location": "L1",
+      "id": "examples_components_alert_php",
+      "community": 36,
+      "norm_label": "alert.php"
+    },
+    {
+      "label": "grid.php",
+      "file_type": "code",
+      "source_file": "examples/components/grid.php",
+      "source_location": "L1",
+      "id": "examples_components_grid_php",
+      "community": 45,
+      "norm_label": "grid.php"
+    },
+    {
+      "label": "table_from_data.php",
+      "file_type": "code",
+      "source_file": "examples/components/table_from_data.php",
+      "source_location": "L1",
+      "id": "examples_components_table_from_data_php",
+      "community": 53,
+      "norm_label": "table_from_data.php"
+    },
+    {
+      "label": "list_group.php",
+      "file_type": "code",
+      "source_file": "examples/components/list_group.php",
+      "source_location": "L1",
+      "id": "examples_components_list_group_php",
+      "community": 46,
+      "norm_label": "list_group.php"
+    },
+    {
+      "label": "breadcrumb.php",
+      "file_type": "code",
+      "source_file": "examples/components/breadcrumb.php",
+      "source_location": "L1",
+      "id": "examples_components_breadcrumb_php",
+      "community": 38,
+      "norm_label": "breadcrumb.php"
+    },
+    {
+      "label": "dropdown.php",
+      "file_type": "code",
+      "source_file": "examples/components/dropdown.php",
+      "source_location": "L1",
+      "id": "examples_components_dropdown_php",
+      "community": 44,
+      "norm_label": "dropdown.php"
+    },
+    {
+      "label": "offcanvas.php",
+      "file_type": "code",
+      "source_file": "examples/components/offcanvas.php",
+      "source_location": "L1",
+      "id": "examples_components_offcanvas_php",
+      "community": 59,
+      "norm_label": "offcanvas.php"
+    },
+    {
+      "label": "callout.php",
+      "file_type": "code",
+      "source_file": "examples/components/callout.php",
+      "source_location": "L1",
+      "id": "examples_components_callout_php",
+      "community": 41,
+      "norm_label": "callout.php"
+    },
+    {
+      "label": "spinner.php",
+      "file_type": "code",
+      "source_file": "examples/components/spinner.php",
+      "source_location": "L1",
+      "id": "examples_components_spinner_php",
+      "community": 52,
+      "norm_label": "spinner.php"
+    },
+    {
+      "label": "carousel.php",
+      "file_type": "code",
+      "source_file": "examples/components/carousel.php",
+      "source_location": "L1",
+      "id": "examples_components_carousel_php",
+      "community": 58,
+      "norm_label": "carousel.php"
+    },
+    {
+      "label": "badge.php",
+      "file_type": "code",
+      "source_file": "examples/components/badge.php",
+      "source_location": "L1",
+      "id": "examples_components_badge_php",
+      "community": 37,
+      "norm_label": "badge.php"
+    },
+    {
+      "label": "modal.php",
+      "file_type": "code",
+      "source_file": "examples/components/modal.php",
+      "source_location": "L1",
+      "id": "examples_components_modal_php",
+      "community": 47,
+      "norm_label": "modal.php"
+    },
+    {
+      "label": "toast.php",
+      "file_type": "code",
+      "source_file": "examples/components/toast.php",
+      "source_location": "L1",
+      "id": "examples_components_toast_php",
+      "community": 55,
+      "norm_label": "toast.php"
+    },
+    {
+      "label": "button.php",
+      "file_type": "code",
+      "source_file": "examples/components/button.php",
+      "source_location": "L1",
+      "id": "examples_components_button_php",
+      "community": 40,
+      "norm_label": "button.php"
+    },
+    {
       "label": "card.php",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/card.php",
@@ -124,7 +520,7 @@
       "label": "navbar",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/navbar.php",
-      "source_location": "L17",
+      "source_location": "L5",
       "id": "bootstrap_navbar_navbar",
       "community": 16,
       "norm_label": "navbar"
@@ -133,28 +529,154 @@
       "label": ".__construct()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/navbar.php",
-      "source_location": "L28",
+      "source_location": "L13",
       "id": "bootstrap_navbar_navbar_construct",
       "community": 16,
       "norm_label": ".__construct()"
     },
     {
+      "label": ".add_item()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L49",
+      "id": "bootstrap_navbar_navbar_add_item",
+      "community": 16,
+      "norm_label": ".add_item()"
+    },
+    {
+      "label": ".add_text()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L98",
+      "id": "bootstrap_navbar_navbar_add_text",
+      "community": 16,
+      "norm_label": ".add_text()"
+    },
+    {
+      "label": ".add_form()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L109",
+      "id": "bootstrap_navbar_navbar_add_form",
+      "community": 16,
+      "norm_label": ".add_form()"
+    },
+    {
+      "label": ".set_placement()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L132",
+      "id": "bootstrap_navbar_navbar_set_placement",
+      "community": 16,
+      "norm_label": ".set_placement()"
+    },
+    {
+      "label": ".set_brand_image()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L143",
+      "id": "bootstrap_navbar_navbar_set_brand_image",
+      "community": 16,
+      "norm_label": ".set_brand_image()"
+    },
+    {
+      "label": ".brand()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L157",
+      "id": "bootstrap_navbar_navbar_brand",
+      "community": 16,
+      "norm_label": ".brand()"
+    },
+    {
       "label": ".collapse()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/navbar.php",
-      "source_location": "L44",
+      "source_location": "L161",
       "id": "bootstrap_navbar_navbar_collapse",
       "community": 16,
       "norm_label": ".collapse()"
     },
     {
-      "label": ".add_to_collapse()",
+      "label": "nav.php",
       "file_type": "code",
-      "source_file": "src/klan1/html/bootstrap/navbar.php",
-      "source_location": "L52",
-      "id": "bootstrap_navbar_navbar_add_to_collapse",
-      "community": 16,
-      "norm_label": ".add_to_collapse()"
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L1",
+      "id": "src_klan1_html_bootstrap_nav_php",
+      "community": 60,
+      "norm_label": "nav.php"
+    },
+    {
+      "label": "nav",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L19",
+      "id": "bootstrap_nav_nav",
+      "community": 60,
+      "norm_label": "nav"
+    },
+    {
+      "label": ".__construct()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L42",
+      "id": "bootstrap_nav_nav_construct",
+      "community": 60,
+      "norm_label": ".__construct()"
+    },
+    {
+      "label": ".apply_styles()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L63",
+      "id": "bootstrap_nav_nav_apply_styles",
+      "community": 60,
+      "norm_label": ".apply_styles()"
+    },
+    {
+      "label": ".build_items()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L102",
+      "id": "bootstrap_nav_nav_build_items",
+      "community": 60,
+      "norm_label": ".build_items()"
+    },
+    {
+      "label": ".add_item()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L129",
+      "id": "bootstrap_nav_nav_add_item",
+      "community": 60,
+      "norm_label": ".add_item()"
+    },
+    {
+      "label": ".add_dropdown_item()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L155",
+      "id": "bootstrap_nav_nav_add_dropdown_item",
+      "community": 60,
+      "norm_label": ".add_dropdown_item()"
+    },
+    {
+      "label": ".create_tabs()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L196",
+      "id": "bootstrap_nav_nav_create_tabs",
+      "community": 60,
+      "norm_label": ".create_tabs()"
+    },
+    {
+      "label": ".create_vertical_pills()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L255",
+      "id": "bootstrap_nav_nav_create_vertical_pills",
+      "community": 60,
+      "norm_label": ".create_vertical_pills()"
     },
     {
       "label": "button_group.php",
@@ -340,7 +862,7 @@
       "label": "accordion",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L14",
+      "source_location": "L16",
       "id": "bootstrap_accordion_accordion",
       "community": 4,
       "norm_label": "accordion"
@@ -349,73 +871,118 @@
       "label": ".__construct()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L41",
+      "source_location": "L65",
       "id": "bootstrap_accordion_accordion_construct",
       "community": 4,
       "norm_label": ".__construct()"
     },
     {
-      "label": ".set_config()",
+      "label": ".add_item()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L50",
-      "id": "bootstrap_accordion_accordion_set_config",
+      "source_location": "L88",
+      "id": "bootstrap_accordion_accordion_add_item",
       "community": 4,
-      "norm_label": ".set_config()"
+      "norm_label": ".add_item()"
     },
     {
-      "label": ".new_li_tab()",
+      "label": ".add_items()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L67",
-      "id": "bootstrap_accordion_accordion_new_li_tab",
+      "source_location": "L164",
+      "id": "bootstrap_accordion_accordion_add_items",
       "community": 4,
-      "norm_label": ".new_li_tab()"
+      "norm_label": ".add_items()"
     },
     {
-      "label": ".new_content_tab()",
+      "label": ".set_default_open()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L83",
-      "id": "bootstrap_accordion_accordion_new_content_tab",
+      "source_location": "L182",
+      "id": "bootstrap_accordion_accordion_set_default_open",
       "community": 4,
-      "norm_label": ".new_content_tab()"
+      "norm_label": ".set_default_open()"
     },
     {
-      "label": ".tab_content()",
+      "label": ".item_body()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L96",
-      "id": "bootstrap_accordion_accordion_tab_content",
+      "source_location": "L196",
+      "id": "bootstrap_accordion_accordion_item_body",
       "community": 4,
-      "norm_label": ".tab_content()"
+      "norm_label": ".item_body()"
     },
     {
-      "label": ".tabs_content_container()",
+      "label": ".item_button()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L103",
-      "id": "bootstrap_accordion_accordion_tabs_content_container",
+      "source_location": "L206",
+      "id": "bootstrap_accordion_accordion_item_button",
       "community": 4,
-      "norm_label": ".tabs_content_container()"
+      "norm_label": ".item_button()"
     },
     {
-      "label": ".set_active_tab()",
+      "label": ".item_collapse()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L107",
-      "id": "bootstrap_accordion_accordion_set_active_tab",
+      "source_location": "L216",
+      "id": "bootstrap_accordion_accordion_item_collapse",
       "community": 4,
-      "norm_label": ".set_active_tab()"
+      "norm_label": ".item_collapse()"
     },
     {
-      "label": ".append_to()",
+      "label": ".item_header()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L115",
-      "id": "bootstrap_accordion_accordion_append_to",
+      "source_location": "L226",
+      "id": "bootstrap_accordion_accordion_item_header",
       "community": 4,
-      "norm_label": ".append_to()"
+      "norm_label": ".item_header()"
+    },
+    {
+      "label": ".container()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L235",
+      "id": "bootstrap_accordion_accordion_container",
+      "community": 4,
+      "norm_label": ".container()"
+    },
+    {
+      "label": ".has_item()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L245",
+      "id": "bootstrap_accordion_accordion_has_item",
+      "community": 4,
+      "norm_label": ".has_item()"
+    },
+    {
+      "label": ".get_item_ids()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L254",
+      "id": "bootstrap_accordion_accordion_get_item_ids",
+      "community": 4,
+      "norm_label": ".get_item_ids()"
+    },
+    {
+      "label": ".count()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L263",
+      "id": "bootstrap_accordion_accordion_count",
+      "community": 4,
+      "norm_label": ".count()"
+    },
+    {
+      "label": ".remove_item()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L273",
+      "id": "bootstrap_accordion_accordion_remove_item",
+      "community": 4,
+      "norm_label": ".remove_item()"
     },
     {
       "label": "title_bar.php",
@@ -493,7 +1060,7 @@
       "label": ".set_heading()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/alert.php",
-      "source_location": "L48",
+      "source_location": "L50",
       "id": "bootstrap_alert_alert_set_heading",
       "community": 13,
       "norm_label": ".set_heading()"
@@ -502,7 +1069,7 @@
       "label": ".generate()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/alert.php",
-      "source_location": "L55",
+      "source_location": "L57",
       "id": "bootstrap_alert_alert_generate",
       "community": 13,
       "norm_label": ".generate()"
@@ -908,7 +1475,7 @@
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L1",
-      "id": "bootstrap_top_bar_php_src_klan1_html_bootstrap_top_bar_php",
+      "id": "src_klan1_html_bootstrap_top_bar_php_src_klan1_html_bootstrap_top_bar_php",
       "community": 3,
       "norm_label": "top_bar_.php"
     },
@@ -917,7 +1484,7 @@
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L15",
-      "id": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "id": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
       "community": 3,
       "norm_label": "top_bar_"
     },
@@ -926,7 +1493,7 @@
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L35",
-      "id": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar_construct",
+      "id": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar_construct",
       "community": 3,
       "norm_label": ".__construct()"
     },
@@ -944,7 +1511,7 @@
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L125",
-      "id": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar_menu_left",
+      "id": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar_menu_left",
       "community": 3,
       "norm_label": ".menu_left()"
     },
@@ -1015,7 +1582,7 @@
       "label": "list_group",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/list_group.php",
-      "source_location": "L17",
+      "source_location": "L5",
       "id": "bootstrap_list_group_list_group",
       "community": 24,
       "norm_label": "list_group"
@@ -1024,10 +1591,28 @@
       "label": ".__construct()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/list_group.php",
-      "source_location": "L23",
+      "source_location": "L9",
       "id": "bootstrap_list_group_list_group_construct",
       "community": 24,
       "norm_label": ".__construct()"
+    },
+    {
+      "label": ".add_item()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/list_group.php",
+      "source_location": "L22",
+      "id": "bootstrap_list_group_list_group_add_item",
+      "community": 24,
+      "norm_label": ".add_item()"
+    },
+    {
+      "label": ".add_items()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/list_group.php",
+      "source_location": "L58",
+      "id": "bootstrap_list_group_list_group_add_items",
+      "community": 24,
+      "norm_label": ".add_items()"
     },
     {
       "label": ".add_button()",
@@ -1294,7 +1879,7 @@
       "label": ".__construct()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/offcanvas.php",
-      "source_location": "L25",
+      "source_location": "L24",
       "id": "bootstrap_offcanvas_offcanvas_construct",
       "community": 26,
       "norm_label": ".__construct()"
@@ -1330,7 +1915,7 @@
       "label": ".set_class()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/callout.php",
-      "source_location": "L44",
+      "source_location": "L47",
       "id": "bootstrap_callout_callout_set_class",
       "community": 5,
       "norm_label": ".set_class()"
@@ -1339,7 +1924,7 @@
       "label": ".set_margin()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/callout.php",
-      "source_location": "L51",
+      "source_location": "L54",
       "id": "bootstrap_callout_callout_set_margin",
       "community": 5,
       "norm_label": ".set_margin()"
@@ -1348,7 +1933,7 @@
       "label": ".get_message()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/callout.php",
-      "source_location": "L55",
+      "source_location": "L58",
       "id": "bootstrap_callout_callout_get_message",
       "community": 5,
       "norm_label": ".get_message()"
@@ -1357,7 +1942,7 @@
       "label": ".set_message()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/callout.php",
-      "source_location": "L59",
+      "source_location": "L62",
       "id": "bootstrap_callout_callout_set_message",
       "community": 5,
       "norm_label": ".set_message()"
@@ -1366,7 +1951,7 @@
       "label": ".get_title()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/callout.php",
-      "source_location": "L63",
+      "source_location": "L66",
       "id": "bootstrap_callout_callout_get_title",
       "community": 5,
       "norm_label": ".get_title()"
@@ -1375,7 +1960,7 @@
       "label": ".set_title()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/callout.php",
-      "source_location": "L67",
+      "source_location": "L70",
       "id": "bootstrap_callout_callout_set_title",
       "community": 5,
       "norm_label": ".set_title()"
@@ -1384,7 +1969,7 @@
       "label": ".generate()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/callout.php",
-      "source_location": "L71",
+      "source_location": "L74",
       "id": "bootstrap_callout_callout_generate",
       "community": 5,
       "norm_label": ".generate()"
@@ -1429,7 +2014,7 @@
       "label": "carousel",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/carousel.php",
-      "source_location": "L17",
+      "source_location": "L5",
       "id": "bootstrap_carousel_carousel",
       "community": 21,
       "norm_label": "carousel"
@@ -1438,7 +2023,7 @@
       "label": ".__construct()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/carousel.php",
-      "source_location": "L29",
+      "source_location": "L16",
       "id": "bootstrap_carousel_carousel_construct",
       "community": 21,
       "norm_label": ".__construct()"
@@ -1564,7 +2149,7 @@
       "label": "modal",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/modal.php",
-      "source_location": "L17",
+      "source_location": "L13",
       "id": "bootstrap_modal_modal",
       "community": 25,
       "norm_label": "modal"
@@ -1573,10 +2158,19 @@
       "label": ".__construct()",
       "file_type": "code",
       "source_file": "src/klan1/html/bootstrap/modal.php",
-      "source_location": "L28",
+      "source_location": "L37",
       "id": "bootstrap_modal_modal_construct",
       "community": 25,
       "norm_label": ".__construct()"
+    },
+    {
+      "label": ".add_footer_item()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/modal.php",
+      "source_location": "L118",
+      "id": "bootstrap_modal_modal_add_footer_item",
+      "community": 25,
+      "norm_label": ".add_footer_item()"
     },
     {
       "label": "toast.php",
@@ -1741,97 +2335,502 @@
       "norm_label": ".info()"
     },
     {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 33,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "k1lib-bootstrap",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "k1_lib_bootstrap_readme_k1lib_bootstrap",
+      "community": 33,
+      "norm_label": "k1lib-bootstrap"
+    },
+    {
+      "label": "Requirements",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "id": "k1_lib_bootstrap_readme_requirements",
+      "community": 33,
+      "norm_label": "requirements"
+    },
+    {
+      "label": "Installation",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L10",
+      "id": "k1_lib_bootstrap_readme_installation",
+      "community": 33,
+      "norm_label": "installation"
+    },
+    {
+      "label": "code:sh (composer require klan1/k1lib-bootstrap)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L12",
+      "id": "k1_lib_bootstrap_readme_codeblock_1",
+      "community": 33,
+      "norm_label": "code:sh (composer require klan1/k1lib-bootstrap)"
+    },
+    {
+      "label": "Development with Opencode",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L16",
+      "id": "k1_lib_bootstrap_readme_development_with_opencode",
+      "community": 33,
+      "norm_label": "development with opencode"
+    },
+    {
+      "label": "Session Management",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L20",
+      "id": "k1_lib_bootstrap_readme_session_management",
+      "community": 33,
+      "norm_label": "session management"
+    },
+    {
+      "label": "code:sh (opencode session list                                    # L)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "id": "k1_lib_bootstrap_readme_codeblock_2",
+      "community": 33,
+      "norm_label": "code:sh (opencode session list                                    # l)"
+    },
+    {
+      "label": "code:sh (opencode import session-export.json                     # Im)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L31",
+      "id": "k1_lib_bootstrap_readme_codeblock_3",
+      "community": 33,
+      "norm_label": "code:sh (opencode import session-export.json                     # im)"
+    },
+    {
+      "label": "Typical Workflow",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L36",
+      "id": "k1_lib_bootstrap_readme_typical_workflow",
+      "community": 33,
+      "norm_label": "typical workflow"
+    },
+    {
+      "label": "License",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L45",
+      "id": "k1_lib_bootstrap_readme_license",
+      "community": 33,
+      "norm_label": "license"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "id": "agents_md",
+      "community": 34,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "id": "k1_lib_bootstrap_agents_graphify",
+      "community": 34,
+      "norm_label": "graphify"
+    },
+    {
+      "label": ".add_to_collapse()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L52",
+      "community": 16,
+      "norm_label": ".add_to_collapse()",
+      "id": "bootstrap_navbar_navbar_add_to_collapse"
+    },
+    {
       "label": "nav.php",
       "file_type": "code",
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L1",
-      "id": "src_klan1_html_componentes_nav_php",
       "community": 7,
-      "norm_label": "nav.php"
+      "norm_label": "nav.php",
+      "id": "src_klan1_html_componentes_nav_php"
     },
     {
       "label": "nav",
       "file_type": "code",
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L19",
-      "id": "componentes_nav_nav",
       "community": 7,
-      "norm_label": "nav"
+      "norm_label": "nav",
+      "id": "componentes_nav_nav"
     },
     {
       "label": ".__construct()",
       "file_type": "code",
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L42",
-      "id": "componentes_nav_nav_construct",
       "community": 7,
-      "norm_label": ".__construct()"
+      "norm_label": ".__construct()",
+      "id": "componentes_nav_nav_construct"
     },
     {
       "label": ".apply_styles()",
       "file_type": "code",
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L63",
-      "id": "componentes_nav_nav_apply_styles",
       "community": 7,
-      "norm_label": ".apply_styles()"
+      "norm_label": ".apply_styles()",
+      "id": "componentes_nav_nav_apply_styles"
     },
     {
       "label": ".build_items()",
       "file_type": "code",
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L102",
-      "id": "componentes_nav_nav_build_items",
       "community": 7,
-      "norm_label": ".build_items()"
+      "norm_label": ".build_items()",
+      "id": "componentes_nav_nav_build_items"
     },
     {
       "label": ".add_item()",
       "file_type": "code",
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L129",
-      "id": "componentes_nav_nav_add_item",
       "community": 7,
-      "norm_label": ".add_item()"
+      "norm_label": ".add_item()",
+      "id": "componentes_nav_nav_add_item"
     },
     {
       "label": ".add_dropdown_item()",
       "file_type": "code",
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L155",
-      "id": "componentes_nav_nav_add_dropdown_item",
       "community": 7,
-      "norm_label": ".add_dropdown_item()"
+      "norm_label": ".add_dropdown_item()",
+      "id": "componentes_nav_nav_add_dropdown_item"
     },
     {
       "label": ".create_tabs()",
       "file_type": "code",
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L196",
-      "id": "componentes_nav_nav_create_tabs",
       "community": 7,
-      "norm_label": ".create_tabs()"
+      "norm_label": ".create_tabs()",
+      "id": "componentes_nav_nav_create_tabs"
     },
     {
       "label": ".create_vertical_pills()",
       "file_type": "code",
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L255",
-      "id": "componentes_nav_nav_create_vertical_pills",
       "community": 7,
-      "norm_label": ".create_vertical_pills()"
+      "norm_label": ".create_vertical_pills()",
+      "id": "componentes_nav_nav_create_vertical_pills"
+    },
+    {
+      "label": ".set_config()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L50",
+      "community": 4,
+      "norm_label": ".set_config()",
+      "id": "bootstrap_accordion_accordion_set_config"
+    },
+    {
+      "label": ".new_li_tab()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L67",
+      "community": 4,
+      "norm_label": ".new_li_tab()",
+      "id": "bootstrap_accordion_accordion_new_li_tab"
+    },
+    {
+      "label": ".new_content_tab()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L83",
+      "community": 4,
+      "norm_label": ".new_content_tab()",
+      "id": "bootstrap_accordion_accordion_new_content_tab"
+    },
+    {
+      "label": ".tab_content()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L96",
+      "community": 4,
+      "norm_label": ".tab_content()",
+      "id": "bootstrap_accordion_accordion_tab_content"
+    },
+    {
+      "label": ".tabs_content_container()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L103",
+      "community": 4,
+      "norm_label": ".tabs_content_container()",
+      "id": "bootstrap_accordion_accordion_tabs_content_container"
+    },
+    {
+      "label": ".set_active_tab()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L107",
+      "community": 4,
+      "norm_label": ".set_active_tab()",
+      "id": "bootstrap_accordion_accordion_set_active_tab"
+    },
+    {
+      "label": ".append_to()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L115",
+      "community": 4,
+      "norm_label": ".append_to()",
+      "id": "bootstrap_accordion_accordion_append_to"
+    },
+    {
+      "label": "top_bar_.php",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "top_bar_.php",
+      "id": "bootstrap_top_bar_php_src_klan1_html_bootstrap_top_bar_php"
+    },
+    {
+      "label": "top_bar_",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L15",
+      "community": 3,
+      "norm_label": "top_bar_",
+      "id": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar"
+    },
+    {
+      "label": ".__construct()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L35",
+      "community": 3,
+      "norm_label": ".__construct()",
+      "id": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar_construct"
+    },
+    {
+      "label": ".menu_left()",
+      "file_type": "code",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L125",
+      "community": 3,
+      "norm_label": ".menu_left()",
+      "id": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar_menu_left"
     }
   ],
   "links": [
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_description"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_license"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_type"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_homepage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_minimum_stability"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_prefer_stable"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_authors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_require"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_autoload"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "composer_json",
+      "target": "k1_lib_bootstrap_composer_scripts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_composer_require",
+      "target": "k1_lib_bootstrap_composer_require_php"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_composer_require",
+      "target": "k1_lib_bootstrap_composer_require_klan1_k1lib_html"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_composer_autoload",
+      "target": "k1_lib_bootstrap_composer_autoload_psr_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_composer_autoload_psr_4",
+      "target": "k1_lib_bootstrap_composer_psr_4_k1lib_html_bootstrap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_composer_autoload_psr_4",
+      "target": "k1_lib_bootstrap_composer_psr_4_k1lib_html_componentes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "composer.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_composer_scripts",
+      "target": "k1_lib_bootstrap_composer_scripts_examples"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/klan1/html/bootstrap/card.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_card_php",
-      "target": "bootstrap_card_card",
-      "confidence_score": 1.0
+      "target": "bootstrap_card_card"
     },
     {
       "relation": "method",
@@ -1839,9 +2838,9 @@
       "source_file": "src/klan1/html/bootstrap/card.php",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_card_card",
-      "target": "bootstrap_card_card_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_card_card_construct"
     },
     {
       "relation": "method",
@@ -1849,9 +2848,9 @@
       "source_file": "src/klan1/html/bootstrap/card.php",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_card_card",
-      "target": "bootstrap_card_card_set_header",
-      "confidence_score": 1.0
+      "target": "bootstrap_card_card_set_header"
     },
     {
       "relation": "method",
@@ -1859,9 +2858,9 @@
       "source_file": "src/klan1/html/bootstrap/card.php",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_card_card",
-      "target": "bootstrap_card_card_set_footer",
-      "confidence_score": 1.0
+      "target": "bootstrap_card_card_set_footer"
     },
     {
       "relation": "method",
@@ -1869,9 +2868,9 @@
       "source_file": "src/klan1/html/bootstrap/card.php",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_card_card",
-      "target": "bootstrap_card_card_body",
-      "confidence_score": 1.0
+      "target": "bootstrap_card_card_body"
     },
     {
       "relation": "contains",
@@ -1879,9 +2878,9 @@
       "source_file": "src/klan1/html/bootstrap/collapse.php",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_collapse_php",
-      "target": "bootstrap_collapse_collapse",
-      "confidence_score": 1.0
+      "target": "bootstrap_collapse_collapse"
     },
     {
       "relation": "method",
@@ -1889,9 +2888,9 @@
       "source_file": "src/klan1/html/bootstrap/collapse.php",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_collapse_collapse",
-      "target": "bootstrap_collapse_collapse_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_collapse_collapse_construct"
     },
     {
       "relation": "contains",
@@ -1899,9 +2898,9 @@
       "source_file": "src/klan1/html/bootstrap/progress.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_progress_php",
-      "target": "bootstrap_progress_progress",
-      "confidence_score": 1.0
+      "target": "bootstrap_progress_progress"
     },
     {
       "relation": "method",
@@ -1909,9 +2908,9 @@
       "source_file": "src/klan1/html/bootstrap/progress.php",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_progress_progress",
-      "target": "bootstrap_progress_progress_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_progress_progress_construct"
     },
     {
       "relation": "contains",
@@ -1919,9 +2918,9 @@
       "source_file": "src/klan1/html/bootstrap/navbar.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_navbar_php",
-      "target": "bootstrap_navbar_navbar",
-      "confidence_score": 1.0
+      "target": "bootstrap_navbar_navbar"
     },
     {
       "relation": "method",
@@ -1929,9 +2928,69 @@
       "source_file": "src/klan1/html/bootstrap/navbar.php",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_navbar_navbar",
-      "target": "bootstrap_navbar_navbar_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_navbar_navbar_construct"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_navbar_navbar",
+      "target": "bootstrap_navbar_navbar_add_item"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_navbar_navbar",
+      "target": "bootstrap_navbar_navbar_add_text"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_navbar_navbar",
+      "target": "bootstrap_navbar_navbar_add_form"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L126",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_navbar_navbar",
+      "target": "bootstrap_navbar_navbar_set_placement"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_navbar_navbar",
+      "target": "bootstrap_navbar_navbar_set_brand_image"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/navbar.php",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_navbar_navbar",
+      "target": "bootstrap_navbar_navbar_brand"
     },
     {
       "relation": "method",
@@ -1939,9 +2998,9 @@
       "source_file": "src/klan1/html/bootstrap/navbar.php",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_navbar_navbar",
-      "target": "bootstrap_navbar_navbar_collapse",
-      "confidence_score": 1.0
+      "target": "bootstrap_navbar_navbar_collapse"
     },
     {
       "relation": "method",
@@ -1949,9 +3008,133 @@
       "source_file": "src/klan1/html/bootstrap/navbar.php",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_navbar_navbar",
-      "target": "bootstrap_navbar_navbar_add_to_collapse",
-      "confidence_score": 1.0
+      "target": "bootstrap_navbar_navbar_add_to_collapse"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_nav_php",
+      "target": "bootstrap_nav_nav"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_nav_nav",
+      "target": "bootstrap_nav_nav_construct"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_nav_nav",
+      "target": "bootstrap_nav_nav_apply_styles"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_nav_nav",
+      "target": "bootstrap_nav_nav_build_items"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L129",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_nav_nav",
+      "target": "bootstrap_nav_nav_add_item"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L155",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_nav_nav",
+      "target": "bootstrap_nav_nav_add_dropdown_item"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L196",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_nav_nav",
+      "target": "bootstrap_nav_nav_create_tabs"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L255",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_nav_nav",
+      "target": "bootstrap_nav_nav_create_vertical_pills"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_nav_nav_construct",
+      "target": "bootstrap_nav_nav_apply_styles"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_nav_nav_construct",
+      "target": "bootstrap_nav_nav_build_items"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_nav_nav_build_items",
+      "target": "bootstrap_nav_nav_add_dropdown_item"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/nav.php",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_nav_nav_build_items",
+      "target": "bootstrap_nav_nav_add_item"
     },
     {
       "relation": "contains",
@@ -1959,9 +3142,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_button_group_php",
-      "target": "bootstrap_button_group_button_group",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group"
     },
     {
       "relation": "method",
@@ -1969,9 +3152,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_group_button_group",
-      "target": "bootstrap_button_group_button_group_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group_construct"
     },
     {
       "relation": "method",
@@ -1979,9 +3162,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_group_button_group",
-      "target": "bootstrap_button_group_button_group_add_button",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group_add_button"
     },
     {
       "relation": "method",
@@ -1989,9 +3172,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_group_button_group",
-      "target": "bootstrap_button_group_button_group_button",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group_button"
     },
     {
       "relation": "method",
@@ -1999,9 +3182,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_group_button_group",
-      "target": "bootstrap_button_group_button_group_count",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group_count"
     },
     {
       "relation": "method",
@@ -2009,9 +3192,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_group_button_group",
-      "target": "bootstrap_button_group_button_group_remove_button",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group_remove_button"
     },
     {
       "relation": "method",
@@ -2019,9 +3202,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_group_button_group",
-      "target": "bootstrap_button_group_button_group_rebuild_childs",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group_rebuild_childs"
     },
     {
       "relation": "method",
@@ -2029,9 +3212,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_group_button_group",
-      "target": "bootstrap_button_group_button_group_replace_child_at",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group_replace_child_at"
     },
     {
       "relation": "calls",
@@ -2040,9 +3223,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_group_button_group_add_button",
-      "target": "bootstrap_button_group_button_group_rebuild_childs",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group_rebuild_childs"
     },
     {
       "relation": "calls",
@@ -2051,9 +3234,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_group_button_group_add_button",
-      "target": "bootstrap_button_group_button_group_replace_child_at",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group_replace_child_at"
     },
     {
       "relation": "calls",
@@ -2062,9 +3245,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_group_button_group_remove_button",
-      "target": "bootstrap_button_group_button_group_rebuild_childs",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group_rebuild_childs"
     },
     {
       "relation": "calls",
@@ -2073,9 +3256,9 @@
       "source_file": "src/klan1/html/bootstrap/button_group.php",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_group_button_group_replace_child_at",
-      "target": "bootstrap_button_group_button_group_rebuild_childs",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_group_button_group_rebuild_childs"
     },
     {
       "relation": "contains",
@@ -2083,9 +3266,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_row.php",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_grid_row_php",
-      "target": "bootstrap_grid_row_grid_row",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_row_grid_row"
     },
     {
       "relation": "method",
@@ -2093,9 +3276,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_row.php",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_row_grid_row",
-      "target": "bootstrap_grid_row_grid_row_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_row_grid_row_construct"
     },
     {
       "relation": "method",
@@ -2103,9 +3286,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_row.php",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_row_grid_row",
-      "target": "bootstrap_grid_row_grid_row_copy_clases_to_cols",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_row_grid_row_copy_clases_to_cols"
     },
     {
       "relation": "method",
@@ -2113,9 +3296,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_row.php",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_row_grid_row",
-      "target": "bootstrap_grid_row_grid_row_col",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_row_grid_row_col"
     },
     {
       "relation": "method",
@@ -2123,9 +3306,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_row.php",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_row_grid_row",
-      "target": "bootstrap_grid_row_grid_row_cell",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_row_grid_row_cell"
     },
     {
       "relation": "method",
@@ -2133,9 +3316,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_row.php",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_row_grid_row",
-      "target": "bootstrap_grid_row_grid_row_append_cell",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_row_grid_row_append_cell"
     },
     {
       "relation": "calls",
@@ -2144,9 +3327,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_row.php",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_row_grid_row_construct",
-      "target": "bootstrap_grid_row_grid_row_append_cell",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_row_grid_row_append_cell"
     },
     {
       "relation": "calls",
@@ -2155,9 +3338,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_row.php",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_row_grid_row_copy_clases_to_cols",
-      "target": "bootstrap_grid_row_grid_row_col",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_row_grid_row_col"
     },
     {
       "relation": "calls",
@@ -2166,9 +3349,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_row.php",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_row_grid_row_col",
-      "target": "bootstrap_grid_row_grid_row_cell",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_row_grid_row_cell"
     },
     {
       "relation": "contains",
@@ -2176,9 +3359,9 @@
       "source_file": "src/klan1/html/bootstrap/pagination.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_pagination_php",
-      "target": "bootstrap_pagination_pagination",
-      "confidence_score": 1.0
+      "target": "bootstrap_pagination_pagination"
     },
     {
       "relation": "method",
@@ -2186,9 +3369,9 @@
       "source_file": "src/klan1/html/bootstrap/pagination.php",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_pagination_pagination",
-      "target": "bootstrap_pagination_pagination_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_pagination_pagination_construct"
     },
     {
       "relation": "contains",
@@ -2196,9 +3379,9 @@
       "source_file": "src/klan1/html/bootstrap/accordion.php",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_accordion_php",
-      "target": "bootstrap_accordion_accordion",
-      "confidence_score": 1.0
+      "target": "bootstrap_accordion_accordion"
     },
     {
       "relation": "method",
@@ -2206,9 +3389,129 @@
       "source_file": "src/klan1/html/bootstrap/accordion.php",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_accordion_accordion",
-      "target": "bootstrap_accordion_accordion_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_accordion_accordion_construct"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_add_item"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_add_items"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L182",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_set_default_open"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L196",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_item_body"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L206",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_item_button"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L216",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_item_collapse"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L226",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_item_header"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L235",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_container"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L245",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_has_item"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L254",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_get_item_ids"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L263",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_count"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L273",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion",
+      "target": "bootstrap_accordion_accordion_remove_item"
     },
     {
       "relation": "method",
@@ -2216,9 +3519,9 @@
       "source_file": "src/klan1/html/bootstrap/accordion.php",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_accordion_accordion",
-      "target": "bootstrap_accordion_accordion_set_config",
-      "confidence_score": 1.0
+      "target": "bootstrap_accordion_accordion_set_config"
     },
     {
       "relation": "method",
@@ -2226,9 +3529,9 @@
       "source_file": "src/klan1/html/bootstrap/accordion.php",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_accordion_accordion",
-      "target": "bootstrap_accordion_accordion_new_li_tab",
-      "confidence_score": 1.0
+      "target": "bootstrap_accordion_accordion_new_li_tab"
     },
     {
       "relation": "method",
@@ -2236,9 +3539,9 @@
       "source_file": "src/klan1/html/bootstrap/accordion.php",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_accordion_accordion",
-      "target": "bootstrap_accordion_accordion_new_content_tab",
-      "confidence_score": 1.0
+      "target": "bootstrap_accordion_accordion_new_content_tab"
     },
     {
       "relation": "method",
@@ -2246,9 +3549,9 @@
       "source_file": "src/klan1/html/bootstrap/accordion.php",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_accordion_accordion",
-      "target": "bootstrap_accordion_accordion_tab_content",
-      "confidence_score": 1.0
+      "target": "bootstrap_accordion_accordion_tab_content"
     },
     {
       "relation": "method",
@@ -2256,9 +3559,9 @@
       "source_file": "src/klan1/html/bootstrap/accordion.php",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_accordion_accordion",
-      "target": "bootstrap_accordion_accordion_tabs_content_container",
-      "confidence_score": 1.0
+      "target": "bootstrap_accordion_accordion_tabs_content_container"
     },
     {
       "relation": "method",
@@ -2266,9 +3569,9 @@
       "source_file": "src/klan1/html/bootstrap/accordion.php",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_accordion_accordion",
-      "target": "bootstrap_accordion_accordion_set_active_tab",
-      "confidence_score": 1.0
+      "target": "bootstrap_accordion_accordion_set_active_tab"
     },
     {
       "relation": "method",
@@ -2276,42 +3579,20 @@
       "source_file": "src/klan1/html/bootstrap/accordion.php",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_accordion_accordion",
-      "target": "bootstrap_accordion_accordion_append_to",
-      "confidence_score": 1.0
+      "target": "bootstrap_accordion_accordion_append_to"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L55",
+      "source_location": "L171",
       "weight": 1.0,
-      "source": "bootstrap_accordion_accordion_set_config",
-      "target": "bootstrap_accordion_accordion_new_li_tab",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L74",
-      "weight": 1.0,
-      "source": "bootstrap_accordion_accordion_new_li_tab",
-      "target": "bootstrap_accordion_accordion_new_content_tab",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/klan1/html/bootstrap/accordion.php",
-      "source_location": "L88",
-      "weight": 1.0,
-      "source": "bootstrap_accordion_accordion_new_content_tab",
-      "target": "bootstrap_accordion_accordion_append_to",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion_add_items",
+      "target": "bootstrap_accordion_accordion_add_item"
     },
     {
       "relation": "contains",
@@ -2319,9 +3600,9 @@
       "source_file": "src/klan1/html/bootstrap/title_bar.php",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_title_bar_php",
-      "target": "bootstrap_title_bar_title_bar",
-      "confidence_score": 1.0
+      "target": "bootstrap_title_bar_title_bar"
     },
     {
       "relation": "method",
@@ -2329,9 +3610,9 @@
       "source_file": "src/klan1/html/bootstrap/title_bar.php",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_title_bar_title_bar",
-      "target": "bootstrap_title_bar_title_bar_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_title_bar_title_bar_construct"
     },
     {
       "relation": "method",
@@ -2339,9 +3620,9 @@
       "source_file": "src/klan1/html/bootstrap/title_bar.php",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_title_bar_title_bar",
-      "target": "bootstrap_title_bar_title_bar_title",
-      "confidence_score": 1.0
+      "target": "bootstrap_title_bar_title_bar_title"
     },
     {
       "relation": "method",
@@ -2349,9 +3630,9 @@
       "source_file": "src/klan1/html/bootstrap/title_bar.php",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_title_bar_title_bar",
-      "target": "bootstrap_title_bar_title_bar_left_button",
-      "confidence_score": 1.0
+      "target": "bootstrap_title_bar_title_bar_left_button"
     },
     {
       "relation": "contains",
@@ -2359,9 +3640,9 @@
       "source_file": "src/klan1/html/bootstrap/alert.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_alert_php",
-      "target": "bootstrap_alert_alert",
-      "confidence_score": 1.0
+      "target": "bootstrap_alert_alert"
     },
     {
       "relation": "method",
@@ -2369,9 +3650,9 @@
       "source_file": "src/klan1/html/bootstrap/alert.php",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_alert_alert",
-      "target": "bootstrap_alert_alert_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_alert_alert_construct"
     },
     {
       "relation": "method",
@@ -2379,9 +3660,9 @@
       "source_file": "src/klan1/html/bootstrap/alert.php",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_alert_alert",
-      "target": "bootstrap_alert_alert_set_heading",
-      "confidence_score": 1.0
+      "target": "bootstrap_alert_alert_set_heading"
     },
     {
       "relation": "method",
@@ -2389,9 +3670,9 @@
       "source_file": "src/klan1/html/bootstrap/alert.php",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_alert_alert",
-      "target": "bootstrap_alert_alert_generate",
-      "confidence_score": 1.0
+      "target": "bootstrap_alert_alert_generate"
     },
     {
       "relation": "contains",
@@ -2399,9 +3680,9 @@
       "source_file": "src/klan1/html/bootstrap/tooltip.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_tooltip_php",
-      "target": "bootstrap_tooltip_tooltip",
-      "confidence_score": 1.0
+      "target": "bootstrap_tooltip_tooltip"
     },
     {
       "relation": "method",
@@ -2409,9 +3690,9 @@
       "source_file": "src/klan1/html/bootstrap/tooltip.php",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_tooltip_tooltip",
-      "target": "bootstrap_tooltip_tooltip_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_tooltip_tooltip_construct"
     },
     {
       "relation": "contains",
@@ -2419,9 +3700,9 @@
       "source_file": "src/klan1/html/bootstrap/grid.php",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_grid_php",
-      "target": "bootstrap_grid_grid",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_grid"
     },
     {
       "relation": "method",
@@ -2429,9 +3710,9 @@
       "source_file": "src/klan1/html/bootstrap/grid.php",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_grid",
-      "target": "bootstrap_grid_grid_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_grid_construct"
     },
     {
       "relation": "method",
@@ -2439,9 +3720,9 @@
       "source_file": "src/klan1/html/bootstrap/grid.php",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_grid",
-      "target": "bootstrap_grid_grid_row",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_grid_row"
     },
     {
       "relation": "method",
@@ -2449,9 +3730,9 @@
       "source_file": "src/klan1/html/bootstrap/grid.php",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_grid",
-      "target": "bootstrap_grid_grid_append_row",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_grid_append_row"
     },
     {
       "relation": "calls",
@@ -2460,9 +3741,9 @@
       "source_file": "src/klan1/html/bootstrap/grid.php",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_grid_construct",
-      "target": "bootstrap_grid_grid_append_row",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_grid_append_row"
     },
     {
       "relation": "contains",
@@ -2470,9 +3751,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_table_from_data_php",
-      "target": "bootstrap_table_from_data_table_from_data",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data"
     },
     {
       "relation": "method",
@@ -2480,9 +3761,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_construct"
     },
     {
       "relation": "method",
@@ -2490,9 +3771,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_set_data",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_set_data"
     },
     {
       "relation": "method",
@@ -2500,9 +3781,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_generate",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_generate"
     },
     {
       "relation": "method",
@@ -2510,9 +3791,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_set_fields_to_hide",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_set_fields_to_hide"
     },
     {
       "relation": "method",
@@ -2520,9 +3801,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_use_data",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_use_data"
     },
     {
       "relation": "method",
@@ -2530,9 +3811,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_get_fields_for_key_array_text",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_get_fields_for_key_array_text"
     },
     {
       "relation": "method",
@@ -2540,9 +3821,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_set_fields_for_key_array_text",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_set_fields_for_key_array_text"
     },
     {
       "relation": "method",
@@ -2550,9 +3831,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_insert_tag_on_field",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_insert_tag_on_field"
     },
     {
       "relation": "method",
@@ -2560,9 +3841,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L235",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_parse_string_value",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_parse_string_value"
     },
     {
       "relation": "method",
@@ -2570,9 +3851,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L289",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_get_fields_on_string",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_get_fields_on_string"
     },
     {
       "relation": "method",
@@ -2580,9 +3861,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L305",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_get_raw_fields_on_string",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_get_raw_fields_on_string"
     },
     {
       "relation": "method",
@@ -2590,9 +3871,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L322",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_hide_fields",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_hide_fields"
     },
     {
       "relation": "method",
@@ -2600,9 +3881,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L327",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_has_header",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_has_header"
     },
     {
       "relation": "method",
@@ -2610,9 +3891,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L331",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_get_max_text_length_on_cell",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_get_max_text_length_on_cell"
     },
     {
       "relation": "method",
@@ -2620,9 +3901,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L335",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_set_max_text_length_on_cell",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_set_max_text_length_on_cell"
     },
     {
       "relation": "method",
@@ -2630,9 +3911,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L340",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_set_float_round",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_set_float_round"
     },
     {
       "relation": "method",
@@ -2640,9 +3921,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L346",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data",
-      "target": "bootstrap_table_from_data_table_from_data_get_float_round",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_get_float_round"
     },
     {
       "relation": "calls",
@@ -2651,9 +3932,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data_generate",
-      "target": "bootstrap_table_from_data_table_from_data_use_data",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_use_data"
     },
     {
       "relation": "calls",
@@ -2662,9 +3943,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data_use_data",
-      "target": "bootstrap_table_from_data_table_from_data_parse_string_value",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_parse_string_value"
     },
     {
       "relation": "calls",
@@ -2673,9 +3954,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L208",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data_insert_tag_on_field",
-      "target": "bootstrap_table_from_data_table_from_data_parse_string_value",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_parse_string_value"
     },
     {
       "relation": "calls",
@@ -2684,9 +3965,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L236",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data_parse_string_value",
-      "target": "bootstrap_table_from_data_table_from_data_get_fields_on_string",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_get_fields_on_string"
     },
     {
       "relation": "calls",
@@ -2695,9 +3976,9 @@
       "source_file": "src/klan1/html/bootstrap/table_from_data.php",
       "source_location": "L261",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_table_from_data_table_from_data_parse_string_value",
-      "target": "bootstrap_table_from_data_table_from_data_get_raw_fields_on_string",
-      "confidence_score": 1.0
+      "target": "bootstrap_table_from_data_table_from_data_get_raw_fields_on_string"
     },
     {
       "relation": "contains",
@@ -2705,9 +3986,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_replace_attribute_number",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_replace_attribute_number"
     },
     {
       "relation": "contains",
@@ -2715,9 +3996,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_remove_attribute_text",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_remove_attribute_text"
     },
     {
       "relation": "contains",
@@ -2725,9 +4006,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_append_close_button",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_append_close_button"
     },
     {
       "relation": "contains",
@@ -2735,9 +4016,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_align_center",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_align_center"
     },
     {
       "relation": "contains",
@@ -2745,9 +4026,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_align_left",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_align_left"
     },
     {
       "relation": "contains",
@@ -2755,9 +4036,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_align_right",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_align_right"
     },
     {
       "relation": "contains",
@@ -2765,9 +4046,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_align_justify",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_align_justify"
     },
     {
       "relation": "contains",
@@ -2775,9 +4056,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_general",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_general"
     },
     {
       "relation": "contains",
@@ -2785,9 +4066,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_small",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_small"
     },
     {
       "relation": "contains",
@@ -2795,9 +4076,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_medium",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_medium"
     },
     {
       "relation": "contains",
@@ -2805,9 +4086,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_large",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_large"
     },
     {
       "relation": "contains",
@@ -2815,9 +4096,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_xlarge",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_xlarge"
     },
     {
       "relation": "contains",
@@ -2825,9 +4106,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_xxlarge",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_xxlarge"
     },
     {
       "relation": "contains",
@@ -2835,9 +4116,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_get_small",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_get_small"
     },
     {
       "relation": "contains",
@@ -2845,9 +4126,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_get_medium",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_get_medium"
     },
     {
       "relation": "contains",
@@ -2855,9 +4136,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L199",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bootstrap_methods_php",
-      "target": "bootstrap_bootstrap_methods_get_large",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_get_large"
     },
     {
       "relation": "calls",
@@ -2866,9 +4147,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_bootstrap_methods_general",
-      "target": "bootstrap_bootstrap_methods_replace_attribute_number",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_replace_attribute_number"
     },
     {
       "relation": "calls",
@@ -2877,9 +4158,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_bootstrap_methods_small",
-      "target": "bootstrap_bootstrap_methods_replace_attribute_number",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_replace_attribute_number"
     },
     {
       "relation": "calls",
@@ -2888,9 +4169,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_bootstrap_methods_medium",
-      "target": "bootstrap_bootstrap_methods_replace_attribute_number",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_replace_attribute_number"
     },
     {
       "relation": "calls",
@@ -2899,9 +4180,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_bootstrap_methods_large",
-      "target": "bootstrap_bootstrap_methods_replace_attribute_number",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_replace_attribute_number"
     },
     {
       "relation": "calls",
@@ -2910,9 +4191,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_bootstrap_methods_xlarge",
-      "target": "bootstrap_bootstrap_methods_replace_attribute_number",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_replace_attribute_number"
     },
     {
       "relation": "calls",
@@ -2921,9 +4202,9 @@
       "source_file": "src/klan1/html/bootstrap/bootstrap_methods.php",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_bootstrap_methods_xxlarge",
-      "target": "bootstrap_bootstrap_methods_replace_attribute_number",
-      "confidence_score": 1.0
+      "target": "bootstrap_bootstrap_methods_replace_attribute_number"
     },
     {
       "relation": "contains",
@@ -2931,9 +4212,9 @@
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L15",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_src_klan1_html_bootstrap_top_bar_php",
-      "target": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_src_klan1_html_bootstrap_top_bar_php",
+      "target": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar"
     },
     {
       "relation": "method",
@@ -2941,9 +4222,9 @@
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L35",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
-      "target": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar_construct",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar_construct"
     },
     {
       "relation": "method",
@@ -2951,9 +4232,9 @@
       "source_file": "src/klan1/html/bootstrap/top_bar.php",
       "source_location": "L39",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
-      "target": "bootstrap_top_bar_top_bar_title",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_title"
     },
     {
       "relation": "method",
@@ -2961,9 +4242,9 @@
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L125",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
-      "target": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar_menu_left",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar_menu_left"
     },
     {
       "relation": "method",
@@ -2971,9 +4252,9 @@
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L70",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
-      "target": "bootstrap_top_bar_top_bar_add_button",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_add_button"
     },
     {
       "relation": "method",
@@ -2981,9 +4262,9 @@
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L81",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
-      "target": "bootstrap_top_bar_top_bar_add_menu_item",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_add_menu_item"
     },
     {
       "relation": "method",
@@ -2991,9 +4272,9 @@
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L97",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
-      "target": "bootstrap_top_bar_top_bar_add_sub_menu",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_add_sub_menu"
     },
     {
       "relation": "method",
@@ -3001,9 +4282,9 @@
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L102",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
-      "target": "bootstrap_top_bar_top_bar_set_title",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_set_title"
     },
     {
       "relation": "method",
@@ -3011,9 +4292,9 @@
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L109",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
-      "target": "bootstrap_top_bar_top_bar_init_title_bar",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_init_title_bar"
     },
     {
       "relation": "method",
@@ -3021,9 +4302,9 @@
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L132",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
-      "target": "bootstrap_top_bar_top_bar_menu_right",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_menu_right"
     },
     {
       "relation": "method",
@@ -3031,9 +4312,9 @@
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L139",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
-      "target": "bootstrap_top_bar_top_bar_get_parent",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_get_parent"
     },
     {
       "relation": "calls",
@@ -3042,9 +4323,19 @@
       "source_file": "src/klan1/html/bootstrap/top_bar_.php",
       "source_location": "L38",
       "weight": 1.0,
-      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar_construct",
-      "target": "bootstrap_top_bar_top_bar_init_title_bar",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_klan1_html_bootstrap_top_bar_php_bootstrap_top_bar_top_bar_construct",
+      "target": "bootstrap_top_bar_top_bar_init_title_bar"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar.php",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_title"
     },
     {
       "relation": "contains",
@@ -3052,9 +4343,9 @@
       "source_file": "src/klan1/html/bootstrap/menu.php",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_menu_php",
-      "target": "bootstrap_menu_menu",
-      "confidence_score": 1.0
+      "target": "bootstrap_menu_menu"
     },
     {
       "relation": "method",
@@ -3062,9 +4353,9 @@
       "source_file": "src/klan1/html/bootstrap/menu.php",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_menu_menu",
-      "target": "bootstrap_menu_menu_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_menu_menu_construct"
     },
     {
       "relation": "method",
@@ -3072,9 +4363,9 @@
       "source_file": "src/klan1/html/bootstrap/menu.php",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_menu_menu",
-      "target": "bootstrap_menu_menu_add_menu_item",
-      "confidence_score": 1.0
+      "target": "bootstrap_menu_menu_add_menu_item"
     },
     {
       "relation": "method",
@@ -3082,9 +4373,9 @@
       "source_file": "src/klan1/html/bootstrap/menu.php",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_menu_menu",
-      "target": "bootstrap_menu_menu_add_sub_menu",
-      "confidence_score": 1.0
+      "target": "bootstrap_menu_menu_add_sub_menu"
     },
     {
       "relation": "method",
@@ -3092,9 +4383,9 @@
       "source_file": "src/klan1/html/bootstrap/menu.php",
       "source_location": "L126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_menu_menu",
-      "target": "bootstrap_menu_menu_set_active",
-      "confidence_score": 1.0
+      "target": "bootstrap_menu_menu_set_active"
     },
     {
       "relation": "calls",
@@ -3103,9 +4394,9 @@
       "source_file": "src/klan1/html/bootstrap/menu.php",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_menu_menu_add_sub_menu",
-      "target": "bootstrap_menu_menu_add_menu_item",
-      "confidence_score": 1.0
+      "target": "bootstrap_menu_menu_add_menu_item"
     },
     {
       "relation": "contains",
@@ -3113,9 +4404,9 @@
       "source_file": "src/klan1/html/bootstrap/list_group.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_list_group_php",
-      "target": "bootstrap_list_group_list_group",
-      "confidence_score": 1.0
+      "target": "bootstrap_list_group_list_group"
     },
     {
       "relation": "method",
@@ -3123,9 +4414,132 @@
       "source_file": "src/klan1/html/bootstrap/list_group.php",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_list_group_list_group",
-      "target": "bootstrap_list_group_list_group_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_list_group_list_group_construct"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/list_group.php",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_list_group_list_group",
+      "target": "bootstrap_list_group_list_group_add_item"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/list_group.php",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_list_group_list_group",
+      "target": "bootstrap_list_group_list_group_add_items"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/list_group.php",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_list_group_list_group_construct",
+      "target": "bootstrap_list_group_list_group_add_items"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/list_group.php",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_list_group_list_group_add_items",
+      "target": "bootstrap_list_group_list_group_add_item"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_add_button"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_add_menu_item"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_add_sub_menu"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_set_title"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L109",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_init_title_bar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar_construct",
+      "target": "bootstrap_top_bar_top_bar_init_title_bar"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_menu_right"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_top_bar_get_parent"
     },
     {
       "relation": "contains",
@@ -3133,9 +4547,9 @@
       "source_file": "src/klan1/html/bootstrap/breadcrumb.php",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_breadcrumb_php",
-      "target": "bootstrap_breadcrumb_breadcrumb",
-      "confidence_score": 1.0
+      "target": "bootstrap_breadcrumb_breadcrumb"
     },
     {
       "relation": "method",
@@ -3143,9 +4557,9 @@
       "source_file": "src/klan1/html/bootstrap/breadcrumb.php",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_breadcrumb_breadcrumb",
-      "target": "bootstrap_breadcrumb_breadcrumb_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_breadcrumb_breadcrumb_construct"
     },
     {
       "relation": "method",
@@ -3153,9 +4567,9 @@
       "source_file": "src/klan1/html/bootstrap/breadcrumb.php",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_breadcrumb_breadcrumb",
-      "target": "bootstrap_breadcrumb_breadcrumb_add_item",
-      "confidence_score": 1.0
+      "target": "bootstrap_breadcrumb_breadcrumb_add_item"
     },
     {
       "relation": "method",
@@ -3163,9 +4577,9 @@
       "source_file": "src/klan1/html/bootstrap/breadcrumb.php",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_breadcrumb_breadcrumb",
-      "target": "bootstrap_breadcrumb_breadcrumb_item",
-      "confidence_score": 1.0
+      "target": "bootstrap_breadcrumb_breadcrumb_item"
     },
     {
       "relation": "method",
@@ -3173,9 +4587,9 @@
       "source_file": "src/klan1/html/bootstrap/breadcrumb.php",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_breadcrumb_breadcrumb",
-      "target": "bootstrap_breadcrumb_breadcrumb_count",
-      "confidence_score": 1.0
+      "target": "bootstrap_breadcrumb_breadcrumb_count"
     },
     {
       "relation": "method",
@@ -3183,9 +4597,9 @@
       "source_file": "src/klan1/html/bootstrap/breadcrumb.php",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_breadcrumb_breadcrumb",
-      "target": "bootstrap_breadcrumb_breadcrumb_remove_item",
-      "confidence_score": 1.0
+      "target": "bootstrap_breadcrumb_breadcrumb_remove_item"
     },
     {
       "relation": "contains",
@@ -3193,9 +4607,9 @@
       "source_file": "src/klan1/html/bootstrap/dropdown.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_dropdown_php",
-      "target": "bootstrap_dropdown_dropdown",
-      "confidence_score": 1.0
+      "target": "bootstrap_dropdown_dropdown"
     },
     {
       "relation": "method",
@@ -3203,9 +4617,9 @@
       "source_file": "src/klan1/html/bootstrap/dropdown.php",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_dropdown_dropdown",
-      "target": "bootstrap_dropdown_dropdown_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_dropdown_dropdown_construct"
     },
     {
       "relation": "contains",
@@ -3213,9 +4627,9 @@
       "source_file": "src/klan1/html/bootstrap/input_text_with_icon.php",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_input_text_with_icon_php",
-      "target": "bootstrap_input_text_with_icon_input_text_with_icon",
-      "confidence_score": 1.0
+      "target": "bootstrap_input_text_with_icon_input_text_with_icon"
     },
     {
       "relation": "method",
@@ -3223,9 +4637,9 @@
       "source_file": "src/klan1/html/bootstrap/input_text_with_icon.php",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_input_text_with_icon_input_text_with_icon",
-      "target": "bootstrap_input_text_with_icon_input_text_with_icon_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_input_text_with_icon_input_text_with_icon_construct"
     },
     {
       "relation": "method",
@@ -3233,9 +4647,9 @@
       "source_file": "src/klan1/html/bootstrap/input_text_with_icon.php",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_input_text_with_icon_input_text_with_icon",
-      "target": "bootstrap_input_text_with_icon_input_text_with_icon_input",
-      "confidence_score": 1.0
+      "target": "bootstrap_input_text_with_icon_input_text_with_icon_input"
     },
     {
       "relation": "contains",
@@ -3243,9 +4657,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_cell.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_grid_cell_php",
-      "target": "bootstrap_grid_cell_grid_cell",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_cell_grid_cell"
     },
     {
       "relation": "method",
@@ -3253,9 +4667,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_cell.php",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_cell_grid_cell",
-      "target": "bootstrap_grid_cell_grid_cell_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_cell_grid_cell_construct"
     },
     {
       "relation": "method",
@@ -3263,9 +4677,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_cell.php",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_cell_grid_cell",
-      "target": "bootstrap_grid_cell_grid_cell_set_class",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_cell_grid_cell_set_class"
     },
     {
       "relation": "method",
@@ -3273,9 +4687,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_cell.php",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_cell_grid_cell",
-      "target": "bootstrap_grid_cell_grid_cell_append_grid",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_cell_grid_cell_append_grid"
     },
     {
       "relation": "method",
@@ -3283,9 +4697,9 @@
       "source_file": "src/klan1/html/bootstrap/grid_cell.php",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_grid_cell_grid_cell",
-      "target": "bootstrap_grid_cell_grid_cell_append_row",
-      "confidence_score": 1.0
+      "target": "bootstrap_grid_cell_grid_cell_append_row"
     },
     {
       "relation": "contains",
@@ -3293,9 +4707,9 @@
       "source_file": "src/klan1/html/bootstrap/offcanvas.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_offcanvas_php",
-      "target": "bootstrap_offcanvas_offcanvas",
-      "confidence_score": 1.0
+      "target": "bootstrap_offcanvas_offcanvas"
     },
     {
       "relation": "method",
@@ -3303,9 +4717,9 @@
       "source_file": "src/klan1/html/bootstrap/offcanvas.php",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_offcanvas_offcanvas",
-      "target": "bootstrap_offcanvas_offcanvas_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_offcanvas_offcanvas_construct"
     },
     {
       "relation": "contains",
@@ -3313,9 +4727,9 @@
       "source_file": "src/klan1/html/bootstrap/callout.php",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_callout_php",
-      "target": "bootstrap_callout_callout",
-      "confidence_score": 1.0
+      "target": "bootstrap_callout_callout"
     },
     {
       "relation": "method",
@@ -3323,9 +4737,9 @@
       "source_file": "src/klan1/html/bootstrap/callout.php",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_callout_callout",
-      "target": "bootstrap_callout_callout_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_callout_callout_construct"
     },
     {
       "relation": "method",
@@ -3333,9 +4747,9 @@
       "source_file": "src/klan1/html/bootstrap/callout.php",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_callout_callout",
-      "target": "bootstrap_callout_callout_set_class",
-      "confidence_score": 1.0
+      "target": "bootstrap_callout_callout_set_class"
     },
     {
       "relation": "method",
@@ -3343,9 +4757,9 @@
       "source_file": "src/klan1/html/bootstrap/callout.php",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_callout_callout",
-      "target": "bootstrap_callout_callout_set_margin",
-      "confidence_score": 1.0
+      "target": "bootstrap_callout_callout_set_margin"
     },
     {
       "relation": "method",
@@ -3353,9 +4767,9 @@
       "source_file": "src/klan1/html/bootstrap/callout.php",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_callout_callout",
-      "target": "bootstrap_callout_callout_get_message",
-      "confidence_score": 1.0
+      "target": "bootstrap_callout_callout_get_message"
     },
     {
       "relation": "method",
@@ -3363,9 +4777,9 @@
       "source_file": "src/klan1/html/bootstrap/callout.php",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_callout_callout",
-      "target": "bootstrap_callout_callout_set_message",
-      "confidence_score": 1.0
+      "target": "bootstrap_callout_callout_set_message"
     },
     {
       "relation": "method",
@@ -3373,9 +4787,9 @@
       "source_file": "src/klan1/html/bootstrap/callout.php",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_callout_callout",
-      "target": "bootstrap_callout_callout_get_title",
-      "confidence_score": 1.0
+      "target": "bootstrap_callout_callout_get_title"
     },
     {
       "relation": "method",
@@ -3383,9 +4797,9 @@
       "source_file": "src/klan1/html/bootstrap/callout.php",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_callout_callout",
-      "target": "bootstrap_callout_callout_set_title",
-      "confidence_score": 1.0
+      "target": "bootstrap_callout_callout_set_title"
     },
     {
       "relation": "method",
@@ -3393,9 +4807,9 @@
       "source_file": "src/klan1/html/bootstrap/callout.php",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_callout_callout",
-      "target": "bootstrap_callout_callout_generate",
-      "confidence_score": 1.0
+      "target": "bootstrap_callout_callout_generate"
     },
     {
       "relation": "calls",
@@ -3404,9 +4818,9 @@
       "source_file": "src/klan1/html/bootstrap/callout.php",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_callout_callout_construct",
-      "target": "bootstrap_callout_callout_set_class",
-      "confidence_score": 1.0
+      "target": "bootstrap_callout_callout_set_class"
     },
     {
       "relation": "contains",
@@ -3414,9 +4828,9 @@
       "source_file": "src/klan1/html/bootstrap/spinner.php",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_spinner_php",
-      "target": "bootstrap_spinner_spinner",
-      "confidence_score": 1.0
+      "target": "bootstrap_spinner_spinner"
     },
     {
       "relation": "method",
@@ -3424,9 +4838,9 @@
       "source_file": "src/klan1/html/bootstrap/spinner.php",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_spinner_spinner",
-      "target": "bootstrap_spinner_spinner_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_spinner_spinner_construct"
     },
     {
       "relation": "contains",
@@ -3434,9 +4848,9 @@
       "source_file": "src/klan1/html/bootstrap/carousel.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_carousel_php",
-      "target": "bootstrap_carousel_carousel",
-      "confidence_score": 1.0
+      "target": "bootstrap_carousel_carousel"
     },
     {
       "relation": "method",
@@ -3444,9 +4858,9 @@
       "source_file": "src/klan1/html/bootstrap/carousel.php",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_carousel_carousel",
-      "target": "bootstrap_carousel_carousel_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_carousel_carousel_construct"
     },
     {
       "relation": "contains",
@@ -3454,9 +4868,9 @@
       "source_file": "src/klan1/html/bootstrap/label_value_row.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_label_value_row_php",
-      "target": "bootstrap_label_value_row_label_value_row",
-      "confidence_score": 1.0
+      "target": "bootstrap_label_value_row_label_value_row"
     },
     {
       "relation": "method",
@@ -3464,9 +4878,9 @@
       "source_file": "src/klan1/html/bootstrap/label_value_row.php",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_label_value_row_label_value_row",
-      "target": "bootstrap_label_value_row_label_value_row_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_label_value_row_label_value_row_construct"
     },
     {
       "relation": "method",
@@ -3474,9 +4888,9 @@
       "source_file": "src/klan1/html/bootstrap/label_value_row.php",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_label_value_row_label_value_row",
-      "target": "bootstrap_label_value_row_label_value_row_get_name_attribute",
-      "confidence_score": 1.0
+      "target": "bootstrap_label_value_row_label_value_row_get_name_attribute"
     },
     {
       "relation": "calls",
@@ -3485,9 +4899,9 @@
       "source_file": "src/klan1/html/bootstrap/label_value_row.php",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_label_value_row_label_value_row_construct",
-      "target": "bootstrap_label_value_row_label_value_row_get_name_attribute",
-      "confidence_score": 1.0
+      "target": "bootstrap_label_value_row_label_value_row_get_name_attribute"
     },
     {
       "relation": "contains",
@@ -3495,9 +4909,9 @@
       "source_file": "src/klan1/html/bootstrap/bar.php",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_bar_php",
-      "target": "bootstrap_bar_bar",
-      "confidence_score": 1.0
+      "target": "bootstrap_bar_bar"
     },
     {
       "relation": "method",
@@ -3505,9 +4919,9 @@
       "source_file": "src/klan1/html/bootstrap/bar.php",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_bar_bar",
-      "target": "bootstrap_bar_bar_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_bar_bar_construct"
     },
     {
       "relation": "method",
@@ -3515,9 +4929,9 @@
       "source_file": "src/klan1/html/bootstrap/bar.php",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_bar_bar",
-      "target": "bootstrap_bar_bar_left",
-      "confidence_score": 1.0
+      "target": "bootstrap_bar_bar_left"
     },
     {
       "relation": "method",
@@ -3525,9 +4939,9 @@
       "source_file": "src/klan1/html/bootstrap/bar.php",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_bar_bar",
-      "target": "bootstrap_bar_bar_right",
-      "confidence_score": 1.0
+      "target": "bootstrap_bar_bar_right"
     },
     {
       "relation": "contains",
@@ -3535,9 +4949,9 @@
       "source_file": "src/klan1/html/bootstrap/badge.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_badge_php",
-      "target": "bootstrap_badge_badge",
-      "confidence_score": 1.0
+      "target": "bootstrap_badge_badge"
     },
     {
       "relation": "method",
@@ -3545,9 +4959,9 @@
       "source_file": "src/klan1/html/bootstrap/badge.php",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_badge_badge",
-      "target": "bootstrap_badge_badge_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_badge_badge_construct"
     },
     {
       "relation": "contains",
@@ -3555,9 +4969,9 @@
       "source_file": "src/klan1/html/bootstrap/modal.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_modal_php",
-      "target": "bootstrap_modal_modal",
-      "confidence_score": 1.0
+      "target": "bootstrap_modal_modal"
     },
     {
       "relation": "method",
@@ -3565,8 +4979,18 @@
       "source_file": "src/klan1/html/bootstrap/modal.php",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_modal_modal",
-      "target": "bootstrap_modal_modal_construct",
+      "target": "bootstrap_modal_modal_construct"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/modal.php",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "bootstrap_modal_modal",
+      "target": "bootstrap_modal_modal_add_footer_item",
       "confidence_score": 1.0
     },
     {
@@ -3575,9 +4999,9 @@
       "source_file": "src/klan1/html/bootstrap/toast.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_toast_php",
-      "target": "bootstrap_toast_toast",
-      "confidence_score": 1.0
+      "target": "bootstrap_toast_toast"
     },
     {
       "relation": "method",
@@ -3585,9 +5009,9 @@
       "source_file": "src/klan1/html/bootstrap/toast.php",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_toast_toast",
-      "target": "bootstrap_toast_toast_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_toast_toast_construct"
     },
     {
       "relation": "contains",
@@ -3595,9 +5019,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_bootstrap_button_php",
-      "target": "bootstrap_button_button",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button"
     },
     {
       "relation": "method",
@@ -3605,9 +5029,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_construct",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_construct"
     },
     {
       "relation": "method",
@@ -3615,9 +5039,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_set_variant",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_set_variant"
     },
     {
       "relation": "method",
@@ -3625,9 +5049,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_set_size",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_set_size"
     },
     {
       "relation": "method",
@@ -3635,9 +5059,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_set_disabled",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_set_disabled"
     },
     {
       "relation": "method",
@@ -3645,9 +5069,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_set_active",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_set_active"
     },
     {
       "relation": "method",
@@ -3655,9 +5079,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_set_toggle",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_set_toggle"
     },
     {
       "relation": "method",
@@ -3665,9 +5089,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_set_block",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_set_block"
     },
     {
       "relation": "method",
@@ -3675,9 +5099,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_primary",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_primary"
     },
     {
       "relation": "method",
@@ -3685,9 +5109,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L177",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_secondary",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_secondary"
     },
     {
       "relation": "method",
@@ -3695,9 +5119,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L187",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_success",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_success"
     },
     {
       "relation": "method",
@@ -3705,9 +5129,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_danger",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_danger"
     },
     {
       "relation": "method",
@@ -3715,9 +5139,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L207",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_warning",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_warning"
     },
     {
       "relation": "method",
@@ -3725,9 +5149,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L217",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button",
-      "target": "bootstrap_button_button_info",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_info"
     },
     {
       "relation": "calls",
@@ -3736,9 +5160,9 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button_construct",
-      "target": "bootstrap_button_button_set_variant",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_set_variant"
     },
     {
       "relation": "calls",
@@ -3747,9 +5171,119 @@
       "source_file": "src/klan1/html/bootstrap/button.php",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap_button_button_construct",
-      "target": "bootstrap_button_button_set_size",
-      "confidence_score": 1.0
+      "target": "bootstrap_button_button_set_size"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_md",
+      "target": "k1_lib_bootstrap_readme_k1lib_bootstrap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_readme_k1lib_bootstrap",
+      "target": "k1_lib_bootstrap_readme_requirements"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_readme_k1lib_bootstrap",
+      "target": "k1_lib_bootstrap_readme_installation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_readme_k1lib_bootstrap",
+      "target": "k1_lib_bootstrap_readme_development_with_opencode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_readme_k1lib_bootstrap",
+      "target": "k1_lib_bootstrap_readme_license"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_readme_installation",
+      "target": "k1_lib_bootstrap_readme_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_readme_development_with_opencode",
+      "target": "k1_lib_bootstrap_readme_session_management"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_readme_development_with_opencode",
+      "target": "k1_lib_bootstrap_readme_typical_workflow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_readme_session_management",
+      "target": "k1_lib_bootstrap_readme_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "k1_lib_bootstrap_readme_session_management",
+      "target": "k1_lib_bootstrap_readme_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_md",
+      "target": "k1_lib_bootstrap_agents_graphify"
     },
     {
       "relation": "contains",
@@ -3757,9 +5291,9 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_klan1_html_componentes_nav_php",
-      "target": "componentes_nav_nav",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav"
     },
     {
       "relation": "method",
@@ -3767,9 +5301,9 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "componentes_nav_nav",
-      "target": "componentes_nav_nav_construct",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav_construct"
     },
     {
       "relation": "method",
@@ -3777,9 +5311,9 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "componentes_nav_nav",
-      "target": "componentes_nav_nav_apply_styles",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav_apply_styles"
     },
     {
       "relation": "method",
@@ -3787,9 +5321,9 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "componentes_nav_nav",
-      "target": "componentes_nav_nav_build_items",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav_build_items"
     },
     {
       "relation": "method",
@@ -3797,9 +5331,9 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "componentes_nav_nav",
-      "target": "componentes_nav_nav_add_item",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav_add_item"
     },
     {
       "relation": "method",
@@ -3807,9 +5341,9 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "componentes_nav_nav",
-      "target": "componentes_nav_nav_add_dropdown_item",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav_add_dropdown_item"
     },
     {
       "relation": "method",
@@ -3817,9 +5351,9 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "componentes_nav_nav",
-      "target": "componentes_nav_nav_create_tabs",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav_create_tabs"
     },
     {
       "relation": "method",
@@ -3827,9 +5361,9 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L255",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "componentes_nav_nav",
-      "target": "componentes_nav_nav_create_vertical_pills",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav_create_vertical_pills"
     },
     {
       "relation": "calls",
@@ -3838,9 +5372,9 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "componentes_nav_nav_construct",
-      "target": "componentes_nav_nav_apply_styles",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav_apply_styles"
     },
     {
       "relation": "calls",
@@ -3849,9 +5383,9 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "componentes_nav_nav_construct",
-      "target": "componentes_nav_nav_build_items",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav_build_items"
     },
     {
       "relation": "calls",
@@ -3860,9 +5394,9 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "componentes_nav_nav_build_items",
-      "target": "componentes_nav_nav_add_dropdown_item",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav_add_dropdown_item"
     },
     {
       "relation": "calls",
@@ -3871,11 +5405,74 @@
       "source_file": "src/klan1/html/componentes/nav.php",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "componentes_nav_nav_build_items",
-      "target": "componentes_nav_nav_add_item",
-      "confidence_score": 1.0
+      "target": "componentes_nav_nav_add_item"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion_set_config",
+      "target": "bootstrap_accordion_accordion_new_li_tab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion_new_li_tab",
+      "target": "bootstrap_accordion_accordion_new_content_tab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/accordion.php",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_accordion_accordion_new_content_tab",
+      "target": "bootstrap_accordion_accordion_append_to"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_src_klan1_html_bootstrap_top_bar_php",
+      "target": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar_construct"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/klan1/html/bootstrap/top_bar_.php",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar",
+      "target": "bootstrap_top_bar_php_bootstrap_top_bar_top_bar_menu_left"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c160dd1d520fee1b57f2570553f2a6e81654dfb4"
+  "built_at_commit": "ad8b718d46b066cfd1a9eac3b68330f46a70a858"
 }

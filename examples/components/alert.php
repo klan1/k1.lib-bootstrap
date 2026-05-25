@@ -1,6 +1,6 @@
 <?php
 $component_name = 'Alert';
-require_once __DIR__ . '/_header.php';
+require_once __DIR__ . '/../_header.php';
 ?>
 
 <section class="component-section">
@@ -12,7 +12,7 @@ require_once __DIR__ . '/_header.php';
         <?php
         $types = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'];
         foreach ($types as $type) {
-            $a = new alert("A simple {$type} alert—check it out!", $type, true);
+            $a = new \k1lib\html\bootstrap\alert("A simple {$type} alert—check it out!", $type, true);
             echo $a->generate();
         }
         ?>

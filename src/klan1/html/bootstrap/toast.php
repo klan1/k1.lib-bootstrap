@@ -41,9 +41,11 @@ class toast extends \k1lib\html\div {
             $header_span->set_value($header);
             $header_div->append_child($header_span);
         }
-        $close_btn = new \k1lib\html\button('×', 'btn-close', NULL, 'button');
+        $close_btn = new \k1lib\html\button('×');
+        $close_btn->set_class('btn-close');
         $close_btn->set_attrib('data-bs-dismiss', 'toast');
         $close_btn->set_attrib('aria-label', 'Close');
+        $close_btn->set_attrib('type', 'button');
         $header_div->append_child($close_btn);
 
         $body_div = new \k1lib\html\div('toast-body');

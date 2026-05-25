@@ -27,14 +27,15 @@ class dropdown extends \k1lib\html\div {
     public function __construct($label = 'Dropdown', $items = [], $direction = 'down') {
         parent::__construct('dropdown', NULL);
 
-        $this->toggle = new \k1lib\html\button($label, 'dropdownToggle');
+        $this->toggle = new \k1lib\html\button($label);
         $this->toggle->set_class('btn btn-secondary dropdown-toggle');
         $this->toggle->set_attrib('type', 'button');
         $this->toggle->set_attrib('data-bs-toggle', 'dropdown');
         $this->toggle->set_attrib('aria-expanded', 'false');
+        $this->toggle->set_attrib('id', 'mainDropdown');
 
         $this->menu = new \k1lib\html\ul('dropdown-menu');
-        $this->menu->set_attrib('aria-labelledby', 'dropdownToggle');
+        $this->menu->set_attrib('aria-labelledby', 'mainDropdown');
 
         foreach ($items as $item) {
             if (!empty($item['divider'])) {
