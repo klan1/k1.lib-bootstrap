@@ -162,16 +162,6 @@ $next_file = $current_index < count($components_list) - 1 ? array_keys($componen
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <a href="../index.php" class="back-link">
-                    <i class="bi bi-arrow-left me-1"></i> All Components
-                </a>
-            </div>
-        </div>
-    </div>
-
     <div class="nav-buttons">
         <?php if ($prev_file): ?>
             <a href="<?= $prev_file ?>.php" class="btn btn-outline-primary">
