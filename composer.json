@@ -24,9 +24,9 @@
         }
     },
     "scripts": {
-        "demo": [
-        "Composer\\Config::disableProcessTimeout",
-        "php -S localhost:8200 -t demo"
-    ]
+        "examples": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -S localhost:8200 -t examples"
+        ]
     }
 }
