@@ -1,0 +1,787 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 78,
+  "totalBatches": 4,
+  "exportsByPath": {
+    "examples/01-basic-document.php": [],
+    "examples/02-semantic-layout.php": [],
+    "examples/03-tables.php": [],
+    "examples/04-forms.php": [],
+    "examples/05-inline-tags.php": [],
+    "examples/06-bootstrap-grid.php": [],
+    "examples/07-mazer-dashboard.php": [],
+    "examples/index.php": [],
+    "src/.DS_Store": [],
+    "src/klan1/html/a.php": [
+      "a"
+    ],
+    "src/klan1/html/append_shotcuts.php": [],
+    "src/klan1/html/article.php": [
+      "article"
+    ],
+    "src/klan1/html/aside.php": [
+      "aside"
+    ],
+    "src/klan1/html/b.php": [
+      "b"
+    ],
+    "src/klan1/html/body.php": [
+      "body"
+    ],
+    "src/klan1/html/br.php": [
+      "br"
+    ],
+    "src/klan1/html/button.php": [
+      "button"
+    ],
+    "src/klan1/html/caption.php": [
+      "caption"
+    ],
+    "src/klan1/html/code.php": [
+      "code"
+    ],
+    "src/klan1/html/div.php": [
+      "div"
+    ],
+    "src/klan1/html/DOM.php": [
+      "DOM"
+    ],
+    "src/klan1/html/em.php": [
+      "em"
+    ],
+    "src/klan1/html/fieldset.php": [
+      "fieldset"
+    ],
+    "src/klan1/html/footer.php": [
+      "footer"
+    ],
+    "src/klan1/html/form.php": [
+      "form"
+    ],
+    "src/klan1/html/h1.php": [
+      "h1"
+    ],
+    "src/klan1/html/h2.php": [
+      "h2"
+    ],
+    "src/klan1/html/h3.php": [
+      "h3"
+    ],
+    "src/klan1/html/h4.php": [
+      "h4"
+    ],
+    "src/klan1/html/h5.php": [
+      "h5"
+    ],
+    "src/klan1/html/h6.php": [
+      "h6"
+    ],
+    "src/klan1/html/head.php": [
+      "head"
+    ],
+    "src/klan1/html/header.php": [
+      "header"
+    ],
+    "src/klan1/html/hr.php": [
+      "hr"
+    ],
+    "src/klan1/html/html_document.php": [
+      "html_document"
+    ],
+    "src/klan1/html/i.php": [
+      "i"
+    ],
+    "src/klan1/html/iframe.php": [
+      "iframe"
+    ],
+    "src/klan1/html/img.php": [
+      "img"
+    ],
+    "src/klan1/html/input.php": [
+      "input"
+    ],
+    "src/klan1/html/label.php": [
+      "label"
+    ],
+    "src/klan1/html/legend.php": [
+      "legend"
+    ],
+    "src/klan1/html/li.php": [
+      "li"
+    ],
+    "src/klan1/html/link.php": [
+      "link"
+    ],
+    "src/klan1/html/main.php": [
+      "main"
+    ],
+    "src/klan1/html/meta.php": [
+      "meta"
+    ],
+    "src/klan1/html/nav.php": [
+      "nav"
+    ],
+    "src/klan1/html/notifications/common_code.php": [
+      "common_code"
+    ],
+    "src/klan1/html/notifications/on_DOM.php": [
+      "on_DOM"
+    ],
+    "src/klan1/html/ol.php": [
+      "ol"
+    ],
+    "src/klan1/html/option.php": [
+      "option"
+    ],
+    "src/klan1/html/p.php": [
+      "p"
+    ],
+    "src/klan1/html/pre.php": [
+      "pre"
+    ],
+    "src/klan1/html/script.php": [
+      "script"
+    ],
+    "src/klan1/html/section.php": [
+      "section"
+    ],
+    "src/klan1/html/select.php": [
+      "select"
+    ],
+    "src/klan1/html/small.php": [
+      "small"
+    ],
+    "src/klan1/html/span.php": [
+      "span"
+    ],
+    "src/klan1/html/strong.php": [
+      "strong"
+    ],
+    "src/klan1/html/style.php": [
+      "style"
+    ],
+    "src/klan1/html/table.php": [
+      "table"
+    ],
+    "src/klan1/html/tag_catalog.php": [
+      "tag_catalog"
+    ],
+    "src/klan1/html/tag_log.php": [
+      "tag_log"
+    ],
+    "src/klan1/html/tag.php": [
+      "tag"
+    ],
+    "src/klan1/html/tbody.php": [
+      "tbody"
+    ],
+    "src/klan1/html/td.php": [
+      "td"
+    ],
+    "src/klan1/html/template.php": [
+      "template"
+    ],
+    "src/klan1/html/textarea.php": [
+      "textarea"
+    ],
+    "src/klan1/html/tfoot.php": [
+      "tfoot"
+    ],
+    "src/klan1/html/th.php": [
+      "th"
+    ],
+    "src/klan1/html/thead.php": [
+      "thead"
+    ],
+    "src/klan1/html/title.php": [
+      "title"
+    ],
+    "src/klan1/html/tr.php": [
+      "tr"
+    ],
+    "src/klan1/html/ul.php": [
+      "ul"
+    ]
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "CLAUDE.md",
+          "language": "markdown",
+          "sizeLines": 94,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 44,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "REVIEW.md",
+          "language": "markdown",
+          "sizeLines": 326,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "composer.json",
+          "language": "json",
+          "sizeLines": 17,
+          "fileCategory": "config"
+        },
+        {
+          "path": "start_server.sh",
+          "language": "shell",
+          "sizeLines": 17,
+          "fileCategory": "script"
+        }
+      ],
+      "batchImportData": {
+        "CLAUDE.md": [],
+        "README.md": [],
+        "REVIEW.md": [],
+        "composer.json": [],
+        "start_server.sh": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "examples/01-basic-document.php",
+          "language": "php",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "examples/02-semantic-layout.php",
+          "language": "php",
+          "sizeLines": 35,
+          "fileCategory": "code"
+        },
+        {
+          "path": "examples/03-tables.php",
+          "language": "php",
+          "sizeLines": 39,
+          "fileCategory": "code"
+        },
+        {
+          "path": "examples/04-forms.php",
+          "language": "php",
+          "sizeLines": 41,
+          "fileCategory": "code"
+        },
+        {
+          "path": "examples/05-inline-tags.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "examples/06-bootstrap-grid.php",
+          "language": "php",
+          "sizeLines": 28,
+          "fileCategory": "code"
+        },
+        {
+          "path": "examples/07-mazer-dashboard.php",
+          "language": "php",
+          "sizeLines": 132,
+          "fileCategory": "code"
+        },
+        {
+          "path": "examples/index.php",
+          "language": "php",
+          "sizeLines": 33,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/.DS_Store",
+          "language": "unknown",
+          "sizeLines": 5,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/a.php",
+          "language": "php",
+          "sizeLines": 41,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/append_shotcuts.php",
+          "language": "php",
+          "sizeLines": 187,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/article.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/aside.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/b.php",
+          "language": "php",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/body.php",
+          "language": "php",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/br.php",
+          "language": "php",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/button.php",
+          "language": "php",
+          "sizeLines": 33,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/caption.php",
+          "language": "php",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/code.php",
+          "language": "php",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/div.php",
+          "language": "php",
+          "sizeLines": 30,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/DOM.php",
+          "language": "php",
+          "sizeLines": 48,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/em.php",
+          "language": "php",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/fieldset.php",
+          "language": "php",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/footer.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/form.php",
+          "language": "php",
+          "sizeLines": 44,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "examples/01-basic-document.php": [],
+        "examples/02-semantic-layout.php": [],
+        "examples/03-tables.php": [],
+        "examples/04-forms.php": [],
+        "examples/05-inline-tags.php": [],
+        "examples/06-bootstrap-grid.php": [],
+        "examples/07-mazer-dashboard.php": [],
+        "examples/index.php": [],
+        "src/.DS_Store": [],
+        "src/klan1/html/a.php": [],
+        "src/klan1/html/append_shotcuts.php": [],
+        "src/klan1/html/article.php": [],
+        "src/klan1/html/aside.php": [],
+        "src/klan1/html/b.php": [],
+        "src/klan1/html/body.php": [],
+        "src/klan1/html/br.php": [],
+        "src/klan1/html/button.php": [],
+        "src/klan1/html/caption.php": [],
+        "src/klan1/html/code.php": [],
+        "src/klan1/html/div.php": [],
+        "src/klan1/html/DOM.php": [],
+        "src/klan1/html/em.php": [],
+        "src/klan1/html/fieldset.php": [],
+        "src/klan1/html/footer.php": [],
+        "src/klan1/html/form.php": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "src/klan1/html/h1.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/h2.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/h3.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/h4.php",
+          "language": "php",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/h5.php",
+          "language": "php",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/h6.php",
+          "language": "php",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/head.php",
+          "language": "php",
+          "sizeLines": 72,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/header.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/hr.php",
+          "language": "php",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/html_document.php",
+          "language": "php",
+          "sizeLines": 152,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/i.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/iframe.php",
+          "language": "php",
+          "sizeLines": 34,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/img.php",
+          "language": "php",
+          "sizeLines": 50,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/input.php",
+          "language": "php",
+          "sizeLines": 33,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/label.php",
+          "language": "php",
+          "sizeLines": 33,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/legend.php",
+          "language": "php",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/li.php",
+          "language": "php",
+          "sizeLines": 56,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/link.php",
+          "language": "php",
+          "sizeLines": 40,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/main.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/meta.php",
+          "language": "php",
+          "sizeLines": 31,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/nav.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/notifications/common_code.php",
+          "language": "php",
+          "sizeLines": 76,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/notifications/on_DOM.php",
+          "language": "php",
+          "sizeLines": 85,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/ol.php",
+          "language": "php",
+          "sizeLines": 47,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/option.php",
+          "language": "php",
+          "sizeLines": 35,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/klan1/html/h1.php": [],
+        "src/klan1/html/h2.php": [],
+        "src/klan1/html/h3.php": [],
+        "src/klan1/html/h4.php": [],
+        "src/klan1/html/h5.php": [],
+        "src/klan1/html/h6.php": [],
+        "src/klan1/html/head.php": [],
+        "src/klan1/html/header.php": [],
+        "src/klan1/html/hr.php": [],
+        "src/klan1/html/html_document.php": [],
+        "src/klan1/html/i.php": [],
+        "src/klan1/html/iframe.php": [],
+        "src/klan1/html/img.php": [],
+        "src/klan1/html/input.php": [],
+        "src/klan1/html/label.php": [],
+        "src/klan1/html/legend.php": [],
+        "src/klan1/html/li.php": [],
+        "src/klan1/html/link.php": [],
+        "src/klan1/html/main.php": [],
+        "src/klan1/html/meta.php": [],
+        "src/klan1/html/nav.php": [],
+        "src/klan1/html/notifications/common_code.php": [],
+        "src/klan1/html/notifications/on_DOM.php": [],
+        "src/klan1/html/ol.php": [],
+        "src/klan1/html/option.php": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "src/klan1/html/p.php",
+          "language": "php",
+          "sizeLines": 24,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/pre.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/script.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/section.php",
+          "language": "php",
+          "sizeLines": 31,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/select.php",
+          "language": "php",
+          "sizeLines": 55,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/small.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/span.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/strong.php",
+          "language": "php",
+          "sizeLines": 31,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/style.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/table.php",
+          "language": "php",
+          "sizeLines": 52,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/tag_catalog.php",
+          "language": "php",
+          "sizeLines": 101,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/tag_log.php",
+          "language": "php",
+          "sizeLines": 36,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/tag.php",
+          "language": "php",
+          "sizeLines": 1126,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/tbody.php",
+          "language": "php",
+          "sizeLines": 39,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/td.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/template.php",
+          "language": "php",
+          "sizeLines": 106,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/textarea.php",
+          "language": "php",
+          "sizeLines": 30,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/tfoot.php",
+          "language": "php",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/th.php",
+          "language": "php",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/thead.php",
+          "language": "php",
+          "sizeLines": 39,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/title.php",
+          "language": "php",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/tr.php",
+          "language": "php",
+          "sizeLines": 53,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/klan1/html/ul.php",
+          "language": "php",
+          "sizeLines": 46,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/klan1/html/p.php": [],
+        "src/klan1/html/pre.php": [],
+        "src/klan1/html/script.php": [],
+        "src/klan1/html/section.php": [],
+        "src/klan1/html/select.php": [],
+        "src/klan1/html/small.php": [],
+        "src/klan1/html/span.php": [],
+        "src/klan1/html/strong.php": [],
+        "src/klan1/html/style.php": [],
+        "src/klan1/html/table.php": [],
+        "src/klan1/html/tag_catalog.php": [],
+        "src/klan1/html/tag_log.php": [],
+        "src/klan1/html/tag.php": [],
+        "src/klan1/html/tbody.php": [],
+        "src/klan1/html/td.php": [],
+        "src/klan1/html/template.php": [],
+        "src/klan1/html/textarea.php": [],
+        "src/klan1/html/tfoot.php": [],
+        "src/klan1/html/th.php": [],
+        "src/klan1/html/thead.php": [],
+        "src/klan1/html/title.php": [],
+        "src/klan1/html/tr.php": [],
+        "src/klan1/html/ul.php": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

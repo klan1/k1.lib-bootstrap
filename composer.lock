@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "7bca6d690bf6c6f8b50015a1d7f5faed",
+    "packages": [
+        {
+            "name": "klan1/k1lib.html",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/klan1/k1lib.html.git",
+                "reference": "b4ebce6197a36d7b8c9fc0473d3cb9ffd6da2112"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/klan1/k1lib.html/zipball/b4ebce6197a36d7b8c9fc0473d3cb9ffd6da2112",
+                "reference": "b4ebce6197a36d7b8c9fc0473d3cb9ffd6da2112",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "klan1/k1app-template-mazer": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "k1lib\\html\\": "src/klan1/html/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "HTML components for k1lib",
+            "support": {
+                "issues": "https://github.com/klan1/k1lib.html/issues",
+                "source": "https://github.com/klan1/k1lib.html/tree/master"
+            },
+            "time": "2026-05-25T14:18:41+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "klan1/k1lib.html": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.2"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

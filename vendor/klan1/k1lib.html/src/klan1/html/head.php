@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
+ */
+
+namespace k1lib\html;
+
+/**
+ * HTML <head> element
+ *
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
+ */
+class head extends tag {
+
+    use append_shotcuts;
+
+    /**
+     * @var title
+     */
+    protected $title;
+
+    function __construct() {
+        parent::__construct("head", IS_NOT_SELF_CLOSED);
+        $this->append_title();
+    }
+
+    /**
+     * @return title
+     */
+    function append_title() {
+        $this->title = new title();
+        $this->append_child_head($this->title);
+        return $this->title;
+    }
+
+    function set_title($document_title) {
+        $this->title->set_value($document_title);
+    }
+
+    public function get_title() {
+        return $this->title->get_value();
+    }
+
+    /**
+     * @return link
+     */
+    function link_css($href = NULL) {
+        $new = new link($href);
+        $this->append_child_tail($new);
+        return $new;
+    }
+
+    /**
+     * @return script
+     */
+    function link_js($src = NULL) {
+        $new = new script($src);
+        $this->append_child_tail($new);
+        return $new;
+    }
+
+    /**
+     * 
+     * @return meta
+     */
+    function append_meta($name = NULL, $content = NULL) {
+        $new = new meta($name, $content);
+        $this->append_child_tail($new);
+        return $new;
+    }
+}
