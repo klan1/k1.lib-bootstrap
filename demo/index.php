@@ -148,6 +148,20 @@ use k1lib\html\bootstrap\top_bar;
             letter-spacing: .05em;
         }
 
+        .component-ref {
+            font-size: .75rem;
+            color: #6c757d;
+            font-family: monospace;
+            background: #f8f9fa;
+            padding: .25rem .5rem;
+            border-radius: .25rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .component-ref .ns { color: #0d6efd; }
+        .component-ref .path { color: #198754; }
+
         .component-badge {
             font-size: .65rem;
             padding: .25rem .5rem;
@@ -204,6 +218,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Button -->
                 <section id="button" class="component-section">
                     <h2 class="component-title">Button</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\button &rarr; src/klan1/html/bootstrap/button.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <div>
@@ -213,7 +228,7 @@ use k1lib\html\bootstrap\top_bar;
                                 $variants = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'link'];
                                 foreach ($variants as $variant) {
                                     $v = constant("k1lib\\html\\bootstrap\\button::VARIANT_" . strtoupper($variant));
-                                    echo (new button(ucfirst($variant), $v))->generate() . ' ';
+                                    echo (new \k1lib\html\bootstrap\button(ucfirst($variant), $v))->generate() . ' ';
                                 }
                                 ?>
                             </div>
@@ -223,7 +238,7 @@ use k1lib\html\bootstrap\top_bar;
                                 foreach ($variants as $variant) {
                                     if ($variant !== 'link') {
                                         $v = constant("k1lib\\html\\bootstrap\\button::VARIANT_" . strtoupper($variant));
-                                        echo (new button(ucfirst($variant), $v, button::SIZE_MD, TRUE))->generate() . ' ';
+                                        echo (new \k1lib\html\bootstrap\button(ucfirst($variant), $v, button::SIZE_MD, TRUE))->generate() . ' ';
                                     }
                                 }
                                 ?>
@@ -231,23 +246,23 @@ use k1lib\html\bootstrap\top_bar;
                             <h6 class="mb-2 text-muted">Sizes</h6>
                             <div class="mb-3">
                                 <?php
-                                echo (new button('Large', button::VARIANT_PRIMARY, button::SIZE_LG))->generate() . ' ';
-                                echo (new button('Default', button::VARIANT_PRIMARY))->generate() . ' ';
-                                echo (new button('Small', button::VARIANT_PRIMARY, button::SIZE_SM))->generate();
+                                echo (new \k1lib\html\bootstrap\button('Large', button::VARIANT_PRIMARY, button::SIZE_LG))->generate() . ' ';
+                                echo (new \k1lib\html\bootstrap\button('Default', button::VARIANT_PRIMARY))->generate() . ' ';
+                                echo (new \k1lib\html\bootstrap\button('Small', button::VARIANT_PRIMARY, button::SIZE_SM))->generate();
                                 ?>
                             </div>
                             <h6 class="mb-2 text-muted">States</h6>
                             <div class="mb-3">
                                 <?php
-                                $disabled_btn = new button('Disabled', button::VARIANT_PRIMARY);
+                                $disabled_btn = new \k1lib\html\bootstrap\button('Disabled', button::VARIANT_PRIMARY);
                                 $disabled_btn->set_disabled();
                                 echo $disabled_btn->generate() . ' ';
 
-                                $active_btn = new button('Active', button::VARIANT_PRIMARY);
+                                $active_btn = new \k1lib\html\bootstrap\button('Active', button::VARIANT_PRIMARY);
                                 $active_btn->set_active();
                                 echo $active_btn->generate() . ' ';
 
-                                $toggle_btn = new button('Toggle', button::VARIANT_PRIMARY, button::SIZE_MD, TRUE);
+                                $toggle_btn = new \k1lib\html\bootstrap\button('Toggle', button::VARIANT_PRIMARY, button::SIZE_MD, TRUE);
                                 $toggle_btn->set_toggle();
                                 echo $toggle_btn->generate();
                                 ?>
@@ -260,13 +275,13 @@ use k1lib\html\bootstrap\top_bar;
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
                         <pre class="code-content"><code><span class="text-primary">// Basic button</span>
-<span class="text-warning">$btn</span> = <span class="text-info">new</span> button(<span class="text-success">'Click me'</span>, button::<span class="text-light">VARIANT_PRIMARY</span>);
+<span class="text-warning">$btn</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Click me'</span>, \k1lib\html\bootstrap\button::<span class="text-light">VARIANT_PRIMARY</span>);
 
 <span class="text-primary">// Outline variant</span>
-<span class="text-warning">$btn</span> = <span class="text-info">new</span> button(<span class="text-success">'Outline'</span>, button::<span class="text-light">VARIANT_PRIMARY</span>, button::<span class="text-light">SIZE_MD</span>, <span class="text-info">true</span>);
+<span class="text-warning">$btn</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Outline'</span>, \k1lib\html\bootstrap\button::<span class="text-light">VARIANT_PRIMARY</span>, \k1lib\html\bootstrap\button::<span class="text-light">SIZE_MD</span>, <span class="text-info">true</span>);
 
 <span class="text-primary">// Disabled state</span>
-<span class="text-warning">$btn</span> = <span class="text-info">new</span> button(<span class="text-success">'Disabled'</span>);
+<span class="text-warning">$btn</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Disabled'</span>);
 <span class="text-warning">$btn</span>-><span class="text-light">set_disabled</span>();
 
 <span class="text-warning">echo</span> <span class="text-warning">$btn</span>-><span class="text-light">generate</span>();</code></pre>
@@ -276,6 +291,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Alert -->
                 <section id="alert" class="component-section">
                     <h2 class="component-title">Alert</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\alert &rarr; src/klan1/html/bootstrap/alert.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
@@ -291,7 +307,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$alert</span> = <span class="text-info">new</span> alert(<span class="text-success">'This is an alert!'</span>, <span class="text-success">'primary'</span>, <span class="text-info">true</span>);
+                        <pre class="code-content"><code><span class="text-warning">$alert</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\alert(<span class="text-success">'This is an alert!'</span>, <span class="text-success">'primary'</span>, <span class="text-info">true</span>);
 <span class="text-warning">echo</span> <span class="text-warning">$alert</span>-><span class="text-light">generate</span>();</code></pre>
                     </div>
                 </section>
@@ -299,6 +315,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Badge -->
                 <section id="badge" class="component-section">
                     <h2 class="component-title">Badge</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\badge &rarr; src/klan1/html/bootstrap/badge.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box badge-demo">
                         <?php
@@ -318,15 +335,16 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">echo</span> (<span class="text-info">new</span> badge(<span class="text-success">'Primary'</span>))-><span class="text-light">generate</span>() . <span class="text-success">' '</span>;
-<span class="text-warning">echo</span> (<span class="text-info">new</span> badge(<span class="text-success">'Secondary'</span>, <span class="text-success">'secondary'</span>))-><span class="text-light">generate</span>();
-<span class="text-warning">echo</span> (<span class="text-info">new</span> badge(<span class="text-success">'Pill'</span>, <span class="text-success">'primary'</span>, <span class="text-info">true</span>))-><span class="text-light">generate</span>();</code></pre>
+                        <pre class="code-content"><code><span class="text-warning">echo</span> (<span class="text-info">new</span> \k1lib\html\bootstrap\badge(<span class="text-success">'Primary'</span>))-><span class="text-light">generate</span>() . <span class="text-success">' '</span>;
+<span class="text-warning">echo</span> (<span class="text-info">new</span> \k1lib\html\bootstrap\badge(<span class="text-success">'Secondary'</span>, <span class="text-success">'secondary'</span>))-><span class="text-light">generate</span>();
+<span class="text-warning">echo</span> (<span class="text-info">new</span> \k1lib\html\bootstrap\badge(<span class="text-success">'Pill'</span>, <span class="text-success">'primary'</span>, <span class="text-info">true</span>))-><span class="text-light">generate</span>();</code></pre>
                     </div>
                 </section>
 
                 <!-- Breadcrumb -->
                 <section id="breadcrumb" class="component-section">
                     <h2 class="component-title">Breadcrumb</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\breadcrumb &rarr; src/klan1/html/bootstrap/breadcrumb.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
@@ -343,7 +361,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$bread</span> = <span class="text-info">new</span> breadcrumb();
+                        <pre class="code-content"><code><span class="text-warning">$bread</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\breadcrumb();
 <span class="text-warning">$bread</span>-><span class="text-light">add_item</span>(<span class="text-success">'Home'</span>, <span class="text-success">'#'</span>)
       -><span class="text-light">add_item</span>(<span class="text-success">'Library'</span>, <span class="text-success">'#'</span>)
       -><span class="text-light">add_item</span>(<span class="text-success">'Current Page'</span>);
@@ -354,34 +372,35 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Button Group -->
                 <section id="button-group" class="component-section">
                     <h2 class="component-title">Button Group</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\button_group &rarr; src/klan1/html/bootstrap/button_group.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <div>
                             <h6 class="mb-2 text-muted">Basic</h6>
                             <?php
                             $group = new button_group();
-                            $group->add_button(new button('Left', button::VARIANT_PRIMARY))
-                                  ->add_button(new button('Center', button::VARIANT_PRIMARY))
-                                  ->add_button(new button('Right', button::VARIANT_PRIMARY));
+                            $group->add_button(new \k1lib\html\bootstrap\button('Left', button::VARIANT_PRIMARY))
+                                  ->add_button(new \k1lib\html\bootstrap\button('Center', button::VARIANT_PRIMARY))
+                                  ->add_button(new \k1lib\html\bootstrap\button('Right', button::VARIANT_PRIMARY));
                             echo $group->generate();
                             ?>
                             <h6 class="mb-2 mt-3 text-muted">Sizes</h6>
                             <?php
                             $group_sm = new button_group('sm');
-                            $group_sm->add_button(new button('Small', button::VARIANT_SECONDARY))
-                                     ->add_button(new button('Small', button::VARIANT_SECONDARY));
+                            $group_sm->add_button(new \k1lib\html\bootstrap\button('Small', button::VARIANT_SECONDARY))
+                                     ->add_button(new \k1lib\html\bootstrap\button('Small', button::VARIANT_SECONDARY));
                             echo $group_sm->generate() . ' ';
                             $group_lg = new button_group('lg');
-                            $group_lg->add_button(new button('Large', button::VARIANT_SECONDARY))
-                                     ->add_button(new button('Large', button::VARIANT_SECONDARY));
+                            $group_lg->add_button(new \k1lib\html\bootstrap\button('Large', button::VARIANT_SECONDARY))
+                                     ->add_button(new \k1lib\html\bootstrap\button('Large', button::VARIANT_SECONDARY));
                             echo $group_lg->generate();
                             ?>
                             <h6 class="mb-2 mt-3 text-muted">Vertical</h6>
                             <?php
                             $group_v = new button_group('md', TRUE);
-                            $group_v->add_button(new button('Top', button::VARIANT_INFO))
-                                     ->add_button(new button('Middle', button::VARIANT_INFO))
-                                     ->add_button(new button('Bottom', button::VARIANT_INFO));
+                            $group_v->add_button(new \k1lib\html\bootstrap\button('Top', button::VARIANT_INFO))
+                                     ->add_button(new \k1lib\html\bootstrap\button('Middle', button::VARIANT_INFO))
+                                     ->add_button(new \k1lib\html\bootstrap\button('Bottom', button::VARIANT_INFO));
                             echo $group_v->generate();
                             ?>
                         </div>
@@ -392,10 +411,10 @@ use k1lib\html\bootstrap\top_bar;
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
                         <pre class="code-content"><code><span class="text-primary">// Basic group</span>
-<span class="text-warning">$group</span> = <span class="text-info">new</span> button_group();
-<span class="text-warning">$group</span>-><span class="text-light">add_button</span>(<span class="text-info">new</span> button(<span class="text-success">'Left'</span>, button::<span class="text-light">VARIANT_PRIMARY</span>))
-      -><span class="text-light">add_button</span>(<span class="text-info">new</span> button(<span class="text-success">'Center'</span>, button::<span class="text-light">VARIANT_PRIMARY</span>))
-      -><span class="text-light">add_button</span>(<span class="text-info">new</span> button(<span class="text-success">'Right'</span>, button::<span class="text-light">VARIANT_PRIMARY</span>));
+<span class="text-warning">$group</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\button_group();
+<span class="text-warning">$group</span>-><span class="text-light">add_button</span>(<span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Left'</span>, \k1lib\html\bootstrap\button::<span class="text-light">VARIANT_PRIMARY</span>))
+      -><span class="text-light">add_button</span>(<span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Center'</span>, \k1lib\html\bootstrap\button::<span class="text-light">VARIANT_PRIMARY</span>))
+      -><span class="text-light">add_button</span>(<span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Right'</span>, \k1lib\html\bootstrap\button::<span class="text-light">VARIANT_PRIMARY</span>));
 
 <span class="text-primary">// Access buttons</span>
 <span class="text-warning">$group</span>-><span class="text-light">button</span>(<span class="text-info">0</span>); <span class="text-secondary">// Returns first button</span></code></pre>
@@ -405,11 +424,12 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Card -->
                 <section id="card" class="component-section">
                     <h2 class="component-title">Card</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\card &rarr; src/klan1/html/bootstrap/card.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box card-demo">
                         <?php
                         $demo_card = new card('Card Title', 'Card Subtitle', 'Some quick example text to build on the card title and make up the bulk of the card\'s content.');
-                        $demo_card->body()->append_child(new button('Go somewhere', button::VARIANT_PRIMARY));
+                        $demo_card->body()->append_child(new \k1lib\html\bootstrap\button('Go somewhere', button::VARIANT_PRIMARY));
                         echo $demo_card->generate();
                         ?>
                     </div>
@@ -418,13 +438,13 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$card</span> = <span class="text-info">new</span> card(
+                        <pre class="code-content"><code><span class="text-warning">$card</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\card(
     <span class="text-success">'Card Title'</span>,
     <span class="text-success">'Card Subtitle'</span>,
     <span class="text-success">'Card content text'</span>
 );
 <span class="text-warning">$card</span>-><span class="text-light">body</span>()-><span class="text-light">append_child</span>(
-    <span class="text-info">new</span> button(<span class="text-success">'Go somewhere'</span>, button::<span class="text-light">VARIANT_PRIMARY</span>)
+    <span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Go somewhere'</span>, \k1lib\html\bootstrap\button::<span class="text-light">VARIANT_PRIMARY</span>)
 );
 <span class="text-warning">echo</span> <span class="text-warning">$card</span>-><span class="text-light">generate</span>();</code></pre>
                     </div>
@@ -433,6 +453,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Callout -->
                 <section id="callout" class="component-section">
                     <h2 class="component-title">Callout</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\callout &rarr; src/klan1/html/bootstrap/callout.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
@@ -445,7 +466,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$callout</span> = <span class="text-info">new</span> callout(
+                        <pre class="code-content"><code><span class="text-warning">$callout</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\callout(
     <span class="text-success">'This is a callout message.'</span>,
     <span class="text-success">'Callout Title'</span>,
     <span class="text-info">true</span>,
@@ -458,10 +479,11 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Collapse -->
                 <section id="collapse" class="component-section">
                     <h2 class="component-title">Collapse</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\collapse &rarr; src/klan1/html/bootstrap/collapse.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
-                        $trigger = new button('Toggle Content', button::VARIANT_PRIMARY);
+                        $trigger = new \k1lib\html\bootstrap\button('Toggle Content', button::VARIANT_PRIMARY);
                         $collapse_content = '<p>This is collapsible content.</p>';
                         $collapse = new collapse('demo', $trigger, $collapse_content);
                         echo $trigger->generate() . ' ';
@@ -473,8 +495,8 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$trigger</span> = <span class="text-info">new</span> button(<span class="text-success">'Toggle'</span>, button::<span class="text-light">VARIANT_PRIMARY</span>);
-<span class="text-warning">$collapse</span> = <span class="text-info">new</span> collapse(<span class="text-success">'demo'</span>, <span class="text-warning">$trigger</span>, <span class="text-success">'<p>Content</p>'</span>);
+                        <pre class="code-content"><code><span class="text-warning">$trigger</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\button(<span class="text-success">'Toggle'</span>, \k1lib\html\bootstrap\button::<span class="text-light">VARIANT_PRIMARY</span>);
+<span class="text-warning">$collapse</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\collapse(<span class="text-success">'demo'</span>, <span class="text-warning">$trigger</span>, <span class="text-success">'<p>Content</p>'</span>);
 <span class="text-warning">echo</span> <span class="text-warning">$collapse</span>-><span class="text-light">generate</span>();</code></pre>
                     </div>
                 </section>
@@ -482,6 +504,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Dropdown -->
                 <section id="dropdown" class="component-section">
                     <h2 class="component-title">Dropdown</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\dropdown &rarr; src/klan1/html/bootstrap/dropdown.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
@@ -499,7 +522,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$dropdown</span> = <span class="text-info">new</span> dropdown(<span class="text-success">'Actions'</span>, [
+                        <pre class="code-content"><code><span class="text-warning">$dropdown</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\dropdown(<span class="text-success">'Actions'</span>, [
     [<span class="text-success">'text'</span> => <span class="text-success">'Action'</span>, <span class="text-success">'href'</span> => <span class="text-success">'#'</span>],
     [<span class="text-success">'divider'</span> => <span class="text-info">true</span>],
     [<span class="text-success">'text'</span> => <span class="text-success">'Separated'</span>, <span class="text-success">'href'</span> => <span class="text-success">'#'</span>]
@@ -511,6 +534,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Grid -->
                 <section id="grid" class="component-section">
                     <h2 class="component-title">Grid</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\grid &rarr; src/klan1/html/bootstrap/grid.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
@@ -535,7 +559,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$grid</span> = <span class="text-info">new</span> grid(<span class="text-info">2</span>, <span class="text-info">3</span>);
+                        <pre class="code-content"><code><span class="text-warning">$grid</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\grid(<span class="text-info">2</span>, <span class="text-info">3</span>);
 <span class="text-warning">$row1</span> = <span class="text-warning">$grid</span>-><span class="text-light">row</span>(<span class="text-info">1</span>);
 <span class="text-warning">$row1</span>-><span class="text-light">general</span>(<span class="text-info">4</span>)-><span class="text-light">small</span>(<span class="text-info">6</span>);
 <span class="text-warning">$row1</span>-><span class="text-light">get_child</span>(<span class="text-info">0</span>)-><span class="text-light">set_value</span>(<span class="text-success">'Col 1'</span>);
@@ -546,6 +570,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- List Group -->
                 <section id="list-group" class="component-section">
                     <h2 class="component-title">List Group</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\list_group &rarr; src/klan1/html/bootstrap/list_group.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box card-demo">
                         <?php
@@ -563,7 +588,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$list</span> = <span class="text-info">new</span> list_group([
+                        <pre class="code-content"><code><span class="text-warning">$list</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\list_group([
     [<span class="text-success">'text'</span> => <span class="text-success">'First item'</span>, <span class="text-success">'href'</span> => <span class="text-success">'#'</span>],
     [<span class="text-success">'text'</span> => <span class="text-success">'Second'</span>, <span class="text-success">'active'</span> => <span class="text-info">true</span>],
     [<span class="text-success">'text'</span> => <span class="text-success">'Third'</span>, <span class="text-success">'href'</span> => <span class="text-success">'#'</span>]
@@ -575,6 +600,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Modal -->
                 <section id="modal" class="component-section">
                     <h2 class="component-title">Modal</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\modal &rarr; src/klan1/html/bootstrap/modal.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal">
@@ -590,7 +616,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$modal</span> = <span class="text-info">new</span> modal(
+                        <pre class="code-content"><code><span class="text-warning">$modal</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\modal(
     <span class="text-success">'Modal Title'</span>,
     <span class="text-success">'<p>Content</p>'</span>,
     <span class="text-success">'Cancel'</span>,
@@ -603,6 +629,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Nav -->
                 <section id="nav" class="component-section">
                     <h2 class="component-title">Nav</h2>
+                    <div class="component-ref">\k1lib\\html\\componentes\\nav &rarr; src/klan1/html/componentes/nav.php</div>
 
                     <div class="preview-label">Tabs</div>
                     <div class="preview-box">
@@ -759,7 +786,7 @@ use k1lib\html\bootstrap\top_bar;
 ], <span class="text-success">'pills'</span>);
 
 <span class="text-primary">// Tabbed interface with content</span>
-<span class="text-warning">$tabs</span> = nav_component::<span class="text-light">create_tabs</span>(<span class="text-success">'myTabs'</span>, [
+<span class="text-warning">$tabs</span> = \k1lib\html\componentes\nav::<span class="text-light">create_tabs</span>(<span class="text-success">'myTabs'</span>, [
     [<span class="text-success">'id'</span> => <span class="text-success">'home'</span>, <span class="text-success">'label'</span> => <span class="text-success">'Home'</span>, <span class="text-success">'content'</span> => <span class="text-success">'<p>Content</p>'</span>]
 ]);
 <span class="text-warning">echo</span> <span class="text-warning">$tabs</span>[<span class="text-success">'nav'</span>]-><span class="text-light">generate</span>();
@@ -770,6 +797,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Navbar -->
                 <section id="navbar" class="component-section">
                     <h2 class="component-title">Navbar</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\navbar &rarr; src/klan1/html/bootstrap/navbar.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
@@ -788,7 +816,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$navbar</span> = <span class="text-info">new</span> navbar(<span class="text-success">'Brand'</span>, <span class="text-success">'demoNav'</span>, <span class="text-success">'light'</span>);
+                        <pre class="code-content"><code><span class="text-warning">$navbar</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\navbar(<span class="text-success">'Brand'</span>, <span class="text-success">'demoNav'</span>, <span class="text-success">'light'</span>);
 <span class="text-warning">$nav</span> = <span class="text-info">new</span> nav([...], <span class="text-success">'nav'</span>);
 <span class="text-warning">$navbar</span>-><span class="text-light">add_to_collapse</span>(<span class="text-warning">$nav</span>);
 <span class="text-warning">echo</span> <span class="text-warning">$navbar</span>-><span class="text-light">generate</span>();</code></pre>
@@ -798,6 +826,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Pagination -->
                 <section id="pagination" class="component-section">
                     <h2 class="component-title">Pagination</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\pagination &rarr; src/klan1/html/bootstrap/pagination.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
@@ -810,7 +839,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$pager</span> = <span class="text-info">new</span> pagination(<span class="text-info">3</span>, <span class="text-info">10</span>, <span class="text-success">'/page'</span>, <span class="text-info">true</span>);
+                        <pre class="code-content"><code><span class="text-warning">$pager</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\pagination(<span class="text-info">3</span>, <span class="text-info">10</span>, <span class="text-success">'/page'</span>, <span class="text-info">true</span>);
 <span class="text-warning">echo</span> <span class="text-warning">$pager</span>-><span class="text-light">generate</span>();</code></pre>
                     </div>
                 </section>
@@ -818,6 +847,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Progress -->
                 <section id="progress" class="component-section">
                     <h2 class="component-title">Progress</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\progress &rarr; src/klan1/html/bootstrap/progress.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box progress-demo">
                         <?php
@@ -835,7 +865,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$prog</span> = <span class="text-info">new</span> progress([
+                        <pre class="code-content"><code><span class="text-warning">$prog</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\progress([
     [<span class="text-success">'value'</span> => <span class="text-info">25</span>, <span class="text-success">'type'</span> => <span class="text-success">'primary'</span>],
     [<span class="text-success">'value'</span> => <span class="text-info">50</span>, <span class="text-success">'striped'</span> => <span class="text-info">true</span>]
 ], <span class="text-info">20</span>);
@@ -846,6 +876,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Spinner -->
                 <section id="spinner" class="component-section">
                     <h2 class="component-title">Spinner</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\spinner &rarr; src/klan1/html/bootstrap/spinner.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box spinner-demo">
                         <?php
@@ -870,16 +901,17 @@ use k1lib\html\bootstrap\top_bar;
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
                         <pre class="code-content"><code><span class="text-primary">// Border spinner</span>
-<span class="text-warning">echo</span> (<span class="text-info">new</span> spinner(<span class="text-success">'border'</span>, <span class="text-success">'primary'</span>))-><span class="text-light">generate</span>();
+<span class="text-warning">echo</span> (<span class="text-info">new</span> \k1lib\html\bootstrap\spinner(<span class="text-success">'border'</span>, <span class="text-success">'primary'</span>))-><span class="text-light">generate</span>();
 
 <span class="text-primary">// Grow spinner</span>
-<span class="text-warning">echo</span> (<span class="text-info">new</span> spinner(<span class="text-success">'grow'</span>, <span class="text-success">'success'</span>))-><span class="text-light">generate</span>();</code></pre>
+<span class="text-warning">echo</span> (<span class="text-info">new</span> \k1lib\html\bootstrap\spinner(<span class="text-success">'grow'</span>, <span class="text-success">'success'</span>))-><span class="text-light">generate</span>();</code></pre>
                     </div>
                 </section>
 
                 <!-- Table -->
                 <section id="table" class="component-section">
                     <h2 class="component-title">Table</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\table_from_data &rarr; src/klan1/html/bootstrap/table_from_data.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
@@ -897,7 +929,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$table</span> = <span class="text-info">new</span> table_from_data();
+                        <pre class="code-content"><code><span class="text-warning">$table</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\table_from_data();
 <span class="text-warning">$table</span>-><span class="text-light">set_data</span>([
     [<span class="text-success">'id'</span> => <span class="text-info">1</span>, <span class="text-success">'name'</span> => <span class="text-success">'John'</span>],
     [<span class="text-success">'id'</span> => <span class="text-info">2</span>, <span class="text-success">'name'</span> => <span class="text-success">'Jane'</span>]
@@ -909,6 +941,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Toast -->
                 <section id="toast" class="component-section">
                     <h2 class="component-title">Toast</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\toast &rarr; src/klan1/html/bootstrap/toast.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
@@ -921,7 +954,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$toast</span> = <span class="text-info">new</span> toast(
+                        <pre class="code-content"><code><span class="text-warning">$toast</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\toast(
     <span class="text-success">'Header'</span>,
     <span class="text-success">'Body message'</span>,
     <span class="text-info">true</span>,
@@ -934,6 +967,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Title Bar -->
                 <section id="title-bar" class="component-section">
                     <h2 class="component-title">Title Bar</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\title_bar &rarr; src/klan1/html/bootstrap/title_bar.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
@@ -947,7 +981,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$title</span> = <span class="text-info">new</span> title_bar(<span class="text-success">'demo'</span>);
+                        <pre class="code-content"><code><span class="text-warning">$title</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\title_bar(<span class="text-success">'demo'</span>);
 <span class="text-warning">$title</span>-><span class="text-light">title</span>()-><span class="text-light">set_value</span>(<span class="text-success">'Page Title'</span>);
 <span class="text-warning">echo</span> <span class="text-warning">$title</span>-><span class="text-light">generate</span>();</code></pre>
                     </div>
@@ -956,6 +990,7 @@ use k1lib\html\bootstrap\top_bar;
                 <!-- Top Bar -->
                 <section id="top-bar" class="component-section">
                     <h2 class="component-title">Top Bar</h2>
+                    <div class="component-ref">\k1lib\\html\\bootstrap\\top_bar &rarr; src/klan1/html/bootstrap/top_bar.php</div>
                     <div class="preview-label">Preview</div>
                     <div class="preview-box">
                         <?php
@@ -973,7 +1008,7 @@ use k1lib\html\bootstrap\top_bar;
                             <div class="code-dots"><span></span><span></span><span></span></div>
                             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
                         </div>
-                        <pre class="code-content"><code><span class="text-warning">$top</span> = <span class="text-info">new</span> top_bar(<span class="text-success">'main'</span>);
+                        <pre class="code-content"><code><span class="text-warning">$top</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\top_bar(<span class="text-success">'main'</span>);
 <span class="text-warning">$top</span>-><span class="text-light">title</span>()-><span class="text-light">set_value</span>(<span class="text-success">'My App'</span>);
 <span class="text-warning">$top</span>-><span class="text-light">menu_left</span>()-><span class="text-light">add_menu_item</span>(<span class="text-success">'#'</span>, <span class="text-success">'Home'</span>);
 <span class="text-warning">echo</span> <span class="text-warning">$top</span>-><span class="text-light">generate</span>();</code></pre>
