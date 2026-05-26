@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3dfad67b1f5db71afad99610f2137138",
+    "content-hash": "58075c564879dfdd75252b13b26a3af0",
     "packages": [
         {
             "name": "klan1/k1.lib-html",

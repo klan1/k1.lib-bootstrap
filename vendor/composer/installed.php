@@ -1,18 +1,18 @@
 <?php return array(
     'root' => array(
         'name' => 'klan1/k1.lib-bootstrap',
-        'pretty_version' => '0.1',
-        'version' => '0.1.0.0',
+        'pretty_version' => '1.1',
+        'version' => '1.1.0.0',
         'reference' => null,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'dev' => false,
+        'dev' => true,
     ),
     'versions' => array(
         'klan1/k1.lib-bootstrap' => array(
-            'pretty_version' => '0.1',
-            'version' => '0.1.0.0',
+            'pretty_version' => '1.1',
+            'version' => '1.1.0.0',
             'reference' => null,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
