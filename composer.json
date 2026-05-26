@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "klan1/k1.lib-html": "v1.x"
+        "klan1/k1.lib-html": "dev-master"
     },
     "autoload": {
         "psr-4": {
