@@ -26,7 +26,7 @@ class ComposerStaticInit7bca6d690bf6c6f8b50015a1d7f5faed
         ),
         'k1lib\\html\\' => 
         array (
-            0 => __DIR__ . '/..' . '/klan1/k1lib.html/src/klan1/html',
+            0 => __DIR__ . '/..' . '/klan1/k1.lib-html/src/klan1/html',
         ),
     );
 

@@ -1,27 +1,24 @@
 {
     "packages": [
         {
-            "name": "klan1/k1lib.html",
+            "name": "klan1/k1.lib-html",
             "version": "dev-master",
             "version_normalized": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/klan1/k1lib.html.git",
-                "reference": "b4ebce6197a36d7b8c9fc0473d3cb9ffd6da2112"
+                "url": "https://github.com/klan1/k1.lib-html.git",
+                "reference": "1affbd3620eef86b5608caa9436e71a780a07ace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/klan1/k1lib.html/zipball/b4ebce6197a36d7b8c9fc0473d3cb9ffd6da2112",
-                "reference": "b4ebce6197a36d7b8c9fc0473d3cb9ffd6da2112",
+                "url": "https://api.github.com/repos/klan1/k1.lib-html/zipball/1affbd3620eef86b5608caa9436e71a780a07ace",
+                "reference": "1affbd3620eef86b5608caa9436e71a780a07ace",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.2"
             },
-            "require-dev": {
-                "klan1/k1app-template-mazer": "dev-main"
-            },
-            "time": "2026-05-25T14:18:41+00:00",
+            "time": "2026-05-26T06:54:33+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
@@ -36,12 +33,12 @@
             ],
             "description": "HTML components for k1lib",
             "support": {
-                "issues": "https://github.com/klan1/k1lib.html/issues",
-                "source": "https://github.com/klan1/k1lib.html/tree/master"
+                "issues": "https://github.com/klan1/k1.lib-html/issues",
+                "source": "https://github.com/klan1/k1.lib-html/tree/master"
             },
-            "install-path": "../klan1/k1lib.html"
+            "install-path": "../klan1/k1.lib-html"
         }
     ],
-    "dev": true,
+    "dev": false,
     "dev-package-names": []
 }

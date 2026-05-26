@@ -7,7 +7,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'dev' => true,
+        'dev' => false,
     ),
     'versions' => array(
         'klan1/k1.lib-bootstrap' => array(
@@ -19,12 +19,12 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'klan1/k1lib.html' => array(
+        'klan1/k1.lib-html' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'b4ebce6197a36d7b8c9fc0473d3cb9ffd6da2112',
+            'reference' => '1affbd3620eef86b5608caa9436e71a780a07ace',
             'type' => 'library',
-            'install_path' => __DIR__ . '/../klan1/k1lib.html',
+            'install_path' => __DIR__ . '/../klan1/k1.lib-html',
             'aliases' => array(
                 0 => '9999999-dev',
             ),

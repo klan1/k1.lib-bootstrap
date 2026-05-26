@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/klan1/k1.lib-html.git",
-                "reference": "c823cde8b1d38fb054c72563dff21a59e377d65b"
+                "reference": "1affbd3620eef86b5608caa9436e71a780a07ace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/klan1/k1.lib-html/zipball/c823cde8b1d38fb054c72563dff21a59e377d65b",
-                "reference": "c823cde8b1d38fb054c72563dff21a59e377d65b",
+                "url": "https://api.github.com/repos/klan1/k1.lib-html/zipball/1affbd3620eef86b5608caa9436e71a780a07ace",
+                "reference": "1affbd3620eef86b5608caa9436e71a780a07ace",
                 "shasum": ""
             },
             "require": {
@@ -39,7 +39,7 @@
                 "issues": "https://github.com/klan1/k1.lib-html/issues",
                 "source": "https://github.com/klan1/k1.lib-html/tree/master"
             },
-            "time": "2026-05-26T03:50:15+00:00"
+            "time": "2026-05-26T06:54:33+00:00"
         }
     ],
     "packages-dev": [],

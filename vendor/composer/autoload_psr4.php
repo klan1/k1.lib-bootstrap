@@ -8,5 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'k1lib\\html\\componentes\\' => array($baseDir . '/src/klan1/html/componentes'),
     'k1lib\\html\\bootstrap\\' => array($baseDir . '/src/klan1/html/bootstrap'),
-    'k1lib\\html\\' => array($vendorDir . '/klan1/k1lib.html/src/klan1/html'),
+    'k1lib\\html\\' => array($vendorDir . '/klan1/k1.lib-html/src/klan1/html'),
 );
