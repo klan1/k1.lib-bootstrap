@@ -3,7 +3,7 @@
     "description": "Bootstrap 5 components built on k1lib.html",
     "license": "Apache-2.0",
     "type": "library",
-    "version": "0.1",
+    "version": "2.1",
     "homepage": "https://github.com/klan1/k1lib-bootstrap",
     "minimum-stability": "dev",
     "prefer-stable": true,
