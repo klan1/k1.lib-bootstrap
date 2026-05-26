@@ -12,7 +12,7 @@ namespace k1lib\html\bootstrap;
  * @link    https://github.com/k1lib/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/offcanvas.mdx
  * @license Apache-2.0
- * @version BETA
+ * @version 1.0.0
  */
 class offcanvas extends \k1lib\html\div {
 
