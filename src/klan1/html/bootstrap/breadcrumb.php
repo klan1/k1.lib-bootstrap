@@ -5,7 +5,10 @@ namespace k1lib\html\bootstrap;
 /**
  * Bootstrap 5 Breadcrumb component
  *
- * Indicates the current page's location within a navigational hierarchy.
+ * Displays a hierarchical trail of navigation links showing the user's
+ * current location within the site structure. Automatically applies
+ * Bootstrap's breadcrumb styling with separators between items.
+ * The last item is marked as active (current page) if no href is provided.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
  * @link    https://github.com/klan1/k1.lib-bootstrap
@@ -15,8 +18,15 @@ namespace k1lib\html\bootstrap;
  */
 class breadcrumb extends \k1lib\html\nav {
 
+    /**
+     * Ordered list container for breadcrumb items
+     * @var \k1lib\html\ol
+     */
     private $ol;
 
+    /**
+     * Creates a new Breadcrumb instance
+     */
     public function __construct() {
         parent::__construct('', NULL);
         $this->set_attrib('aria-label', 'breadcrumb');
@@ -26,11 +36,12 @@ class breadcrumb extends \k1lib\html\nav {
     }
 
     /**
-     * Add a breadcrumb item
+     * Adds a new breadcrumb item
      *
-     * @param string $text Item text
-     * @param string|null $href Item URL (null for current page)
-     * @return $this
+     * @param string $text The display text for this breadcrumb item
+     * @param string|null $href Optional URL for the item link. If NULL,
+     *                          the item is marked as the current page (active)
+     * @return $this For method chaining
      */
     public function add_item($text, $href = NULL) {
         $li = $this->ol->append_li(null, 'breadcrumb-item');
@@ -46,10 +57,10 @@ class breadcrumb extends \k1lib\html\nav {
     }
 
     /**
-     * Get a breadcrumb item by index
+     * Retrieves a breadcrumb item by its position
      *
-     * @param int $index
-     * @return \k1lib\html\li|null
+     * @param int $index Zero-based index of the breadcrumb item
+     * @return \k1lib\html\li|null The breadcrumb list item or NULL if not found
      */
     public function item($index) {
         $childs = $this->ol->get_childs();
@@ -57,19 +68,19 @@ class breadcrumb extends \k1lib\html\nav {
     }
 
     /**
-     * Get total number of items
+     * Returns the total count of breadcrumb items
      *
-     * @return int
+     * @return int Number of items in the breadcrumb trail
      */
     public function count() {
         return count($this->ol->get_childs());
     }
 
     /**
-     * Remove an item by index
+     * Removes a breadcrumb item at the specified index
      *
-     * @param int $index
-     * @return $this
+     * @param int $index Zero-based index of the item to remove
+     * @return $this For method chaining
      */
     public function remove_item($index) {
         $this->ol->remove_child($index);

@@ -2,14 +2,60 @@
 
 namespace k1lib\html\bootstrap;
 
+/**
+ * Bootstrap 5 Navbar component
+ *
+ * A responsive navigation header that includes support for branding,
+ * navigation links, dropdown menus, forms, and collapsible content
+ * via Bootstrap's navbar JavaScript plugin.
+ *
+ * @author  Alejandro Trujillo J. (J0hnd03)
+ * @link    https://github.com/klan1/k1.lib-bootstrap
+ * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/navbar.mdx
+ * @license Apache-2.0
+ * @version 1.0.0
+ */
 class navbar extends \k1lib\html\nav {
 
+    /**
+     * Brand element (link or image)
+     * @var \k1lib\html\a|\k1lib\html\img|null
+     */
     protected $brand = NULL;
+
+    /**
+     * Mobile menu toggler button
+     * @var \k1lib\html\button
+     */
     protected $toggler = NULL;
+
+    /**
+     * Collapsible content div
+     * @var \k1lib\html\div
+     */
     protected $collapse = NULL;
+
+    /**
+     * Navigation links container ul
+     * @var \k1lib\html\ul
+     */
     protected $nav = NULL;
+
+    /**
+     * Container div (fluid or fixed width)
+     * @var \k1lib\html\div
+     */
     protected $container = NULL;
 
+    /**
+     * Creates a new Navbar instance
+     *
+     * @param string $brand Brand text or leave empty for no brand
+     * @param string $id Unique identifier for the navbar
+     * @param string $color Color theme: 'light' or 'dark'
+     * @param string $expand Breakpoint for responsive expansion: 'sm', 'md', 'lg', 'xl', 'xxl'
+     * @param string $container_type Container type: 'container' or 'container-fluid'
+     */
     public function __construct($brand = '', $id = 'mainNavbar', $color = 'light', $expand = 'lg', $container_type = 'container-fluid') {
         $classes = "navbar navbar-expand-{$expand} navbar-{$color}";
         parent::__construct(NULL, $classes, $id);
@@ -46,6 +92,17 @@ class navbar extends \k1lib\html\nav {
         $this->container->append_child($this->collapse);
     }
 
+    /**
+     * Adds a navigation item
+     *
+     * @param string $text Item display text
+     * @param string $href URL the item links to
+     * @param bool $active Mark as the currently active page
+     * @param bool $disabled Mark as disabled
+     * @param array|null $dropdown If provided, creates a dropdown menu with the given items.
+     *        Each item should have 'text' and 'href' keys, or be 'divider' for a separator.
+     * @return \k1lib\html\li The created list item
+     */
     public function add_item($text = '', $href = '#', $active = FALSE, $disabled = FALSE, $dropdown = NULL) {
         $li = $this->nav->append_li();
         $li->set_class('nav-item');
@@ -95,6 +152,13 @@ class navbar extends \k1lib\html\nav {
         return $li;
     }
 
+    /**
+     * Adds text content to the navbar
+     *
+     * @param string $text Text content to display
+     * @param string $margin_start CSS margin start class (e.g., 'auto' for push to end)
+     * @return \k1lib\html\span The created span element
+     */
     public function add_text($text = '', $margin_start = 'auto') {
         $span = new \k1lib\html\span($text);
         $span->set_class("navbar-text me-{$margin_start}");
@@ -106,6 +170,15 @@ class navbar extends \k1lib\html\nav {
         return $span;
     }
 
+    /**
+     * Adds a search form to the navbar
+     *
+     * @param string $placeholder Input placeholder text
+     * @param string $button_text Search button text
+     * @param string $button_class Bootstrap button classes
+     * @param string $input_name Name attribute for the input
+     * @return \k1lib\html\form The created form element
+     */
     public function add_form($placeholder = 'Search', $button_text = 'Search', $button_class = 'btn-outline-success', $input_name = 'search') {
         $form = new \k1lib\html\form();
         $form->set_class('d-flex');
@@ -129,6 +202,13 @@ class navbar extends \k1lib\html\nav {
         return $form;
     }
 
+    /**
+     * Sets the navbar placement (fixed or sticky position)
+     *
+     * @param string $placement Position: 'fixed-top', 'fixed-bottom', 'sticky-top', or 'sticky-bottom'
+     * @param bool $add_background Add a background color class
+     * @return $this For method chaining
+     */
     public function set_placement($placement = 'fixed-top', $add_background = true) {
         $valid_placements = ['fixed-top', 'fixed-bottom', 'sticky-top', 'sticky-bottom'];
         if (in_array($placement, $valid_placements)) {
@@ -140,6 +220,16 @@ class navbar extends \k1lib\html\nav {
         return $this;
     }
 
+    /**
+     * Sets a brand image instead of text
+     *
+     * @param string $src Image source URL
+     * @param string $alt Image alt text
+     * @param int $width Image width in pixels
+     * @param int $height Image height in pixels
+     * @param string $href Link destination for the brand image
+     * @return \k1lib\html\a The brand anchor element
+     */
     public function set_brand_image($src, $alt = '', $width = 30, $height = 24, $href = '#') {
         $this->brand = new \k1lib\html\a($href, '');
         $this->brand->set_class('navbar-brand');
@@ -154,10 +244,20 @@ class navbar extends \k1lib\html\nav {
         return $this->brand;
     }
 
+    /**
+     * Gets the brand element
+     *
+     * @return \k1lib\html\a|\k1lib\html\img|null The brand element
+     */
     public function brand() {
         return $this->brand;
     }
 
+    /**
+     * Gets the collapse element
+     *
+     * @return \k1lib\html\div The collapse container element
+     */
     public function collapse() {
         return $this->collapse;
     }

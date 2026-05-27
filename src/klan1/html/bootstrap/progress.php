@@ -5,11 +5,12 @@ namespace k1lib\html\bootstrap;
 /**
  * Bootstrap 5 Progress component
  *
- * Display completion progress for tasks with customizable bars.
+ * Display completion progress for tasks or loading states with support
+ * for multiple bars, contextual color variants, striped patterns, and
+ * animated stripes.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
- * @link    https://github.com/klan1/k1.lib-bootstrap
- * @link    https://github.com/k1lib/k1.lib-bootstrap
+ * @link    https://github.com/k11/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/progress.mdx
  * @license Apache-2.0
  * @version 1.0.0
@@ -17,8 +18,15 @@ namespace k1lib\html\bootstrap;
 class progress extends \k1lib\html\div {
 
     /**
-     * @param array $bars Array of ['value' => int, 'type' => '', 'label' => '', 'striped' => bool, 'animated' => bool]
-     * @param int $height Height in pixels
+     * Creates a new Progress instance
+     *
+     * @param array $bars Array of progress bar configurations. Each bar can have:
+     *   - 'value' (int): Progress percentage (0-100)
+     *   - 'type' (string): Bootstrap color type (primary, secondary, success, danger, warning, info)
+     *   - 'striped' (bool): Apply striped styling
+     *   - 'animated' (bool): Apply animated striped styling
+     *   - 'label' (string): Text label displayed in the bar
+     * @param int|null $height Fixed height in pixels
      */
     public function __construct($bars = [], $height = NULL) {
         parent::__construct('progress', NULL);

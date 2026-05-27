@@ -5,7 +5,9 @@ namespace k1lib\html\bootstrap;
 /**
  * Bootstrap 5 Collapse component
  *
- * Show/hide content via smooth accordion-style transitions.
+ * A collapsible content area that can be shown or hidden via smooth
+ * accordion-style transitions. Used in conjunction with buttons or links
+ * that trigger the show/hide behavior via Bootstrap's collapse JavaScript.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
  * @link    https://github.com/klan1/k1.lib-bootstrap
@@ -16,10 +18,13 @@ namespace k1lib\html\bootstrap;
 class collapse extends \k1lib\html\div {
 
     /**
-     * @param string $id Unique collapse identifier
-     * @param \k1lib\html\tag $trigger Button or link that triggers the collapse
-     * @param string $content Collapsible content HTML
-     * @param bool $expanded Start in expanded state
+     * Creates a new Collapse instance
+     *
+     * @param string $id Unique identifier for this collapse element
+     * @param \k1lib\html\tag|null $trigger Button or link element that triggers the collapse.
+     *        If provided, the trigger will be configured with data-bs-toggle="collapse".
+     * @param string $content HTML content to display in the collapsible area
+     * @param bool $expanded Start in expanded (visible) state
      */
     public function __construct($id, $trigger = NULL, $content = '', $expanded = FALSE) {
         parent::__construct('collapse', "collapse-{$id}");

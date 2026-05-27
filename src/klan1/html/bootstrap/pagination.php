@@ -5,11 +5,12 @@ namespace k1lib\html\bootstrap;
 /**
  * Bootstrap 5 Pagination component
  *
- * Indicate that a series of related content exists across multiple pages.
+ * A component for navigating between pages of related content, such as
+ * search results, article archives, or tabular data. Displays page
+ * numbers with Previous/Next navigation controls.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
  * @link    https://github.com/klan1/k1.lib-bootstrap
- * @link    https://github.com/k1lib/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/pagination.mdx
  * @license Apache-2.0
  * @version 1.0.0
@@ -17,10 +18,12 @@ namespace k1lib\html\bootstrap;
 class pagination extends \k1lib\html\ul {
 
     /**
-     * @param int $current_page Current active page
-     * @param int $total_pages Total number of pages
-     * @param string $base_url URL prefix for page links
-     * @param bool $show_prev_next Show previous/next buttons
+     * Creates a new Pagination instance
+     *
+     * @param int $current_page The currently active page number
+     * @param int $total_pages Total number of available pages
+     * @param string $base_url Base URL for page links (query param ?page=X will be appended)
+     * @param bool $show_prev_next Show Previous and Next navigation links
      */
     public function __construct($current_page = 1, $total_pages = 1, $base_url = '', $show_prev_next = TRUE) {
         parent::__construct('pagination', NULL);

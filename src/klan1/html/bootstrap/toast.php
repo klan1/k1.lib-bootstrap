@@ -5,11 +5,13 @@ namespace k1lib\html\bootstrap;
 /**
  * Bootstrap 5 Toast component
  *
- * Lightweight push notifications for small amounts of temporary content.
+ * Lightweight push notifications for displaying brief, auto-dismissing
+ * messages to users. Toasts appear temporarily without interrupting
+ * the user experience and can be configured with a header, body content,
+ * and automatic dismissal timing.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
  * @link    https://github.com/klan1/k1.lib-bootstrap
- * @link    https://github.com/k1lib/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/toast.mdx
  * @license Apache-2.0
  * @version 1.0.0
@@ -17,10 +19,12 @@ namespace k1lib\html\bootstrap;
 class toast extends \k1lib\html\div {
 
     /**
-     * @param string $header Toast header text
+     * Creates a new Toast instance
+     *
+     * @param string $header Toast header/title text
      * @param string $body Toast body content
-     * @param bool $autohide Auto-hide after delay
-     * @param int $delay Hide delay in milliseconds
+     * @param bool $autohide Automatically hide the toast after the delay
+     * @param int $delay Time in milliseconds before auto-hide (default: 5000)
      */
     public function __construct($header = '', $body = '', $autohide = TRUE, $delay = 5000) {
         parent::__construct('toast', 'toast-' . uniqid());

@@ -8,35 +8,80 @@ use k1lib\html\button;
 /**
  * Bootstrap 5 Nav component
  *
- * Base nav component for creating navigation bars and tabbed interfaces.
+ * A flexible navigation component for creating tabbed interfaces, pill
+ * navigations, and underline-styled navbars. Supports horizontal and
+ * vertical layouts, dropdown menus, filled/justified elements, and
+ * can generate complete tab interfaces with content panes.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
  * @link    https://github.com/klan1/k1.lib-bootstrap
- * @link    https://github.com/k1lib/k1.lib-bootstrap
  * @link    https://getbootstrap.com/docs/5.3/components/navs-tabs/
  * @license Apache-2.0
+ * @version 1.0.0
  */
 class nav extends \k1lib\html\ul {
 
+    /**
+     * Tabs-style navigation (bordered tabs)
+     */
     const TYPE_TABS = 'tabs';
+
+    /**
+     * Pills-style navigation (rounded buttons)
+     */
     const TYPE_PILLS = 'pills';
+
+    /**
+     * Underline-style navigation (Bootstrap 5 native)
+     */
     const TYPE_UNDERLINE = 'underline';
 
+    /**
+     * Current navigation type
+     * @var string
+     */
     protected $type = 'tabs';
+
+    /**
+     * Navigation items configuration
+     * @var array
+     */
     protected $items = [];
+
+    /**
+     * Horizontal alignment: start, center, end
+     * @var string
+     */
     protected $aligned = 'start';
+
+    /**
+     * Use nav-fill for proportionate filling
+     * @var bool
+     */
     protected $filled = false;
+
+    /**
+     * Use nav-justified for equal-width items
+     * @var bool
+     */
     protected $justified = false;
+
+    /**
+     * Stack items vertically
+     * @var bool
+     */
     protected $vertical = false;
 
     /**
-     * @param array $items Array of items. Each item can be:
+     * Creates a new Nav instance
+     *
+     * @param array $items Array of nav items. Each item can be:
      *   - ['text' => '', 'href' => '', 'active' => bool, 'disabled' => bool]
      *   - ['text' => '', 'dropdown' => [...dropdown items...]]
-     * @param string $type Nav type: tabs, pills, underline
-     * @param bool $vertical Stack vertically with flex-column
-     * @param string $alignment Horizontal alignment: start, center, end
-     * @param bool $filled Use nav-fill to proportionately fill space
+     * @param string $type Navigation style: TYPE_TABS, TYPE_PILLS, or TYPE_UNDERLINE
+     * @param bool $vertical Stack items vertically with flex-column
+     * @param string $alignment Horizontal alignment: 'start', 'center', or 'end'
+     * @param bool $filled Use nav-fill to proportionately fill available space
      * @param bool $justified Use nav-justified for equal-width elements
      */
     public function __construct(
@@ -60,6 +105,9 @@ class nav extends \k1lib\html\ul {
         $this->build_items();
     }
 
+    /**
+     * Applies Bootstrap CSS classes based on configuration
+     */
     protected function apply_styles() {
         $classes = ['nav'];
 
@@ -99,6 +147,9 @@ class nav extends \k1lib\html\ul {
         $this->set_class(implode(' ', $classes));
     }
 
+    /**
+     * Builds nav items from the items array
+     */
     protected function build_items() {
         foreach ($this->items as $item) {
             if (isset($item['dropdown'])) {
@@ -118,13 +169,13 @@ class nav extends \k1lib\html\ul {
     }
 
     /**
-     * Add a simple nav item
+     * Adds a simple navigation item
      *
-     * @param string $text
-     * @param string $href
-     * @param bool $active
-     * @param bool $disabled
-     * @return \k1lib\html\li
+     * @param string $text Display text for the link
+     * @param string $href URL the item links to
+     * @param bool $active Mark as the currently active item
+     * @param bool $disabled Mark as disabled (non-clickable)
+     * @return \k1lib\html\li The created list item
      */
     public function add_item($text, $href = '#', $active = false, $disabled = false) {
         $li = $this->append_li(NULL, 'nav-item');
@@ -146,11 +197,13 @@ class nav extends \k1lib\html\ul {
     }
 
     /**
-     * Add a dropdown item
+     * Adds a dropdown navigation item
      *
-     * @param string $text Dropdown trigger text
-     * @param array $dropdown_items Array of ['text' => '', 'href' => ''] or ['divider' => true]
-     * @return \k1lib\html\li
+     * @param string $text Display text for the dropdown trigger
+     * @param array $dropdown_items Array of dropdown item configurations:
+     *   - ['text' => '', 'href' => '', 'active' => bool, 'disabled' => bool]
+     *   - ['divider' => true] for a separator line
+     * @return \k1lib\html\li The created list item containing the dropdown
      */
     public function add_dropdown_item($text, $dropdown_items) {
         $li = $this->append_li(NULL, 'nav-item dropdown');
@@ -187,11 +240,18 @@ class nav extends \k1lib\html\ul {
     }
 
     /**
-     * Create a tabbed interface with content panes
+     * Creates a complete tabbed interface with navigation and content panes
      *
-     * @param string $tab_id Base ID for the tab
-     * @param array $tabs Array of ['id' => '', 'label' => '', 'content' => '', 'active' => bool]
-     * @return array ['nav' => nav, 'content' => div]
+     * @param string $tab_id Base ID prefix for the tab elements
+     * @param array $tabs Array of tab configurations:
+     *   - 'id' (string): Unique tab identifier
+     *   - 'label' (string): Tab button text
+     *   - 'content' (string): HTML content for the tab pane
+     *   - 'active' (bool): Set as initially active tab
+     *   - 'disabled' (bool): Disable the tab button
+     * @return array Contains:
+     *   - 'nav': The nav component with tab buttons
+     *   - 'content': The div containing tab panes
      */
     public static function create_tabs($tab_id, $tabs) {
         $nav = new nav([], 'tabs');
@@ -246,11 +306,14 @@ class nav extends \k1lib\html\ul {
     }
 
     /**
-     * Create vertical pills with content panes
+     * Creates a vertical pill navigation with content panes
      *
-     * @param string $tab_id Base ID for the tab
-     * @param array $tabs Array of ['id' => '', 'label' => '', 'content' => '', 'active' => bool]
-     * @return array ['wrapper' => div, 'nav' => nav, 'content' => div]
+     * @param string $tab_id Base ID prefix for the tab elements
+     * @param array $tabs Array of tab configurations (same as create_tabs)
+     * @return array Contains:
+     *   - 'wrapper': Wrapper div containing nav and content
+     *   - 'nav': The nav component with vertical pills
+     *   - 'content': The div containing tab panes
      */
     public static function create_vertical_pills($tab_id, $tabs) {
         $wrapper = new div();

@@ -5,11 +5,12 @@ namespace k1lib\html\bootstrap;
 /**
  * Bootstrap 5 Badge component
  *
- * Small count and labeling component for highlighting content.
+ * A small, flexible component for highlighting counts, labels, or metadata.
+ * Badges can be rendered as pills (rounded) or regular badges, and support
+ * all Bootstrap color variants.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
  * @link    https://github.com/klan1/k1.lib-bootstrap
- * @link    https://github.com/k1lib/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/badge.mdx
  * @license Apache-2.0
  * @version 1.0.0
@@ -17,9 +18,11 @@ namespace k1lib\html\bootstrap;
 class badge extends \k1lib\html\span {
 
     /**
-     * @param string $text Badge text
-     * @param string $type Color type (primary, secondary, success, danger, warning, info, light, dark)
-     * @param bool $pill Render as pill badge
+     * Creates a new Badge instance
+     *
+     * @param string $text The badge text content (e.g., "New", "5", "Pending")
+     * @param string $type Bootstrap color type (primary, secondary, success, danger, warning, info, light, dark)
+     * @param bool $pill Render as pill-shaped badge (rounded-pill class)
      */
     public function __construct($text, $type = 'primary', $pill = FALSE) {
         $class = $pill ? "badge rounded-pill text-bg-{$type}" : "badge text-bg-{$type}";

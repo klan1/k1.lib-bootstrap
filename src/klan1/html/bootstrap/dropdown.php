@@ -5,24 +5,39 @@ namespace k1lib\html\bootstrap;
 /**
  * Bootstrap 5 Dropdown component
  *
- * Interactive button menu that reveals a list of actions or links.
+ * An interactive dropdown menu that reveals a list of actions or links
+ * when the trigger button is clicked. Supports directional variants
+ * (dropup, dropend, dropstart) and dividers between menu items.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
  * @link    https://github.com/klan1/k1.lib-bootstrap
-* @link    https://github.com/k1lib/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/dropdown.mdx
  * @license Apache-2.0
  * @version 1.0.0
  */
 class dropdown extends \k1lib\html\div {
 
+    /**
+     * The dropdown menu ul element
+     * @var \k1lib\html\ul
+     */
     protected $menu = NULL;
+
+    /**
+     * The dropdown toggle button
+     * @var \k1lib\html\button
+     */
     protected $toggle = NULL;
 
     /**
-     * @param string $label Button text
-     * @param array $items Array of ['text' => '', 'href' => '', 'divider' => bool]
-     * @param string $direction Drop direction (down, up, start, end)
+     * Creates a new Dropdown instance
+     *
+     * @param string $label The button text that triggers the dropdown
+     * @param array $items Array of menu item configurations:
+     *   - 'text' (string): Item display text
+     *   - 'href' (string): URL the item links to
+     *   - 'divider' (bool): TRUE to render a divider line instead of an item
+     * @param string $direction Drop direction: 'down', 'up', 'start', or 'end'
      */
     public function __construct($label = 'Dropdown', $items = [], $direction = 'down') {
         parent::__construct('dropdown', NULL);
@@ -34,7 +49,16 @@ class dropdown extends \k1lib\html\div {
         $this->toggle->set_attrib('aria-expanded', 'false');
         $this->toggle->set_attrib('id', 'mainDropdown');
 
-        $this->menu = new \k1lib\html\ul('dropdown-menu');
+        $direction_class = 'dropdown-menu';
+        if ($direction === 'up') {
+            $direction_class = 'dropup';
+        } elseif ($direction === 'start') {
+            $direction_class = 'dropstart';
+        } elseif ($direction === 'end') {
+            $direction_class = 'dropend';
+        }
+
+        $this->menu = new \k1lib\html\ul($direction_class);
         $this->menu->set_attrib('aria-labelledby', 'mainDropdown');
 
         foreach ($items as $item) {

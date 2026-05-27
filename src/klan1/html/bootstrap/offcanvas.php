@@ -5,11 +5,12 @@ namespace k1lib\html\bootstrap;
 /**
  * Bootstrap 5 Offcanvas component
  *
- * Hidden sidebar that slides in from the edge of the screen.
+ * A side panel that slides in from the edge of the screen. Unlike modals,
+ * offcanvases are often used for navigation menus, filters, or settings
+ * panels. Supports placement on the start (left), end (right), top, or bottom.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
  * @link    https://github.com/klan1/k1.lib-bootstrap
- * @link    https://github.com/k1lib/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/offcanvas.mdx
  * @license Apache-2.0
  * @version 1.0.0
@@ -17,8 +18,10 @@ namespace k1lib\html\bootstrap;
 class offcanvas extends \k1lib\html\div {
 
     /**
-     * @param string $placement Side: start, end, top, bottom
-     * @param string $title Title shown in header
+     * Creates a new Offcanvas instance
+     *
+     * @param string $placement Panel position: 'start' (left), 'end' (right), 'top', or 'bottom'
+     * @param string $title Title displayed in the offcanvas header
      * @param string $content Body HTML content
      */
     public function __construct($placement = 'start', $title = 'Offcanvas', $content = '') {

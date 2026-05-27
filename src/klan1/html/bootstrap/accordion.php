@@ -12,12 +12,20 @@ namespace k1lib\html\bootstrap;
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/accordion.mdx
  * @license Apache-2.0
+ * @version 1.0.0
  */
 class accordion extends \k1lib\html\div {
 
     use bootstrap_methods;
 
+    /**
+     * Default mode: only one item open at a time
+     */
     const MODE_DEFAULT = 'default';
+
+    /**
+     * Always-open mode: multiple items can be open simultaneously
+     */
     const MODE_ALWAYS_OPEN = 'always-open';
 
     /**

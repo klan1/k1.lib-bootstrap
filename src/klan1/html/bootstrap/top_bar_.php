@@ -5,35 +5,44 @@ namespace k1lib\html\bootstrap;
 /**
  * Bootstrap 5 Top Bar alternate component
  *
+ * An alternative top bar implementation with dropdown menus on both
+ * left and right sides. Includes title management with multiple span
+ * elements for hierarchical titles and responsive toggle support.
+ *
  * @author  Alejandro Trujillo J. (J0hnd03)
  * @link    https://github.com/klan1/k1.lib-bootstrap
- * @link    https://github.com/k1lib/k1.lib-bootstrap
- * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/navbar.mdx
  * @license Apache-2.0
+ * @version 1.0.0
  */
-
 class top_bar_ extends \k1lib\html\tag {
 
     use bootstrap_methods;
     use \k1lib\html\append_shotcuts;
 
     /**
+     * Parent element to append to
      * @var \k1lib\html\tag
      */
     protected $parent;
 
     /**
+     * Left dropdown menu
      * @var \k1lib\html\ul
      */
     protected $menu_left;
 
     /**
+     * Right dropdown menu
      * @var \k1lib\html\ul
      */
     protected $menu_right;
 
+    /**
+     * Creates a new Top Bar alternate instance
+     *
+     * @param \k1lib\html\tag $parent Element to append the top bar to
+     */
     function __construct(\k1lib\html\tag $parent) {
-
         $this->parent = $parent;
         $this->init_title_bar();
 
@@ -61,11 +70,13 @@ class top_bar_ extends \k1lib\html\tag {
     }
 
     /**
-     * @param string $href
-     * @param string $label
-     * @param string $class
-     * @param string $id
-     * @return \k1lib\html\a
+     * Adds a button to the right menu
+     *
+     * @param string $href Button link URL
+     * @param string $label Button text
+     * @param string|null $class Additional CSS classes
+     * @param string|null $id Optional element ID
+     * @return \k1lib\html\a The created anchor element
      */
     function add_button($href, $label, $class = NULL, $id = NULL) {
         $a = new \k1lib\html\a($href, $label, "_self", "button $class", $id);
@@ -74,9 +85,12 @@ class top_bar_ extends \k1lib\html\tag {
     }
 
     /**
-     * @param string $href
-     * @param string $label
-     * @return \k1lib\html\li
+     * Adds a menu item to the left menu
+     *
+     * @param string $href Item link URL
+     * @param string $label Item text
+     * @param \k1lib\html\tag|null $where Optional parent element to add under
+     * @return \k1lib\html\li The created list item
      */
     function add_menu_item($href, $label, \k1lib\html\tag $where = NULL) {
         if (empty($where)) {
@@ -90,15 +104,23 @@ class top_bar_ extends \k1lib\html\tag {
     }
 
     /**
-     * @param string $href
-     * @param string $label
-     * @return \k1lib\html\li
+     * Adds a submenu under a parent list item
+     *
+     * @param \k1lib\html\li $where Parent list item
+     * @return \k1lib\html\ul The created submenu
      */
     function add_sub_menu(\k1lib\html\li $where) {
         $sub_ul = $where->append_ul("menu vertical");
         return $sub_ul;
     }
 
+    /**
+     * Sets a title value on title spans
+     *
+     * @param int $number Title number (1, 2, or 3)
+     * @param string $value Title text value
+     * @param bool $append Append to existing value instead of replacing
+     */
     function set_title($number, $value, $append = FALSE) {
         $elements = $this->parent->get_elements_by_class("k1lib-title-{$number}");
         foreach ($elements as $element) {
@@ -106,6 +128,9 @@ class top_bar_ extends \k1lib\html\tag {
         }
     }
 
+    /**
+     * Initializes the responsive title bar
+     */
     function init_title_bar() {
         $title = $this->parent->append_div("title-bar")
                 ->set_attrib("data-responsive-toggle", "responsive-menu")
@@ -120,21 +145,27 @@ class top_bar_ extends \k1lib\html\tag {
     }
 
     /**
-     * @return div
+     * Gets the left dropdown menu
+     *
+     * @return \k1lib\html\ul The left menu element
      */
     function menu_left() {
         return $this->menu_left;
     }
 
     /**
-     * @return div
+     * Gets the right dropdown menu
+     *
+     * @return \k1lib\html\ul The right menu element
      */
     function menu_right() {
         return $this->menu_right;
     }
 
     /**
-     * @return tag
+     * Gets the parent element
+     *
+     * @return \k1lib\html\tag The parent element
      */
     function get_parent() {
         return $this->parent;

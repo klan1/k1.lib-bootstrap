@@ -2,16 +2,44 @@
 
 namespace k1lib\html\bootstrap;
 
+/**
+ * Bootstrap 5 Carousel component
+ *
+ * A slideshow component for cycling through elements (images or text slides)
+ * with support for indicators, controls, autoplay, crossfade effects, and
+ * touch/swipe navigation.
+ *
+ * @author  Alejandro Trujillo J. (J0hnd03)
+ * @link    https://github.com/klan1/k1.lib-bootstrap
+ * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/carousel.mdx
+ * @license Apache-2.0
+ * @version 1.0.0
+ */
 class carousel extends \k1lib\html\div {
 
+    /**
+     * Array of slide data
+     * @var array
+     */
     protected $slides = [];
 
     /**
-     * @param array $slides Array of slide data ['image' => '', 'caption' => '', 'active' => bool, 'interval' => int]
-     * @param bool $indicators Show slide indicators
-     * @param bool $controls Show prev/next controls
-     * @param bool $autoplay Enable auto-sliding (data-bs-ride="carousel")
-     * @param array $options Additional options: crossfade, dark, touch, interval
+     * Creates a new Carousel instance
+     *
+     * @param array $slides Array of slide data. Each slide can have:
+     *   - 'image' (string): URL of the slide image
+     *   - 'caption' (string): Slide caption title
+     *   - 'text' (string): Additional caption text
+     *   - 'active' (bool): Set as the initially active slide
+     *   - 'interval' (int): Custom interval for this slide in milliseconds
+     * @param bool $indicators Show slide indicator buttons at the bottom
+     * @param bool $controls Show previous/next navigation arrows
+     * @param bool $autoplay Enable automatic sliding
+     * @param array $options Additional options:
+     *   - 'crossfade' (bool): Enable crossfade transition effect
+     *   - 'dark' (bool): Use dark variant styling
+     *   - 'touch' (bool): Enable touch/swipe navigation
+     *   - 'interval' (int): Default interval between slides in milliseconds
      */
     public function __construct($slides = [], $indicators = TRUE, $controls = TRUE, $autoplay = FALSE, $options = []) {
         if (!is_array($options)) {

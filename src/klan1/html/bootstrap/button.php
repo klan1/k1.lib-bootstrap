@@ -5,8 +5,10 @@ namespace k1lib\html\bootstrap;
 /**
  * Bootstrap 5 Button component
  *
- * Use Bootstrap's custom button styles for actions in forms, dialogs, and more.
- * Supports multiple sizes, states, variants, and more.
+ * Creates Bootstrap-styled buttons for actions in forms, dialogs, and more.
+ * Supports all Bootstrap button variants (colors), sizes (sm/md/lg),
+ * outline styles, disabled state, active/toggle states, and block-level layout.
+ * Can render as a <button> or <a> element when href is provided.
  *
  * @author  Alejandro Trujillo J. (J0hnd03)
  * @link    https://github.com/klan1/k1.lib-bootstrap
@@ -16,26 +18,74 @@ namespace k1lib\html\bootstrap;
  */
 class button extends \k1lib\html\button {
 
+    /**
+     * Primary button style (solid blue)
+     */
     const VARIANT_PRIMARY = 'primary';
+
+    /**
+     * Secondary button style (gray)
+     */
     const VARIANT_SECONDARY = 'secondary';
+
+    /**
+     * Success button style (green)
+     */
     const VARIANT_SUCCESS = 'success';
+
+    /**
+     * Danger button style (red)
+     */
     const VARIANT_DANGER = 'danger';
+
+    /**
+     * Warning button style (yellow)
+     */
     const VARIANT_WARNING = 'warning';
+
+    /**
+     * Info button style (light blue)
+     */
     const VARIANT_INFO = 'info';
+
+    /**
+     * Light button style (white/light gray)
+     */
     const VARIANT_LIGHT = 'light';
+
+    /**
+     * Dark button style (dark gray/black)
+     */
     const VARIANT_DARK = 'dark';
+
+    /**
+     * Link button style (looks like a hyperlink)
+     */
     const VARIANT_LINK = 'link';
 
+    /**
+     * Small button size
+     */
     const SIZE_SM = 'sm';
+
+    /**
+     * Medium button size (default)
+     */
     const SIZE_MD = 'md';
+
+    /**
+     * Large button size
+     */
     const SIZE_LG = 'lg';
 
     /**
-     * @param string|null $value Button text content
-     * @param string $variant Bootstrap variant (primary, secondary, etc.)
-     * @param string $size Button size (sm, md, lg)
-     * @param bool $outline Use outline variant
-     * @param string|null $href Use anchor tag instead of button if provided
+     * Creates a new Button instance
+     *
+     * @param string|null $value Button text content. Empty string for icon-only buttons.
+     * @param string $variant Bootstrap variant color (VARIANT_PRIMARY, VARIANT_SECONDARY, etc.)
+     * @param string $size Button size (SIZE_SM, SIZE_MD, SIZE_LG)
+     * @param bool $outline Use outline variant style instead of solid
+     * @param string|null $href If provided, renders as an <a> tag instead of <button>
      */
     public function __construct($value = NULL, $variant = self::VARIANT_PRIMARY, $size = self::SIZE_MD, $outline = FALSE, $href = NULL) {
         if ($href !== NULL) {
@@ -52,11 +102,11 @@ class button extends \k1lib\html\button {
     }
 
     /**
-     * Set the Bootstrap variant
+     * Sets the Bootstrap color variant
      *
-     * @param string $variant primary, secondary, success, danger, warning, info, light, dark, link
-     * @param bool $outline Use outline variant
-     * @return $this
+     * @param string $variant Bootstrap variant (primary, secondary, success, danger, warning, info, light, dark, link)
+     * @param bool $outline Use outline variant style (btn-outline-*) instead of solid (btn-*)
+     * @return $this For method chaining
      */
     public function set_variant($variant, $outline = FALSE) {
         $class = 'btn';
@@ -70,10 +120,10 @@ class button extends \k1lib\html\button {
     }
 
     /**
-     * Set the Bootstrap size
+     * Sets the Bootstrap size variant
      *
-     * @param string $size sm, md, or lg
-     * @return $this
+     * @param string $size Button size: SIZE_SM, SIZE_MD, or SIZE_LG. MD applies no additional class.
+     * @return $this For method chaining
      */
     public function set_size($size) {
         if ($size === self::SIZE_SM) {
@@ -85,10 +135,13 @@ class button extends \k1lib\html\button {
     }
 
     /**
-     * Enable disabled state
+     * Sets the disabled state
      *
-     * @param bool $disabled
-     * @return $this
+     * For <a> elements: adds .disabled class, aria-disabled="true", and tabindex="-1".
+     * For <button> elements: adds the disabled attribute.
+     *
+     * @param bool $disabled TRUE to disable, FALSE to enable
+     * @return $this For method chaining
      */
     public function set_disabled($disabled = TRUE) {
         if ($this->get_tag_name() === 'a') {
@@ -112,10 +165,10 @@ class button extends \k1lib\html\button {
     }
 
     /**
-     * Enable active state for toggle buttons
+     * Sets the active state for toggle button groups
      *
-     * @param bool $active
-     * @return $this
+     * @param bool $active TRUE to mark as active (pressed), FALSE otherwise
+     * @return $this For method chaining
      */
     public function set_active($active = TRUE) {
         if ($active) {
@@ -129,10 +182,10 @@ class button extends \k1lib\html\button {
     }
 
     /**
-     * Enable toggle functionality
+     * Enables Bootstrap toggle button functionality
      *
-     * @param bool $toggle
-     * @return $this
+     * @param bool $toggle TRUE to enable toggle behavior (data-bs-toggle="button"), FALSE to remove
+     * @return $this For method chaining
      */
     public function set_toggle($toggle = TRUE) {
         if ($toggle) {
@@ -144,10 +197,10 @@ class button extends \k1lib\html\button {
     }
 
     /**
-     * Set block level button (full width)
+     * Sets block-level button (full width)
      *
-     * @param bool $block
-     * @return $this
+     * @param bool $block TRUE for full-width button, FALSE for default width
+     * @return $this For method chaining
      */
     public function set_block($block = TRUE) {
         if ($block) {
@@ -159,60 +212,60 @@ class button extends \k1lib\html\button {
     }
 
     /**
-     * Factory method for primary button
+     * Factory method to create a primary button
      *
-     * @param string|null $value
-     * @return static
+     * @param string|null $value Button text content
+     * @return static New button instance with primary variant
      */
     public static function primary($value = NULL) {
         return new static($value, self::VARIANT_PRIMARY);
     }
 
     /**
-     * Factory method for secondary button
+     * Factory method to create a secondary button
      *
-     * @param string|null $value
-     * @return static
+     * @param string|null $value Button text content
+     * @return static New button instance with secondary variant
      */
     public static function secondary($value = NULL) {
         return new static($value, self::VARIANT_SECONDARY);
     }
 
     /**
-     * Factory method for success button
+     * Factory method to create a success button
      *
-     * @param string|null $value
-     * @return static
+     * @param string|null $value Button text content
+     * @return static New button instance with success variant
      */
     public static function success($value = NULL) {
         return new static($value, self::VARIANT_SUCCESS);
     }
 
     /**
-     * Factory method for danger button
+     * Factory method to create a danger button
      *
-     * @param string|null $value
-     * @return static
+     * @param string|null $value Button text content
+     * @return static New button instance with danger variant
      */
     public static function danger($value = NULL) {
         return new static($value, self::VARIANT_DANGER);
     }
 
     /**
-     * Factory method for warning button
+     * Factory method to create a warning button
      *
-     * @param string|null $value
-     * @return static
+     * @param string|null $value Button text content
+     * @return static New button instance with warning variant
      */
     public static function warning($value = NULL) {
         return new static($value, self::VARIANT_WARNING);
     }
 
     /**
-     * Factory method for info button
+     * Factory method to create an info button
      *
-     * @param string|null $value
-     * @return static
+     * @param string|null $value Button text content
+     * @return static New button instance with info variant
      */
     public static function info($value = NULL) {
         return new static($value, self::VARIANT_INFO);
