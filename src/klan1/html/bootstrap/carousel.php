@@ -14,6 +14,9 @@ class carousel extends \k1lib\html\div {
      * @param array $options Additional options: crossfade, dark, touch, interval
      */
     public function __construct($slides = [], $indicators = TRUE, $controls = TRUE, $autoplay = FALSE, $options = []) {
+        if (!is_array($options)) {
+            $options = [];
+        }
         $options = array_merge([
             'crossfade' => FALSE,
             'dark' => FALSE,

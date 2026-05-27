@@ -35,6 +35,9 @@ class modal extends \k1lib\html\div {
      * @param array $options Configuration array
      */
     public function __construct($title = '', $content = '', $options = []) {
+        if (!is_array($options)) {
+            $options = [];
+        }
         $options = array_merge([
             'id' => NULL,
             'size' => NULL,
