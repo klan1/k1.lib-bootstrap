@@ -32,7 +32,17 @@ class modal extends \k1lib\html\div {
     /**
      * @param string $title Modal title text
      * @param string $content Modal body content
-     * @param array $options Configuration array
+     * @param array $options Configuration array with keys:
+     *   - id (string|null): Modal ID, auto-generated if null
+     *   - size (string|null): SIZE_SM, SIZE_LG, SIZE_XL, SIZE_FULLSMALL, SIZE_FULLMD, SIZE_FULLLG, SIZE_FULLXL, or SIZE_FULL
+     *   - scrollable (bool): Enable scrollable modal body (default: FALSE)
+     *   - centered (bool): Center the modal vertically (default: FALSE)
+     *   - static_backdrop (bool): Close on backdrop click disabled (default: TRUE)
+     *   - keyboard (bool): Enable ESC key to close (default: FALSE)
+     *   - btn_ok (string): OK button text, empty to hide (default: 'OK')
+     *   - btn_cancel (string): Cancel button text, empty to hide (default: 'Cancel')
+     *   - btn_ok_class (string): OK button Bootstrap classes (default: 'btn-primary')
+     *   - btn_cancel_class (string): Cancel button Bootstrap classes (default: 'btn-secondary')
      */
     public function __construct($title = '', $content = '', $options = []) {
         if (!is_array($options)) {
