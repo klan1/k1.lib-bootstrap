@@ -13,7 +13,7 @@ use k1lib\html\button;
  * vertical layouts, dropdown menus, filled/justified elements, and
  * can generate complete tab interfaces with content panes.
  *
- * @author  Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @link    https://getbootstrap.com/docs/5.3/components/navs-tabs/
  * @license Apache-2.0

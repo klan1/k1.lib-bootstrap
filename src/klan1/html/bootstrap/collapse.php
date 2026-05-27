@@ -9,7 +9,7 @@ namespace k1lib\html\bootstrap;
  * accordion-style transitions. Used in conjunction with buttons or links
  * that trigger the show/hide behavior via Bootstrap's collapse JavaScript.
  *
- * @author  Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/collapse.mdx
  * @license Apache-2.0

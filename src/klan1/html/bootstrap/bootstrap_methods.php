@@ -9,7 +9,7 @@ namespace k1lib\html\bootstrap;
  * This trait adds methods to set column spans at different breakpoints
  * (general, small, medium, large, extra-large, extra-extra-large).
  *
- * @author  Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @license Apache-2.0
  * @version 1.0.0

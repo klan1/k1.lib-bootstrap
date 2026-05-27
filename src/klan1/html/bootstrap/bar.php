@@ -9,7 +9,7 @@ namespace k1lib\html\bootstrap;
  * sections. Used as a foundation for title_bar, top_bar, and similar
  * components that need a dual-section layout.
  *
- * @author  Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @license Apache-2.0
  * @version 1.0.0

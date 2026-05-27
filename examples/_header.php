@@ -2,7 +2,7 @@
 /**
  * Bootstrap 5 Components Showcase - Individual Component Examples
  *
- * @author Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link https://github.com/klan1/k1.lib-bootstrap
  * @license Apache-2.0
  */

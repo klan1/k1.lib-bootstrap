@@ -9,7 +9,7 @@ namespace k1lib\html\bootstrap;
  * on the left and a title span, commonly used in mobile-friendly
  * interfaces or as part of larger navigation structures.
  *
- * @author  Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @license Apache-2.0
  * @version 1.0.0

@@ -9,7 +9,7 @@ namespace k1lib\html\bootstrap;
  * drilldown, and accordion navigation styles. Built on Foundation
  *-inspired menu patterns with Bootstrap styling.
  *
- * @author  Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @license Apache-2.0
  * @version 1.0.0

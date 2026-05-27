@@ -10,7 +10,7 @@ namespace k1lib\html\bootstrap;
  * the user experience and can be configured with a header, body content,
  * and automatic dismissal timing.
  *
- * @author  Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/toast.mdx
  * @license Apache-2.0

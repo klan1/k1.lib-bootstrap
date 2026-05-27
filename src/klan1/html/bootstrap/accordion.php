@@ -8,7 +8,7 @@ namespace k1lib\html\bootstrap;
  * Build vertically collapsing accordions in combination with our Collapse JavaScript plugin.
  * Supports: default (one open at a time), always-open, flush, and open-by-default modes.
  *
- * @author  Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/accordion.mdx
  * @license Apache-2.0

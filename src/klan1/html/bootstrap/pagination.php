@@ -9,7 +9,7 @@ namespace k1lib\html\bootstrap;
  * search results, article archives, or tabular data. Displays page
  * numbers with Previous/Next navigation controls.
  *
- * @author  Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/components/pagination.mdx
  * @license Apache-2.0

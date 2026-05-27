@@ -9,7 +9,7 @@ namespace k1lib\html\bootstrap;
  * that holds grid cells (columns). Uses Bootstrap's row class with
  * configurable column count.
  *
- * @author  Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/layout/grid.mdx
  * @license Apache-2.0

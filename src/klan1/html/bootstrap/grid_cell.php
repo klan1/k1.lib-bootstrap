@@ -9,7 +9,7 @@ namespace k1lib\html\bootstrap;
  * responsive column that can contain content and can be nested with
  * additional grids or rows.
  *
- * @author  Alejandro Trujillo J. (J0hnd03)
+ * @author Alejandro Trujillo J. <https://github.com/j0hnd03>
  * @link    https://github.com/klan1/k1.lib-bootstrap
  * @link    https://github.com/twbs/bootstrap/blob/v5.3.8/site/src/content/docs/layout/grid.mdx
  * @license Apache-2.0
