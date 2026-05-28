@@ -22,7 +22,7 @@
             "k1lib\\html\\bootstrap\\": "src/k1lib/html/bootstrap/"
         }
     },
-    "scripts；二是 {
+    "scripts": {
         "test": "phpunit",
         "examples": [
             "Composer\\Config::disableProcessTimeout",
