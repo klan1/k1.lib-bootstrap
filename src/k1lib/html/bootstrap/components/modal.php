@@ -210,7 +210,7 @@ class modal extends \k1lib\html\div {
      * @param string $position Position to add the element ('last' only supported)
      * @return $this For method chaining
      */
-    public function add_footer_item($element, $position = 'last') {
+    public function add_footer_item($element, $position = 'last'): static {
         if ($element instanceof \k1lib\html\tag) {
             $this->footer->append_child($element);
         } else {

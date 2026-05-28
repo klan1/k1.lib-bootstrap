@@ -44,7 +44,7 @@ class button_group extends \k1lib\html\div {
      * @param \k1lib\html\tag $button Button to add
      * @return $this
      */
-    public function add_button($button) {
+    public function add_button($button): static {
         $this->append_child($button);
         return $this;
     }
@@ -55,7 +55,7 @@ class button_group extends \k1lib\html\div {
      * @param array $buttons Array of button objects
      * @return $this
      */
-    public function add_buttons(array $buttons) {
+    public function add_buttons(array $buttons): static {
         foreach ($buttons as $button) {
             $this->append_child($button);
         }
@@ -68,7 +68,7 @@ class button_group extends \k1lib\html\div {
      * @param int $index
      * @return \k1lib\html\tag|null
      */
-    public function button($index) {
+    public function button($index): \k1lib\html\tag|null {
         $childs = $this->get_childs();
         return $childs[$index] ?? NULL;
     }
@@ -106,7 +106,7 @@ class button_toolbar extends \k1lib\html\div {
      * @param string $class Additional classes like 'me-2' for spacing
      * @return $this
      */
-    public function add_group(button_group $group, $class = '') {
+    public function add_group(button_group $group, $class = ''): static {
         $group_div = new \k1lib\html\div('btn-group ' . $class);
         foreach ($group->get_childs() as $child) {
             $group_div->append_child($child);

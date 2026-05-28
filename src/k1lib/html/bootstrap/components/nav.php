@@ -108,7 +108,7 @@ class nav extends \k1lib\html\ul {
     /**
      * Applies Bootstrap CSS classes based on configuration
      */
-    protected function apply_styles() {
+    protected function apply_styles(): void {
         $classes = ['nav'];
 
         switch ($this->type) {
@@ -150,7 +150,7 @@ class nav extends \k1lib\html\ul {
     /**
      * Builds nav items from the items array
      */
-    protected function build_items() {
+    protected function build_items(): void {
         foreach ($this->items as $item) {
             if (isset($item['dropdown'])) {
                 $this->add_dropdown_item(

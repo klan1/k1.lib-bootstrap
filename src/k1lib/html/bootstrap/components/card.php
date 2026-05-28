@@ -65,7 +65,7 @@ class card extends \k1lib\html\div {
      * @param string $content Header HTML content
      * @return $this For method chaining
      */
-    public function set_header($content) {
+    public function set_header($content): static {
         $this->header = new \k1lib\html\div('card-header');
         $this->header->set_value($content);
         $this->append_child($this->header);
@@ -79,7 +79,7 @@ class card extends \k1lib\html\div {
      * @param string $content Footer HTML content
      * @return $this For method chaining
      */
-    public function set_footer($content) {
+    public function set_footer($content): static {
         $this->footer = new \k1lib\html\div('card-footer');
         $this->footer->set_value($content);
         $this->append_child($this->footer);

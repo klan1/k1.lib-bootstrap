@@ -76,7 +76,7 @@ class callout extends \k1lib\html\div {
      * @param string $class CSS class name
      * @param bool $append Whether to append or replace existing classes
      */
-    public function set_class($class, $append = FALSE) {
+    public function set_class($class, $append = FALSE): static {
         if ($append === FALSE) {
             $class = "alert {$class}";
         }

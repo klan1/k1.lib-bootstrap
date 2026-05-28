@@ -78,7 +78,7 @@ class top_bar_ extends \k1lib\html\tag {
      * @param string|null $id Optional element ID
      * @return \k1lib\html\a The created anchor element
      */
-    function add_button($href, $label, $class = NULL, $id = NULL) {
+    function add_button($href, $label, $class = NULL, $id = NULL): \k1lib\html\a {
         $a = new \k1lib\html\a($href, $label, "_self", "button $class", $id);
         $this->menu_right->append_li()->append_child($a);
         return $a;
@@ -92,7 +92,7 @@ class top_bar_ extends \k1lib\html\tag {
      * @param \k1lib\html\tag|null $where Optional parent element to add under
      * @return \k1lib\html\li The created list item
      */
-    function add_menu_item($href, $label, \k1lib\html\tag $where = NULL) {
+    function add_menu_item($href, $label, \k1lib\html\tag $where = NULL): \k1lib\html\li {
         if (empty($where)) {
             $li = $this->menu_left->append_li();
             $li->append_a($href, $label);
@@ -109,7 +109,7 @@ class top_bar_ extends \k1lib\html\tag {
      * @param \k1lib\html\li $where Parent list item
      * @return \k1lib\html\ul The created submenu
      */
-    function add_sub_menu(\k1lib\html\li $where) {
+    function add_sub_menu(\k1lib\html\li $where): \k1lib\html\ul {
         $sub_ul = $where->append_ul("menu vertical");
         return $sub_ul;
     }
@@ -121,7 +121,7 @@ class top_bar_ extends \k1lib\html\tag {
      * @param string $value Title text value
      * @param bool $append Append to existing value instead of replacing
      */
-    function set_title($number, $value, $append = FALSE) {
+    function set_title($number, $value, $append = FALSE): void {
         $elements = $this->parent->get_elements_by_class("k1lib-title-{$number}");
         foreach ($elements as $element) {
             $element->set_value($value, $append);
@@ -131,7 +131,7 @@ class top_bar_ extends \k1lib\html\tag {
     /**
      * Initializes the responsive title bar
      */
-    function init_title_bar() {
+    function init_title_bar(): void {
         $title = $this->parent->append_div("title-bar")
                 ->set_attrib("data-responsive-toggle", "responsive-menu")
                 ->set_attrib("data-hide-for", "medium");
@@ -149,7 +149,7 @@ class top_bar_ extends \k1lib\html\tag {
      *
      * @return \k1lib\html\ul The left menu element
      */
-    function menu_left() {
+    function menu_left(): \k1lib\html\ul {
         return $this->menu_left;
     }
 
@@ -158,7 +158,7 @@ class top_bar_ extends \k1lib\html\tag {
      *
      * @return \k1lib\html\ul The right menu element
      */
-    function menu_right() {
+    function menu_right(): \k1lib\html\ul {
         return $this->menu_right;
     }
 

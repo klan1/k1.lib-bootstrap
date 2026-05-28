@@ -60,7 +60,7 @@ class grid_row extends div {
      *
      * @param int $from Column number to copy classes from
      */
-    public function copy_clases_to_cols($from) {
+    public function copy_clases_to_cols($from): void {
         $classes = $this->col($from)->get_attribute('class');
         for ($col = 1; $col <= count($this->cols); $col++) {
             $this->cols[$col]->set_class($classes);

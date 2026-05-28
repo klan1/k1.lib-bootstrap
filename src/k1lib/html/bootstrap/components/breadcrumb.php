@@ -43,7 +43,7 @@ class breadcrumb extends \k1lib\html\nav {
      *                          the item is marked as the current page (active)
      * @return $this For method chaining
      */
-    public function add_item($text, $href = NULL) {
+    public function add_item($text, $href = NULL): static {
         $li = $this->ol->append_li(null, 'breadcrumb-item');
 
         if ($href !== NULL) {
@@ -62,7 +62,7 @@ class breadcrumb extends \k1lib\html\nav {
      * @param int $index Zero-based index of the breadcrumb item
      * @return \k1lib\html\li|null The breadcrumb list item or NULL if not found
      */
-    public function item($index) {
+    public function item($index): \k1lib\html\li|null {
         $childs = $this->ol->get_childs();
         return $childs[$index] ?? NULL;
     }

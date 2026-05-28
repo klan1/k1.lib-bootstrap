@@ -99,7 +99,7 @@ class list_group extends \k1lib\html\ul {
      * @param array $items Array of item configurations. See add_item() for structure.
      * @return $this For method chaining
      */
-    public function add_items(array $items) {
+    public function add_items(array $items): static {
         foreach ($items as $item) {
             $text = $item['text'] ?? '';
             $href = $item['href'] ?? NULL;

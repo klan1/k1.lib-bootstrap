@@ -68,7 +68,7 @@ class alert extends \k1lib\html\div {
      * @param string $heading The heading text to display
      * @return $this For method chaining
      */
-    public function set_heading($heading) {
+    public function set_heading($heading): static {
         $this->heading = new \k1lib\html\h4($heading, NULL);
         $this->heading->set_class('alert-heading');
         $this->append_child($this->heading);
@@ -82,7 +82,7 @@ class alert extends \k1lib\html\div {
      * @param int $n_childs Number of children to include (0 = all)
      * @return string The rendered HTML
      */
-    public function generate($with_childs = \TRUE, $n_childs = 0) {
+    public function generate($with_childs = \TRUE, $n_childs = 0): string {
         if (!empty($this->heading)) {
             $this->append_child($this->heading);
             $p = new \k1lib\html\p($this->message);

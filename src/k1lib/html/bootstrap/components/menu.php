@@ -133,7 +133,7 @@ class menu extends \k1lib\html\ul {
      * @param string|null $where_id Parent menu item ID to nest under
      * @return \k1lib\html\li The created list item
      */
-    function add_menu_item($href, $label, $id = NULL, $where_id = NULL) {
+    function add_menu_item($href, $label, $id = NULL, $where_id = NULL): \k1lib\html\li {
         $parent = NULL;
         if (!empty($where_id)) {
             $parent = $this->get_element_by_id($where_id);
@@ -164,7 +164,7 @@ class menu extends \k1lib\html\ul {
      * @param string|null $where_id Parent menu item ID to nest under
      * @return menu The newly created submenu
      */
-    function add_sub_menu($href, $label, $id = NULL, $where_id = NULL) {
+    function add_sub_menu($href, $label, $id = NULL, $where_id = NULL): menu {
         $parent = NULL;
         if (!empty($where_id)) {
             $parent = $this->get_element_by_id($where_id);
@@ -188,7 +188,7 @@ class menu extends \k1lib\html\ul {
      *
      * @param string $id The ID of the menu item to mark as active
      */
-    function set_active($id) {
+    function set_active($id): void {
         $tag = $this->get_element_by_id($id);
         if (!empty($tag)) {
             $tag->unlink_value_obj();

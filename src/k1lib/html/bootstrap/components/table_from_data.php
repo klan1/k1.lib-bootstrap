@@ -95,7 +95,7 @@ class table_from_data extends table {
      * @param bool $has_header Treat first row as column headers
      * @return $this For method chaining
      */
-    public function set_data(array $data, $has_header = TRUE) {
+    public function set_data(array $data, $has_header = TRUE): static {
         $this->data = $data;
         $this->data_original = $data;
         $this->has_header = $has_header;
@@ -109,7 +109,7 @@ class table_from_data extends table {
      * @param int $n_childs Number of children limit (0 = all)
      * @return string The rendered HTML
      */
-    public function generate($with_childs = TRUE, $n_childs = 0) {
+    public function generate($with_childs = TRUE, $n_childs = 0): string {
         $this->use_data();
         return parent::generate($with_childs, $n_childs);
     }
@@ -119,14 +119,14 @@ class table_from_data extends table {
      *
      * @param array $fields Array of field names to hide
      */
-    public function set_fields_to_hide($fields) {
+    public function set_fields_to_hide($fields): void {
         $this->fields_to_hide = $fields;
     }
 
     /**
      * Processes data and builds table structure
      */
-    public function use_data() {
+    public function use_data(): static {
         $num_col = 0;
         $num_row = 0;
         $row = 0;
@@ -188,7 +188,7 @@ class table_from_data extends table {
      *
      * @param array $fields_for_key_array_text Field names to include in auth code
      */
-    public function set_fields_for_key_array_text(array $fields_for_key_array_text) {
+    public function set_fields_for_key_array_text(array $fields_for_key_array_text): void {
         $this->fields_for_key_array_text = $fields_for_key_array_text;
     }
 
@@ -204,7 +204,7 @@ class table_from_data extends table {
      * @param int|null $just_this_row Only process specific row index
      * @return $this For method chaining
      */
-    public function insert_tag_on_field(tag $tag_object, array $fields_to_insert, $tag_attrib_to_use = NULL, $append = FALSE, $respect_blanks = FALSE, $just_replace_attribs = FALSE, $just_this_row = NULL) {
+    public function insert_tag_on_field(tag $tag_object, array $fields_to_insert, $tag_attrib_to_use = NULL, $append = FALSE, $respect_blanks = FALSE, $just_replace_attribs = FALSE, $just_this_row = NULL): static {
         $row = 0;
         foreach ($this->data_original as $row_index => $row_data) {
             $row++;
@@ -368,7 +368,7 @@ class table_from_data extends table {
      * @param array $fields Array of field names to hide
      * @return $this For method chaining
      */
-    public function hide_fields(array $fields) {
+    public function hide_fields(array $fields): static {
         $this->fields_to_hide = $fields;
         return $this;
     }
@@ -397,7 +397,7 @@ class table_from_data extends table {
      * @param int|null $max_text_length_on_cell Max characters before truncation
      * @return $this For method chaining
      */
-    public function set_max_text_length_on_cell($max_text_length_on_cell) {
+    public function set_max_text_length_on_cell($max_text_length_on_cell): static {
         $this->max_text_length_on_cell = $max_text_length_on_cell;
         return $this;
     }

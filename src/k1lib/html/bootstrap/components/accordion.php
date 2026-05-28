@@ -93,7 +93,7 @@ class accordion extends \k1lib\html\div {
      * @param bool $is_default_open If true, this item starts open
      * @return $this
      */
-    public function add_item($title, $content = '', $item_id = null, $is_default_open = false) {
+    public function add_item($title, $content = '', $item_id = null, $is_default_open = false): static {
         $this->item_counter++;
         if ($item_id === null) {
             $item_id = 'item-' . $this->item_counter;
@@ -169,7 +169,7 @@ class accordion extends \k1lib\html\div {
      * @param array $items Array of items, each with 'title', 'content', 'id', 'default_open' keys
      * @return $this
      */
-    public function add_items(array $items) {
+    public function add_items(array $items): static {
         foreach ($items as $item_config) {
             $title = $item_config['title'] ?? '';
             $content = $item_config['content'] ?? '';
@@ -187,7 +187,7 @@ class accordion extends \k1lib\html\div {
      * @param string|array $item_ids Single ID or array of IDs
      * @return $this
      */
-    public function set_default_open($item_ids) {
+    public function set_default_open($item_ids): static {
         if (!is_array($item_ids)) {
             $item_ids = [$item_ids];
         }
@@ -201,7 +201,7 @@ class accordion extends \k1lib\html\div {
      * @param string $item_id
      * @return \k1lib\html\div|null
      */
-    public function item_body($item_id) {
+    public function item_body($item_id): \k1lib\html\div|null {
         return $this->items[$item_id]['body'] ?? null;
     }
 
@@ -211,7 +211,7 @@ class accordion extends \k1lib\html\div {
      * @param string $item_id
      * @return \k1lib\html\button|null
      */
-    public function item_button($item_id) {
+    public function item_button($item_id): \k1lib\html\button|null {
         return $this->items[$item_id]['button'] ?? null;
     }
 
@@ -221,7 +221,7 @@ class accordion extends \k1lib\html\div {
      * @param string $item_id
      * @return \k1lib\html\div|null
      */
-    public function item_collapse($item_id) {
+    public function item_collapse($item_id): \k1lib\html\div|null {
         return $this->items[$item_id]['collapse'] ?? null;
     }
 
@@ -231,7 +231,7 @@ class accordion extends \k1lib\html\div {
      * @param string $item_id
      * @return \k1lib\html\div|null
      */
-    public function item_header($item_id) {
+    public function item_header($item_id): \k1lib\html\div|null {
         return $this->items[$item_id]['header'] ?? null;
     }
 
@@ -240,7 +240,7 @@ class accordion extends \k1lib\html\div {
      *
      * @return \k1lib\html\div
      */
-    public function container() {
+    public function container(): \k1lib\html\div {
         return $this->container;
     }
 
@@ -250,7 +250,7 @@ class accordion extends \k1lib\html\div {
      * @param string $item_id
      * @return bool
      */
-    public function has_item($item_id) {
+    public function has_item($item_id): bool {
         return isset($this->items[$item_id]);
     }
 
@@ -259,7 +259,7 @@ class accordion extends \k1lib\html\div {
      *
      * @return array
      */
-    public function get_item_ids() {
+    public function get_item_ids(): array {
         return array_keys($this->items);
     }
 
@@ -278,7 +278,7 @@ class accordion extends \k1lib\html\div {
      * @param string $item_id
      * @return $this
      */
-    public function remove_item($item_id) {
+    public function remove_item($item_id): static {
         if (isset($this->items[$item_id])) {
             $this->items[$item_id]['item']->remove_from_parent();
             unset($this->items[$item_id]);

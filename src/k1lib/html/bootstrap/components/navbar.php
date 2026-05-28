@@ -103,7 +103,7 @@ class navbar extends \k1lib\html\nav {
      *        Each item should have 'text' and 'href' keys, or be 'divider' for a separator.
      * @return \k1lib\html\li The created list item
      */
-    public function add_item($text = '', $href = '#', $active = FALSE, $disabled = FALSE, $dropdown = NULL) {
+    public function add_item($text = '', $href = '#', $active = FALSE, $disabled = FALSE, $dropdown = NULL): \k1lib\html\li {
         $li = $this->nav->append_li();
         $li->set_class('nav-item');
 
@@ -159,7 +159,7 @@ class navbar extends \k1lib\html\nav {
      * @param string $margin_start CSS margin start class (e.g., 'auto' for push to end)
      * @return \k1lib\html\span The created span element
      */
-    public function add_text($text = '', $margin_start = 'auto') {
+    public function add_text($text = '', $margin_start = 'auto'): \k1lib\html\span {
         $span = new \k1lib\html\span($text);
         $span->set_class("navbar-text me-{$margin_start}");
         if ($this->brand instanceof \k1lib\html\a) {
@@ -179,7 +179,7 @@ class navbar extends \k1lib\html\nav {
      * @param string $input_name Name attribute for the input
      * @return \k1lib\html\form The created form element
      */
-    public function add_form($placeholder = 'Search', $button_text = 'Search', $button_class = 'btn-outline-success', $input_name = 'search') {
+    public function add_form($placeholder = 'Search', $button_text = 'Search', $button_class = 'btn-outline-success', $input_name = 'search'): \k1lib\html\form {
         $form = new \k1lib\html\form();
         $form->set_class('d-flex');
         $form->set_attrib('role', 'search');
@@ -209,7 +209,7 @@ class navbar extends \k1lib\html\nav {
      * @param bool $add_background Add a background color class
      * @return $this For method chaining
      */
-    public function set_placement($placement = 'fixed-top', $add_background = true) {
+    public function set_placement($placement = 'fixed-top', $add_background = true): static {
         $valid_placements = ['fixed-top', 'fixed-bottom', 'sticky-top', 'sticky-bottom'];
         if (in_array($placement, $valid_placements)) {
             $this->set_class($placement, TRUE);
@@ -230,7 +230,7 @@ class navbar extends \k1lib\html\nav {
      * @param string $href Link destination for the brand image
      * @return \k1lib\html\a The brand anchor element
      */
-    public function set_brand_image($src, $alt = '', $width = 30, $height = 24, $href = '#') {
+    public function set_brand_image($src, $alt = '', $width = 30, $height = 24, $href = '#'): \k1lib\html\a {
         $this->brand = new \k1lib\html\a($href, '');
         $this->brand->set_class('navbar-brand');
 
@@ -249,7 +249,7 @@ class navbar extends \k1lib\html\nav {
      *
      * @return \k1lib\html\a|\k1lib\html\img|null The brand element
      */
-    public function brand() {
+    public function brand(): \k1lib\html\a|\k1lib\html\img|null {
         return $this->brand;
     }
 
@@ -258,7 +258,7 @@ class navbar extends \k1lib\html\nav {
      *
      * @return \k1lib\html\div The collapse container element
      */
-    public function collapse() {
+    public function collapse(): \k1lib\html\div {
         return $this->collapse;
     }
 }
