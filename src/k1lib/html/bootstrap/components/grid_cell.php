@@ -46,7 +46,7 @@ class grid_cell extends div {
      * @param bool $append Whether to append or replace (default TRUE)
      * @return $this For method chaining
      */
-    public function set_class($class, $append = false): tag {
+    public function set_class($class, $append = false): static {
         parent::set_class($class, $append);
         return $this;
     }
