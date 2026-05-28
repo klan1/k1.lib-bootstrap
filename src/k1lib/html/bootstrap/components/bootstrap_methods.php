@@ -85,7 +85,7 @@ trait bootstrap_methods {
      * @param string $text Text to remove
      * @return string The modified attribute value
      */
-    public function remove_attribute_text($attribute, $text) {
+    public function remove_attribute_text($attribute, $text): string {
         $attribute_value = $this->get_attribute($attribute);
         $text_regexp = "/(\s*$text\s*)/";
         $regexp_match = [];
