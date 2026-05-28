@@ -17,7 +17,7 @@ namespace k1lib\html\bootstrap;
 class top_bar_ extends \k1lib\html\tag {
 
     use bootstrap_methods;
-    use \k1lib\html\append_shotcuts;
+    use \k1lib\html\append_shortcuts;
 
     /**
      * Parent element to append to
