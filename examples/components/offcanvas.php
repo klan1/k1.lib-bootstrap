@@ -5,7 +5,7 @@ require_once __DIR__ . '/../_header.php';
 
 <section class="component-section">
     <h2 class="component-title">Offcanvas</h2>
-    <div class="component-ref">\k1lib\html\bootstrap\offcanvas &rarr; src/klan1/html/bootstrap/offcanvas.php</div>
+    <div class="component-ref">\k1lib\html\bootstrap\components\offcanvas &rarr; src/klan1/html/bootstrap/offcanvas.php</div>
 
     <div class="preview-label">Basic (Start/Left)</div>
     <div class="preview-box">
@@ -13,7 +13,7 @@ require_once __DIR__ . '/../_header.php';
             Open Offcanvas (Left)
         </button>
         <?php
-        $offcanvas_left = new \k1lib\html\bootstrap\offcanvas('start', 'Offcanvas Title', '<p>Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.</p><hr><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>');
+        $offcanvas_left = new \k1lib\html\bootstrap\components\offcanvas('start', 'Offcanvas Title', '<p>Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.</p><hr><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>');
         echo $offcanvas_left->generate();
         ?>
     </div>
@@ -23,7 +23,7 @@ require_once __DIR__ . '/../_header.php';
             <div class="code-dots"><span></span><span></span><span></span></div>
             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
         </div>
-        <pre class="code-content"><code><span class="textwarning">$offcanvas</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\offcanvas(<span class="textsuccess">'start'</span>, <span class="textsuccess">'Title'</span>, <span class="textsuccess">'<p>Content</p>'</span>);
+        <pre class="code-content"><code><span class="textwarning">$offcanvas</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\components\offcanvas(<span class="textsuccess">'start'</span>, <span class="textsuccess">'Title'</span>, <span class="textsuccess">'<p>Content</p>'</span>);
 <span class="textwarning">echo</span> <span class="textwarning">$offcanvas</span>-><span class="textlight">generate</span>();</code></pre>
     </div>
 
@@ -33,7 +33,7 @@ require_once __DIR__ . '/../_header.php';
             Open Offcanvas (Right)
         </button>
         <?php
-        $offcanvas_right = new \k1lib\html\bootstrap\offcanvas('end', 'Right Offcanvas', '<p>This offcanvas slides in from the right side.</p>');
+        $offcanvas_right = new \k1lib\html\bootstrap\components\offcanvas('end', 'Right Offcanvas', '<p>This offcanvas slides in from the right side.</p>');
         echo $offcanvas_right->generate();
         ?>
     </div>
@@ -43,7 +43,7 @@ require_once __DIR__ . '/../_header.php';
             <div class="code-dots"><span></span><span></span><span></span></div>
             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
         </div>
-        <pre class="code-content"><code><span class="textwarning">$offcanvas</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\offcanvas(<span class="textsuccess">'end'</span>, <span class="textsuccess">'Title'</span>, <span class="textsuccess">'<p>Content</p>'</span>);</code></pre>
+        <pre class="code-content"><code><span class="textwarning">$offcanvas</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\components\offcanvas(<span class="textsuccess">'end'</span>, <span class="textsuccess">'Title'</span>, <span class="textsuccess">'<p>Content</p>'</span>);</code></pre>
     </div>
 
     <div class="preview-label mt-4">Top</div>
@@ -52,7 +52,7 @@ require_once __DIR__ . '/../_header.php';
             Open Offcanvas (Top)
         </button>
         <?php
-        $offcanvas_top = new \k1lib\html\bootstrap\offcanvas('top', 'Top Offcanvas', '<p>This offcanvas slides in from the top.</p>');
+        $offcanvas_top = new \k1lib\html\bootstrap\components\offcanvas('top', 'Top Offcanvas', '<p>This offcanvas slides in from the top.</p>');
         echo $offcanvas_top->generate();
         ?>
     </div>
@@ -63,7 +63,7 @@ require_once __DIR__ . '/../_header.php';
             Open Offcanvas (Bottom)
         </button>
         <?php
-        $offcanvas_bottom = new \k1lib\html\bootstrap\offcanvas('bottom', 'Bottom Offcanvas', '<p>This offcanvas slides in from the bottom.</p>');
+        $offcanvas_bottom = new \k1lib\html\bootstrap\components\offcanvas('bottom', 'Bottom Offcanvas', '<p>This offcanvas slides in from the bottom.</p>');
         echo $offcanvas_bottom->generate();
         ?>
     </div>

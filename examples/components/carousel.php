@@ -5,7 +5,7 @@ require_once __DIR__ . '/../_header.php';
 
 <section class="component-section">
     <h2 class="component-title">Carousel</h2>
-    <div class="component-ref">\k1lib\html\bootstrap\carousel &rarr; src/klan1/html/bootstrap/carousel.php</div>
+    <div class="component-ref">\k1lib\html\bootstrap\components\carousel &rarr; src/klan1/html/bootstrap/carousel.php</div>
 
     <div class="preview-label">With Indicators and Controls</div>
     <div class="preview-box">
@@ -30,7 +30,7 @@ require_once __DIR__ . '/../_header.php';
                 'active' => false
             ]
         ];
-        $carousel = new \k1lib\html\bootstrap\carousel($slides, true, true, false);
+        $carousel = new \k1lib\html\bootstrap\components\carousel($slides, true, true, false);
         echo $carousel->generate();
         ?>
     </div>
@@ -49,7 +49,7 @@ require_once __DIR__ . '/../_header.php';
     ],
     [<span class="textsuccess">'image'</span> => <span class="textsuccess">'...'</span>, <span class="textsuccess">'caption'</span> => <span class="textsuccess">'...'</span>],
 ];
-<span class="textwarning">$carousel</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\carousel(<span class="textwarning">$slides</span>, <span class="textinfo">true</span>, <span class="textinfo">true</span>, <span class="textinfo">false</span>);
+<span class="textwarning">$carousel</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\components\carousel(<span class="textwarning">$slides</span>, <span class="textinfo">true</span>, <span class="textinfo">true</span>, <span class="textinfo">false</span>);
 <span class="textwarning">echo</span> <span class="textwarning">$carousel</span>-><span class="text-light">generate</span>();</code></pre>
     </div>
 
@@ -68,7 +68,7 @@ require_once __DIR__ . '/../_header.php';
                 'active' => false
             ]
         ];
-        $autoplayCarousel = new \k1lib\html\bootstrap\carousel($autoplaySlides, true, true, true);
+        $autoplayCarousel = new \k1lib\html\bootstrap\components\carousel($autoplaySlides, true, true, true);
         echo $autoplayCarousel->generate();
         ?>
     </div>
@@ -79,13 +79,13 @@ require_once __DIR__ . '/../_header.php';
             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
         </div>
         <pre class="code-content"><code><span class="textcomment">// Autoplay enabled (data-bs-ride="carousel")</span>
-<span class="textwarning">$carousel</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\carousel(<span class="textwarning">$slides</span>, <span class="textinfo">true</span>, <span class="textinfo">true</span>, <span class="textinfo">true</span>);</code></pre>
+<span class="textwarning">$carousel</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\components\carousel(<span class="textwarning">$slides</span>, <span class="textinfo">true</span>, <span class="textinfo">true</span>, <span class="textinfo">true</span>);</code></pre>
     </div>
 
     <div class="preview-label mt-4">Crossfade</div>
     <div class="preview-box">
         <?php
-        $crossfadeCarousel = new \k1lib\html\bootstrap\carousel($slides, true, true, false, ['crossfade' => true]);
+        $crossfadeCarousel = new \k1lib\html\bootstrap\components\carousel($slides, true, true, false, ['crossfade' => true]);
         echo $crossfadeCarousel->generate();
         ?>
     </div>
@@ -95,7 +95,7 @@ require_once __DIR__ . '/../_header.php';
             <div class="code-dots"><span></span><span></span><span></span></div>
             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
         </div>
-        <pre class="code-content"><code><span class="textwarning">$carousel</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\carousel(<span class="textwarning">$slides</span>, <span class="textinfo">true</span>, <span class="textinfo">true</span>, <span class="textinfo">false</span>, [<span class="textsuccess">'crossfade'</span> => <span class="textinfo">true</span>]);</code></pre>
+        <pre class="code-content"><code><span class="textwarning">$carousel</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\components\carousel(<span class="textwarning">$slides</span>, <span class="textinfo">true</span>, <span class="textinfo">true</span>, <span class="textinfo">false</span>, [<span class="textsuccess">'crossfade'</span> => <span class="textinfo">true</span>]);</code></pre>
     </div>
 
     <div class="preview-label mt-4">Individual Interval</div>
@@ -122,7 +122,7 @@ require_once __DIR__ . '/../_header.php';
                 'active' => false
             ]
         ];
-        $intervalCarousel = new \k1lib\html\bootstrap\carousel($intervalSlides, true, true, true);
+        $intervalCarousel = new \k1lib\html\bootstrap\components\carousel($intervalSlides, true, true, true);
         echo $intervalCarousel->generate();
         ?>
     </div>
@@ -146,7 +146,7 @@ require_once __DIR__ . '/../_header.php';
     <div class="preview-label mt-4">No Controls</div>
     <div class="preview-box">
         <?php
-        $noControlsCarousel = new \k1lib\html\bootstrap\carousel($slides, false, false, false);
+        $noControlsCarousel = new \k1lib\html\bootstrap\components\carousel($slides, false, false, false);
         echo $noControlsCarousel->generate();
         ?>
     </div>
@@ -156,7 +156,7 @@ require_once __DIR__ . '/../_header.php';
             <div class="code-dots"><span></span><span></span><span></span></div>
             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
         </div>
-        <pre class="code-content"><code><span class="textwarning">$carousel</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\carousel(<span class="textwarning">$slides</span>, <span class="textinfo">false</span>, <span class="textinfo">false</span>, <span class="textinfo">false</span>);</code></pre>
+        <pre class="code-content"><code><span class="textwarning">$carousel</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\components\carousel(<span class="textwarning">$slides</span>, <span class="textinfo">false</span>, <span class="textinfo">false</span>, <span class="textinfo">false</span>);</code></pre>
     </div>
 </section>
 

@@ -5,12 +5,12 @@ require_once __DIR__ . '/../_header.php';
 
 <section class="component-section">
     <h2 class="component-title">Nav</h2>
-    <div class="component-ref">\k1lib\html\bootstrap\nav &rarr; src/klan1/html/componentes/nav.php</div>
+    <div class="component-ref">\k1lib\html\bootstrap\components\nav &rarr; src/klan1/html/componentes/nav.php</div>
 
     <div class="preview-label">Tabs</div>
     <div class="preview-box">
         <?php
-        $demo_nav_tabs = new \k1lib\html\bootstrap\nav([
+        $demo_nav_tabs = new \k1lib\html\bootstrap\components\nav([
             ['text' => 'Home', 'href' => '#', 'active' => true],
             ['text' => 'Features', 'href' => '#'],
             ['text' => 'Pricing', 'href' => '#'],
@@ -23,7 +23,7 @@ require_once __DIR__ . '/../_header.php';
     <div class="preview-label">Pills</div>
     <div class="preview-box">
         <?php
-        $demo_nav_pills = new \k1lib\html\bootstrap\nav([
+        $demo_nav_pills = new \k1lib\html\bootstrap\components\nav([
             ['text' => 'Home', 'href' => '#', 'active' => true],
             ['text' => 'Features', 'href' => '#'],
             ['text' => 'Pricing', 'href' => '#'],
@@ -35,7 +35,7 @@ require_once __DIR__ . '/../_header.php';
     <div class="preview-label">Underline</div>
     <div class="preview-box">
         <?php
-        $demo_nav_underline = new \k1lib\html\bootstrap\nav([
+        $demo_nav_underline = new \k1lib\html\bootstrap\components\nav([
             ['text' => 'Home', 'href' => '#', 'active' => true],
             ['text' => 'Features', 'href' => '#'],
             ['text' => 'Pricing', 'href' => '#'],
@@ -47,7 +47,7 @@ require_once __DIR__ . '/../_header.php';
     <div class="preview-label">Vertical Pills</div>
     <div class="preview-box">
         <?php
-        $demo_nav_vertical = new \k1lib\html\bootstrap\nav([
+        $demo_nav_vertical = new \k1lib\html\bootstrap\components\nav([
             ['text' => 'Home', 'href' => '#', 'active' => true],
             ['text' => 'Features', 'href' => '#'],
             ['text' => 'Pricing', 'href' => '#'],

@@ -5,12 +5,12 @@ require_once __DIR__ . '/../_header.php';
 
 <section class="component-section">
     <h2 class="component-title">Dropdown</h2>
-    <div class="component-ref">\k1lib\html\bootstrap\dropdown &rarr; src/klan1/html/bootstrap/dropdown.php</div>
+    <div class="component-ref">\k1lib\html\bootstrap\components\dropdown &rarr; src/klan1/html/bootstrap/dropdown.php</div>
 
     <div class="preview-label">Basic</div>
     <div class="preview-box">
         <?php
-        $dropdown = new \k1lib\html\bootstrap\dropdown('Actions', [
+        $dropdown = new \k1lib\html\bootstrap\components\dropdown('Actions', [
             ['text' => 'Action', 'href' => '#'],
             ['text' => 'Another Action', 'href' => '#'],
             ['divider' => true],
@@ -25,7 +25,7 @@ require_once __DIR__ . '/../_header.php';
             <div class="code-dots"><span></span><span></span><span></span></div>
             <span class="text-white-50 ms-2" style="font-size: .75rem;">PHP</span>
         </div>
-        <pre class="code-content"><code><span class="text-warning">$dropdown</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\dropdown(<span class="textsuccess">'Actions'</span>, [
+        <pre class="code-content"><code><span class="text-warning">$dropdown</span> = <span class="text-info">new</span> \k1lib\html\bootstrap\components\dropdown(<span class="textsuccess">'Actions'</span>, [
     [<span class="textsuccess">'text'</span> => <span class="textsuccess">'Action'</span>, <span class="textsuccess">'href'</span> => <span class="textsuccess">'#'</span>],
     [<span class="textsuccess">'text'</span> => <span class="textsuccess">'Another Action'</span>, <span class="textsuccess">'href'</span> => <span class="textsuccess">'#'</span>],
     [<span class="textsuccess">'divider'</span> => <span class="textinfo">true</span>],

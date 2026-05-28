@@ -5,7 +5,7 @@ require_once __DIR__ . '/../_header.php';
 
 <section class="component-section">
     <h2 class="component-title">Table from Data</h2>
-    <div class="component-ref">\k1lib\html\bootstrap\table_from_data &rarr; src/klan1/html/bootstrap/table_from_data.php</div>
+    <div class="component-ref">\k1lib\html\bootstrap\components\table_from_data &rarr; src/klan1/html/bootstrap/table_from_data.php</div>
 
     <div class="preview-label">Basic Table</div>
     <div class="preview-box">
@@ -16,7 +16,7 @@ require_once __DIR__ . '/../_header.php';
             ['name' => 'Bob Wilson', 'email' => 'bob@example.com', 'role' => 'Editor'],
         ];
         $columns = ['name', 'email', 'role'];
-        $table = new \k1lib\html\bootstrap\table_from_data($data, $columns, 'users-table');
+        $table = new \k1lib\html\bootstrap\components\table_from_data($data, $columns, 'users-table');
         echo $table->generate();
         ?>
     </div>
@@ -31,7 +31,7 @@ require_once __DIR__ . '/../_header.php';
     [<span class="textsuccess">'name'</span> => <span class="textsuccess">'Jane'</span>, <span class="textsuccess">'email'</span> => <span class="textsuccess">'jane@example.com'</span>],
 ];
 <span class="textwarning">$columns</span> = [<span class="textsuccess">'name'</span>, <span class="textsuccess">'email'</span>];
-<span class="textwarning">$table</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\table_from_data(<span class="textwarning">$data</span>, <span class="textwarning">$columns</span>);
+<span class="textwarning">$table</span> = <span class="textinfo">new</span> \k1lib\html\bootstrap\components\table_from_data(<span class="textwarning">$data</span>, <span class="textwarning">$columns</span>);
 <span class="textwarning">echo</span> <span class="textwarning">$table</span>-><span class="textlight">generate</span>();</code></pre>
     </div>
 </section>
