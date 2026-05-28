@@ -19,8 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "k1lib\\html\\bootstrap\\": "src/klan1/html/bootstrap/",
-            "k1lib\\html\\componentes\\": "src/klan1/html/componentes/"
+            "k1lib\\html\\bootstrap\\": "src/klan1/html/bootstrap/"
         }
     },
     "scripts": {
