@@ -118,9 +118,11 @@ class table_from_data extends table {
      * Sets fields to hide from table output
      *
      * @param array $fields Array of field names to hide
+     * @return static The current table for chaining
      */
-    public function set_fields_to_hide($fields): void {
+    public function set_fields_to_hide($fields): static {
         $this->fields_to_hide = $fields;
+        return $this;
     }
 
     /**
@@ -187,9 +189,11 @@ class table_from_data extends table {
      * Sets fields used to generate unique auth codes
      *
      * @param array $fields_for_key_array_text Field names to include in auth code
+     * @return static The current table for chaining
      */
-    public function set_fields_for_key_array_text(array $fields_for_key_array_text): void {
+    public function set_fields_for_key_array_text(array $fields_for_key_array_text): static {
         $this->fields_for_key_array_text = $fields_for_key_array_text;
+        return $this;
     }
 
     /**
@@ -406,9 +410,11 @@ class table_from_data extends table {
      * Sets decimal places to round float values
      *
      * @param int $round_places Number of decimal places
+     * @return static The current table for chaining
      */
-    public function set_float_round($round_places) {
+    public function set_float_round($round_places): static {
         $this->float_round = $round_places;
+        return $this;
     }
 
     /**

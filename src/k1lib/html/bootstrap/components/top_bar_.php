@@ -120,18 +120,22 @@ class top_bar_ extends \k1lib\html\tag {
      * @param int $number Title number (1, 2, or 3)
      * @param string $value Title text value
      * @param bool $append Append to existing value instead of replacing
+     * @return static The current top bar for chaining
      */
-    function set_title($number, $value, $append = FALSE): void {
+    function set_title($number, $value, $append = FALSE): static {
         $elements = $this->parent->get_elements_by_class("k1lib-title-{$number}");
         foreach ($elements as $element) {
             $element->set_value($value, $append);
         }
+        return $this;
     }
 
     /**
      * Initializes the responsive title bar
+     *
+     * @return static The current top bar for chaining
      */
-    function init_title_bar(): void {
+    function init_title_bar(): static {
         $title = $this->parent->append_div("title-bar")
                 ->set_attrib("data-responsive-toggle", "responsive-menu")
                 ->set_attrib("data-hide-for", "medium");
@@ -142,6 +146,7 @@ class top_bar_ extends \k1lib\html\tag {
         $title_bar_title->append_span("k1lib-title-1");
         $title_bar_title->append_span("k1lib-title-2");
         $title_bar_title->append_span("k1lib-title-3");
+        return $this;
     }
 
     /**

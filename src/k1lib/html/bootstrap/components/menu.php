@@ -187,12 +187,14 @@ class menu extends \k1lib\html\ul {
      * Marks a menu item as active by its ID
      *
      * @param string $id The ID of the menu item to mark as active
+     * @return static The current menu for chaining
      */
-    function set_active($id): void {
+    function set_active($id): static {
         $tag = $this->get_element_by_id($id);
         if (!empty($tag)) {
             $tag->unlink_value_obj();
             $tag->set_class('active', TRUE);
         }
+        return $this;
     }
 }

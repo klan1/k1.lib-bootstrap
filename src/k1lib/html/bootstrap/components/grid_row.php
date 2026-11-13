@@ -59,12 +59,14 @@ class grid_row extends div {
      * Copies CSS classes from one column to all columns in the row
      *
      * @param int $from Column number to copy classes from
+     * @return static The current grid row for chaining
      */
-    public function copy_clases_to_cols($from): void {
+    public function copy_clases_to_cols($from): static {
         $classes = $this->col($from)->get_attribute('class');
         for ($col = 1; $col <= count($this->cols); $col++) {
             $this->cols[$col]->set_class($classes);
         }
+        return $this;
     }
 
     /**

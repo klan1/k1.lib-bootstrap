@@ -20,7 +20,10 @@
     "autoload": {
         "psr-4": {
             "k1lib\\html\\bootstrap\\": "src/k1lib/html/bootstrap/"
-        }
+        },
+        "files": [
+            "src/asset_boot.php"
+        ]
     },
     "scripts": {
         "test": "phpunit",

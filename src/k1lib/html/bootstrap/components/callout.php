@@ -75,21 +75,24 @@ class callout extends \k1lib\html\div {
      *
      * @param string $class CSS class name
      * @param bool $append Whether to append or replace existing classes
+     * @return static The current callout for chaining
      */
     public function set_class($class, $append = FALSE): static {
         if ($append === FALSE) {
             $class = "alert {$class}";
         }
-        parent::set_class($class, $append);
+        return parent::set_class($class, $append);
     }
 
     /**
      * Sets the CSS margin
      *
      * @param string $margin CSS margin value (e.g., "10px", "1rem 2rem")
+     * @return static The current callout for chaining
      */
-    public function set_margin($margin) {
+    public function set_margin($margin): static {
         $this->margin = $margin;
+        return $this;
     }
 
     /**
@@ -105,9 +108,11 @@ class callout extends \k1lib\html\div {
      * Sets the callout message
      *
      * @param string $message The message content
+     * @return static The current callout for chaining
      */
-    public function set_message($message) {
+    public function set_message($message): static {
         $this->message = $message;
+        return $this;
     }
 
     /**
@@ -123,9 +128,11 @@ class callout extends \k1lib\html\div {
      * Sets the callout title
      *
      * @param string $title The title text
+     * @return static The current callout for chaining
      */
-    function set_title($title) {
+    function set_title($title): static {
         $this->title = $title;
+        return $this;
     }
 
     /**
@@ -135,7 +142,7 @@ class callout extends \k1lib\html\div {
      * @param int $n_childs Number of children to include (0 = all)
      * @return string The rendered HTML
      */
-    public function generate($with_childs = \TRUE, $n_childs = 0) {
+    public function generate($with_childs = \TRUE, $n_childs = 0): string {
         $content = '';
         if (!empty($this->title)) {
             $content .= "<h6 class=\"alert-heading\">{$this->title}</h6>";

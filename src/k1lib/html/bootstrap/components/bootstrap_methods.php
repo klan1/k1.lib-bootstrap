@@ -108,6 +108,7 @@ trait bootstrap_methods {
         $close_button->set_attrib('data-bs-dismiss', 'alert');
         $close_button->set_attrib("aria-label", "Close");
         $this->append_child_tail($close_button);
+        return $close_button;
     }
 
     /**
