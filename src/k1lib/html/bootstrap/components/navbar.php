@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class navbar extends \k1lib\html\nav {
+    use bootstrap_assets;
 
     /**
      * Brand element (link or image)
@@ -57,6 +58,7 @@ class navbar extends \k1lib\html\nav {
      * @param string $container_type Container type: 'container' or 'container-fluid'
      */
     public function __construct($brand = '', $id = 'mainNavbar', $color = 'light', $expand = 'lg', $container_type = 'container-fluid') {
+        self::require_assets();
         $classes = "navbar navbar-expand-{$expand} navbar-{$color}";
         parent::__construct(NULL, $classes, $id);
         $this->set_attrib('data-bs-theme', $color === 'dark' ? 'dark' : 'light');
@@ -123,7 +125,7 @@ class navbar extends \k1lib\html\nav {
                 foreach ($dropdown as $item) {
                     if ($item === 'divider') {
                         $dropdown_li = $dropdown_menu->append_li();
-                        $dropdown_li->set_class('dropdown-divider');
+                        $dropdown_li->append_child((new \k1lib\html\hr())->set_class('dropdown-divider'));
                     } else {
                         $dropdown_li = $dropdown_menu->append_li();
                         $dropdown_a = $dropdown_li->append_a($item['href'], $item['text']);
@@ -162,11 +164,7 @@ class navbar extends \k1lib\html\nav {
     public function add_text($text = '', $margin_start = 'auto'): \k1lib\html\span {
         $span = new \k1lib\html\span($text);
         $span->set_class("navbar-text me-{$margin_start}");
-        if ($this->brand instanceof \k1lib\html\a) {
-            $this->brand->append_child($span);
-        } else {
-            $this->collapse->append_child($span);
-        }
+        $this->collapse->append_child($span);
         return $span;
     }
 

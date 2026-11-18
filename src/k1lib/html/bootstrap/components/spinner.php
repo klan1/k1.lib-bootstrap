@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class spinner extends \k1lib\html\div {
+    use bootstrap_assets;
 
     /**
      * Border spinner type (traditional circular spinner)
@@ -51,6 +52,7 @@ class spinner extends \k1lib\html\div {
      * @param bool $centered Wrap in a centered flexbox container
      */
     public function __construct($type = 'border', $color = 'primary', $size = 'md', $centered = FALSE) {
+        self::require_assets();
         $size_class = '';
         if ($size === 'sm') {
             $size_class = 'spinner-' . $type . '-sm';
@@ -63,9 +65,7 @@ class spinner extends \k1lib\html\div {
         $this->append_child($visuallyHidden);
 
         if ($centered) {
-            $wrapper = new \k1lib\html\div('d-flex justify-content-center align-items-center');
-            $wrapper->append_child($this);
-            return;
+            $this->set_class('d-flex justify-content-center align-items-center min-vh-100', TRUE);
         }
     }
 }

@@ -19,6 +19,7 @@ namespace k1lib\html\bootstrap\components;
 use k1lib\html\div;
 
 class grid_cell extends div {
+    use bootstrap_assets;
 
     use bootstrap_methods;
 
@@ -29,6 +30,12 @@ class grid_cell extends div {
     protected $row_number = 0;
 
     /**
+     * Column number this cell represents
+     * @var int|null
+     */
+    protected $col_number = 0;
+
+    /**
      * Creates a new Grid Cell instance
      *
      * @param int|null $col_number Column number identifier
@@ -36,7 +43,9 @@ class grid_cell extends div {
      * @param string|null $id Optional element ID
      */
     public function __construct($col_number = NULL, $class = 'col', $id = NULL) {
-        parent::__construct($class, NULL);
+        self::require_assets();
+        $this->col_number = $col_number;
+        parent::__construct($class ?? 'col', $id);
     }
 
     /**

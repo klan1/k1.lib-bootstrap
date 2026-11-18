@@ -15,8 +15,8 @@ require_once __DIR__ . '/../vendor/autoload.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>k1.lib-bootstrap - Components Showcase</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="/resources/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/bootstrap/bootstrap-icons.min.v2.css" rel="stylesheet">
     <style>
         :root { --bs-body-bg: #f8f9fa; }
         body { padding-top: 70px; background-color: var(--bs-body-bg); }
@@ -91,40 +91,72 @@ require_once __DIR__ . '/../vendor/autoload.php';
         <div class="hero-section">
             <h1><i class="bi bi-grid-3x3-gap me-2"></i> k1.lib-bootstrap</h1>
             <p>PHP components library wrapping Bootstrap 5 with an object-oriented interface.</p>
+            <a href="/playground.php" class="btn btn-light me-2">
+                <i class="bi bi-play-circle me-1"></i> Abrir Playground
+            </a>
+            <a href="/playground.php?file=group" class="btn btn-light me-2">
+                <i class="bi bi-collection me-1"></i> Kitchen Sink
+            </a>
             <a href="https://github.com/klan1/k1.lib-bootstrap" class="btn btn-light" target="_blank">
                 <i class="bi bi-github me-1"></i> View on GitHub
             </a>
         </div>
 
-        <div class="section-title">Components</div>
-        <div class="row g-4">
-            <?php
-            $components = [
-                ['name' => 'Accordion', 'file' => 'components/accordion.php', 'ns' => '\k1lib\html\bootstrap\accordion', 'desc' => 'Vertically collapsing accordion component'],
-                ['name' => 'Alert', 'file' => 'components/alert.php', 'ns' => '\k1lib\html\bootstrap\alert', 'desc' => 'Dismissible alert messages'],
-                ['name' => 'Badge', 'file' => 'components/badge.php', 'ns' => '\k1lib\html\bootstrap\badge', 'desc' => 'Badges and pill badges'],
-                ['name' => 'Breadcrumb', 'file' => 'components/breadcrumb.php', 'ns' => '\k1lib\html\bootstrap\breadcrumb', 'desc' => 'Navigation breadcrumbs'],
-                ['name' => 'Button', 'file' => 'components/button.php', 'ns' => '\k1lib\html\bootstrap\button', 'desc' => 'Buttons with variants, sizes, and states'],
-                ['name' => 'Button Group', 'file' => 'components/button_group.php', 'ns' => '\k1lib\html\bootstrap\button_group', 'desc' => 'Group buttons together'],
-                ['name' => 'Card', 'file' => 'components/card.php', 'ns' => '\k1lib\html\bootstrap\card', 'desc' => 'Flexible card component'],
-                ['name' => 'Callout', 'file' => 'components/callout.php', 'ns' => '\k1lib\html\bootstrap\callout', 'desc' => 'Callout/notice boxes'],
-                ['name' => 'Collapse', 'file' => 'components/collapse.php', 'ns' => '\k1lib\html\bootstrap\collapse', 'desc' => 'Collapsible content'],
-                ['name' => 'Dropdown', 'file' => 'components/dropdown.php', 'ns' => '\k1lib\html\bootstrap\dropdown', 'desc' => 'Dropdown menus'],
-                ['name' => 'Grid', 'file' => 'components/grid.php', 'ns' => '\k1lib\html\bootstrap\grid', 'desc' => 'Bootstrap grid system'],
-                ['name' => 'List Group', 'file' => 'components/list_group.php', 'ns' => '\k1lib\html\bootstrap\list_group', 'desc' => 'List group component'],
-                ['name' => 'Modal', 'file' => 'components/modal.php', 'ns' => '\k1lib\html\bootstrap\modal', 'desc' => 'Modal dialogs'],
-                ['name' => 'Nav', 'file' => 'components/nav.php', 'ns' => '\k1lib\html\componentes\nav', 'desc' => 'Navigation components'],
-                ['name' => 'Navbar', 'file' => 'components/navbar.php', 'ns' => '\k1lib\html\bootstrap\navbar', 'desc' => 'Navbar component'],
-                ['name' => 'Pagination', 'file' => 'components/pagination.php', 'ns' => '\k1lib\html\bootstrap\pagination', 'desc' => 'Pagination component'],
-                ['name' => 'Progress', 'file' => 'components/progress.php', 'ns' => '\k1lib\html\bootstrap\progress', 'desc' => 'Progress bars'],
-                ['name' => 'Spinner', 'file' => 'components/spinner.php', 'ns' => '\k1lib\html\bootstrap\spinner', 'desc' => 'Loading spinners'],
-                ['name' => 'Table', 'file' => 'components/table_from_data.php', 'ns' => '\k1lib\html\bootstrap\table_from_data', 'desc' => 'Table from data array'],
-                ['name' => 'Title Bar', 'file' => 'components/title_bar.php', 'ns' => '\k1lib\html\bootstrap\title_bar', 'desc' => 'Page title bar'],
-                ['name' => 'Toast', 'file' => 'components/toast.php', 'ns' => '\k1lib\html\bootstrap\toast', 'desc' => 'Toast notifications'],
-            ];
-
-            foreach ($components as $comp):
-            ?>
+        <?php
+        $sections = [
+    'Content' => [
+        ['name' => 'Tables', 'file' => 'components/table_from_data.php', 'ns' => '\k1lib\html\bootstrap\components\table_from_data', 'desc' => 'Tables from data arrays'],
+    ],
+    'Layout' => [
+        ['name' => 'Grid', 'file' => 'components/grid.php', 'ns' => '\k1lib\html\bootstrap\components\grid', 'desc' => 'Bootstrap grid system'],
+    ],
+    'Forms' => [
+        ['name' => 'Form control', 'file' => 'components/form_control.php', 'ns' => '\k1lib\html\bootstrap\components\form_control', 'desc' => 'Textual inputs, textareas and plain text'],
+        ['name' => 'Select', 'file' => 'components/form_select.php', 'ns' => '\k1lib\html\bootstrap\components\form_select', 'desc' => 'Custom select menus'],
+        ['name' => 'Checks & radios', 'file' => 'components/form_check.php', 'ns' => '\k1lib\html\bootstrap\components\form_check', 'desc' => 'Checkboxes, radios and switches'],
+        ['name' => 'Range', 'file' => 'components/range.php', 'ns' => '\k1lib\html\bootstrap\components\range', 'desc' => 'Range inputs'],
+        ['name' => 'Input group', 'file' => 'components/input_group.php', 'ns' => '\k1lib\html\bootstrap\components\input_group', 'desc' => 'Addons, buttons and selects'],
+        ['name' => 'Floating labels', 'file' => 'components/floating_label.php', 'ns' => '\k1lib\html\bootstrap\components\floating_label', 'desc' => 'Labels that float over controls'],
+        ['name' => 'Layout', 'file' => 'components/form_layout.php', 'ns' => '\k1lib\html\bootstrap\components\form_layout', 'desc' => 'Grid, gutters, horizontal and inline layouts'],
+        ['name' => 'Validation', 'file' => 'components/validation.php', 'ns' => '\k1lib\html\bootstrap\components\validation', 'desc' => 'Validation feedback messages'],
+    ],
+    'Components' => [
+        ['name' => 'Accordion', 'file' => 'components/accordion.php', 'ns' => '\k1lib\html\bootstrap\components\accordion', 'desc' => 'Vertically collapsing content'],
+        ['name' => 'Alerts', 'file' => 'components/alert.php', 'ns' => '\k1lib\html\bootstrap\components\alert', 'desc' => 'Contextual feedback messages'],
+        ['name' => 'Badge', 'file' => 'components/badge.php', 'ns' => '\k1lib\html\bootstrap\components\badge', 'desc' => 'Small count and labeling'],
+        ['name' => 'Breadcrumb', 'file' => 'components/breadcrumb.php', 'ns' => '\k1lib\html\bootstrap\components\breadcrumb', 'desc' => 'Navigation breadcrumbs'],
+        ['name' => 'Button group', 'file' => 'components/button_group.php', 'ns' => '\k1lib\html\bootstrap\components\button_group', 'desc' => 'Group buttons together'],
+        ['name' => 'Button toolbar', 'file' => 'components/button_toolbar.php', 'ns' => '\k1lib\html\bootstrap\components\button_toolbar', 'desc' => 'Group button groups'],
+        ['name' => 'Buttons', 'file' => 'components/button.php', 'ns' => '\k1lib\html\bootstrap\components\button', 'desc' => 'Buttons with variants, sizes and states'],
+        ['name' => 'Card', 'file' => 'components/card.php', 'ns' => '\k1lib\html\bootstrap\components\card', 'desc' => 'Flexible content container'],
+        ['name' => 'Carousel', 'file' => 'components/carousel.php', 'ns' => '\k1lib\html\bootstrap\components\carousel', 'desc' => 'Slideshow component'],
+        ['name' => 'Close button', 'file' => 'components/close_button.php', 'ns' => '\k1lib\html\bootstrap\components\close_button', 'desc' => 'Dismissible close button'],
+        ['name' => 'Collapse', 'file' => 'components/collapse.php', 'ns' => '\k1lib\html\bootstrap\components\collapse', 'desc' => 'Collapsible content'],
+        ['name' => 'Dropdowns', 'file' => 'components/dropdown.php', 'ns' => '\k1lib\html\bootstrap\components\dropdown', 'desc' => 'Dropdown menus'],
+        ['name' => 'List group', 'file' => 'components/list_group.php', 'ns' => '\k1lib\html\bootstrap\components\list_group', 'desc' => 'List of items with variants'],
+        ['name' => 'Modal', 'file' => 'components/modal.php', 'ns' => '\k1lib\html\bootstrap\components\modal', 'desc' => 'Modal dialogs'],
+        ['name' => 'Navbar', 'file' => 'components/navbar.php', 'ns' => '\k1lib\html\bootstrap\components\navbar', 'desc' => 'Navbar component'],
+        ['name' => 'Navs & tabs', 'file' => 'components/nav.php', 'ns' => '\k1lib\html\bootstrap\components\nav', 'desc' => 'Navigation tabs and pills'],
+        ['name' => 'Offcanvas', 'file' => 'components/offcanvas.php', 'ns' => '\k1lib\html\bootstrap\components\offcanvas', 'desc' => 'Offcanvas panels'],
+        ['name' => 'Pagination', 'file' => 'components/pagination.php', 'ns' => '\k1lib\html\bootstrap\components\pagination', 'desc' => 'Pagination controls'],
+        ['name' => 'Placeholders', 'file' => 'components/placeholder.php', 'ns' => '\k1lib\html\bootstrap\components\placeholder', 'desc' => 'Loading placeholders'],
+        ['name' => 'Popovers', 'file' => 'components/popover.php', 'ns' => '\k1lib\html\bootstrap\components\popover', 'desc' => 'Popovers'],
+        ['name' => 'Progress', 'file' => 'components/progress.php', 'ns' => '\k1lib\html\bootstrap\components\progress', 'desc' => 'Progress bars'],
+        ['name' => 'Scrollspy', 'file' => 'components/scrollspy.php', 'ns' => '\k1lib\html\bootstrap\components\scrollspy', 'desc' => 'Scrollspy navigation'],
+        ['name' => 'Spinners', 'file' => 'components/spinner.php', 'ns' => '\k1lib\html\bootstrap\components\spinner', 'desc' => 'Loading spinners'],
+        ['name' => 'Toasts', 'file' => 'components/toast.php', 'ns' => '\k1lib\html\bootstrap\components\toast', 'desc' => 'Toast notifications'],
+        ['name' => 'Tooltips', 'file' => 'components/tooltip.php', 'ns' => '\k1lib\html\bootstrap\components\tooltip', 'desc' => 'Tooltips'],
+    ],
+    'Extras' => [
+        ['name' => 'Callout', 'file' => 'components/callout.php', 'ns' => '\k1lib\html\bootstrap\components\callout', 'desc' => 'Documentation-style callouts'],
+        ['name' => 'Title Bar', 'file' => 'components/title_bar.php', 'ns' => '\k1lib\html\bootstrap\components\title_bar', 'desc' => 'Page title bar'],
+    ],
+];
+        foreach ($sections as $section_title => $components):
+        ?>
+        <div class="section-title"><?= $section_title ?></div>
+        <div class="row g-4 mb-4">
+            <?php foreach ($components as $comp): ?>
             <div class="col-md-6 col-lg-4">
                 <div class="component-card d-flex flex-column">
                     <h5><i class="bi bi-box me-2"></i><?= $comp['name'] ?></h5>
@@ -137,12 +169,13 @@ require_once __DIR__ . '/../vendor/autoload.php';
             </div>
             <?php endforeach; ?>
         </div>
+        <?php endforeach; ?>
 
         <footer class="mt-5 mb-3 text-center text-muted">
             <p class="small">k1.lib-bootstrap &copy; <?= date('Y') ?> &middot; Built with Bootstrap 5</p>
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/resources/bootstrap/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>

@@ -17,6 +17,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class toast extends \k1lib\html\div {
+    use bootstrap_assets;
 
     /**
      * Creates a new Toast instance
@@ -27,6 +28,7 @@ class toast extends \k1lib\html\div {
      * @param int $delay Time in milliseconds before auto-hide (default: 5000)
      */
     public function __construct($header = '', $body = '', $autohide = TRUE, $delay = 5000) {
+        self::require_assets();
         parent::__construct('toast', 'toast-' . uniqid());
         $this->set_attrib('role', 'alert');
         $this->set_attrib('aria-live', 'assertive');

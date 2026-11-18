@@ -15,6 +15,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class grid extends \k1lib\html\div {
+    use bootstrap_assets;
 
     use bootstrap_methods;
 
@@ -44,6 +45,7 @@ class grid extends \k1lib\html\div {
      * @param \k1lib\html\tag|null $parent Optional parent element to attach to
      */
     public function __construct($num_rows, $num_cols, \k1lib\html\tag $parent = NULL) {
+        self::require_assets();
         $this->parent = $parent;
 
         $this->num_rows = 0;

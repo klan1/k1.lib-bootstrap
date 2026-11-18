@@ -20,6 +20,7 @@ use k1lib\html\div;
 use k1lib\html\bootstrap\components\grid_cell;
 
 class grid_row extends div {
+    use bootstrap_assets;
 
     use bootstrap_methods;
 
@@ -43,6 +44,7 @@ class grid_row extends div {
      * @param \k1lib\html\tag|null $parent Optional parent element to append to
      */
     function __construct($num_cols, $grid_row = NULL, $parent = NULL) {
+        self::require_assets();
         $this->parent = $parent;
 
         parent::__construct("row row-cols-{$num_cols}", NULL);

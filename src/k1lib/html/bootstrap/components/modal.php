@@ -17,6 +17,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class modal extends \k1lib\html\div {
+    use bootstrap_assets;
 
     /**
      * Small modal width (max-width: 300px)
@@ -36,22 +37,22 @@ class modal extends \k1lib\html\div {
     /**
      * Fullscreen below small breakpoint
      */
-    const SIZE_FULLSMALL = 'modal-fullscreen-sm';
+    const SIZE_FULLSMALL = 'modal-fullscreen-sm-down';
 
     /**
      * Fullscreen below medium breakpoint
      */
-    const SIZE_FULLMD = 'modal-fullscreen-md';
+    const SIZE_FULLMD = 'modal-fullscreen-md-down';
 
     /**
      * Fullscreen below large breakpoint
      */
-    const SIZE_FULLLG = 'modal-fullscreen-lg';
+    const SIZE_FULLLG = 'modal-fullscreen-lg-down';
 
     /**
      * Fullscreen below extra large breakpoint
      */
-    const SIZE_FULLXL = 'modal-fullscreen-xl';
+    const SIZE_FULLXL = 'modal-fullscreen-xl-down';
 
     /**
      * Always fullscreen
@@ -118,6 +119,7 @@ class modal extends \k1lib\html\div {
      *   - btn_cancel_class (string): Cancel button Bootstrap classes (default: 'btn-secondary')
      */
     public function __construct($title = '', $content = '', $options = []) {
+        self::require_assets();
         if (!is_array($options)) {
             $options = [];
         }
@@ -148,7 +150,7 @@ class modal extends \k1lib\html\div {
 
         $dialog_classes = 'modal-dialog';
         if ($options['size']) {
-            $dialog_classes .= ' modal-' . $options['size'];
+            $dialog_classes .= ' ' . $options['size'];
         }
         if ($options['centered']) {
             $dialog_classes .= ' modal-dialog-centered';

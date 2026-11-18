@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class collapse extends \k1lib\html\div {
+    use bootstrap_assets;
 
     /**
      * Creates a new Collapse instance
@@ -27,11 +28,14 @@ class collapse extends \k1lib\html\div {
      * @param bool $expanded Start in expanded (visible) state
      */
     public function __construct($id, $trigger = NULL, $content = '', $expanded = FALSE) {
+        self::require_assets();
         parent::__construct('collapse', "collapse-{$id}");
 
         if ($trigger instanceof \k1lib\html\tag) {
+            $trigger->set_attrib('id', "collapse-{$id}-trigger");
             $trigger->set_attrib('data-bs-toggle', 'collapse');
             $trigger->set_attrib('data-bs-target', "#collapse-{$id}");
+            $trigger->set_attrib('aria-controls', "collapse-{$id}");
             $trigger->set_attrib('aria-expanded', $expanded ? 'true' : 'false');
         }
 

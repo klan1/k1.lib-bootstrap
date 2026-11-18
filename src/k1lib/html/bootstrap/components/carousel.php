@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class carousel extends \k1lib\html\div {
+    use bootstrap_assets;
 
     /**
      * Array of slide data
@@ -42,6 +43,7 @@ class carousel extends \k1lib\html\div {
      *   - 'interval' (int): Default interval between slides in milliseconds
      */
     public function __construct($slides = [], $indicators = TRUE, $controls = TRUE, $autoplay = FALSE, $options = []) {
+        self::require_assets();
         if (!is_array($options)) {
             $options = [];
         }
@@ -52,6 +54,7 @@ class carousel extends \k1lib\html\div {
             'interval' => 5000,
         ], $options);
 
+        $id = $options['id'] ?? 'carousel-' . uniqid();
         $classes = 'carousel slide';
         if ($options['crossfade']) {
             $classes .= ' carousel-fade';
@@ -60,15 +63,13 @@ class carousel extends \k1lib\html\div {
             $classes .= ' carousel-dark';
         }
 
-        parent::__construct($classes, 'mainCarousel');
+        parent::__construct($classes, $id);
 
         if ($autoplay) {
             $this->set_attrib('data-bs-ride', 'carousel');
             if ($options['interval']) {
                 $this->set_attrib('data-bs-interval', $options['interval']);
             }
-        } else {
-            $this->set_attrib('data-bs-ride', 'false');
         }
 
         if (!$options['touch']) {
@@ -85,7 +86,7 @@ class carousel extends \k1lib\html\div {
                     $indicatorBtn->set_class('active', TRUE);
                 }
                 $indicatorBtn->set_attrib('type', 'button');
-                $indicatorBtn->set_attrib('data-bs-target', '#mainCarousel');
+                $indicatorBtn->set_attrib('data-bs-target', '#' . $id);
                 $indicatorBtn->set_attrib('data-bs-slide-to', $index);
                 if ($index === 0) {
                     $indicatorBtn->set_attrib('aria-current', 'true');
@@ -129,7 +130,7 @@ class carousel extends \k1lib\html\div {
             $prevBtn = new \k1lib\html\button();
             $prevBtn->set_class('carousel-control-prev');
             $prevBtn->set_attrib('type', 'button');
-            $prevBtn->set_attrib('data-bs-target', '#mainCarousel');
+            $prevBtn->set_attrib('data-bs-target', '#' . $id);
             $prevBtn->set_attrib('data-bs-slide', 'prev');
             $prevIcon = new \k1lib\html\span('carousel-control-prev-icon');
             $prevIcon->set_attrib('aria-hidden', 'true');
@@ -141,7 +142,7 @@ class carousel extends \k1lib\html\div {
             $nextBtn = new \k1lib\html\button();
             $nextBtn->set_class('carousel-control-next');
             $nextBtn->set_attrib('type', 'button');
-            $nextBtn->set_attrib('data-bs-target', '#mainCarousel');
+            $nextBtn->set_attrib('data-bs-target', '#' . $id);
             $nextBtn->set_attrib('data-bs-slide', 'next');
             $nextIcon = new \k1lib\html\span('carousel-control-next-icon');
             $nextIcon->set_attrib('aria-hidden', 'true');

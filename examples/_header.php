@@ -24,7 +24,7 @@ use k1lib\html\bootstrap\grid_cell;
 use k1lib\html\bootstrap\list_group;
 use k1lib\html\bootstrap\modal;
 use k1lib\html\bootstrap\offcanvas;
-use k1lib\html\componentes\nav as nav_component;
+use k1lib\html\bootstrap\components\nav as nav_component;
 use k1lib\html\bootstrap\navbar;
 use k1lib\html\bootstrap\pagination;
 use k1lib\html\bootstrap\progress;
@@ -71,8 +71,8 @@ $next_file = $current_index < count($components_list) - 1 ? array_keys($componen
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $component_name ?? 'Component' ?> - k1.lib-bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="/resources/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/bootstrap/bootstrap-icons.min.v2.css" rel="stylesheet">
     <style>
         :root { --bs-body-bg: #f8f9fa; }
         body { padding-top: 70px; background-color: var(--bs-body-bg); }
@@ -175,6 +175,6 @@ $next_file = $current_index < count($components_list) - 1 ? array_keys($componen
         <?php endif; ?>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/resources/bootstrap/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>

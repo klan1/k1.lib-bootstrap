@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class card extends \k1lib\html\div {
+    use bootstrap_assets;
 
     /**
      * Card header element
@@ -43,6 +44,7 @@ class card extends \k1lib\html\div {
      * @param string|null $text Card body text (paragraph element)
      */
     public function __construct($title = NULL, $subtitle = NULL, $text = NULL) {
+        self::require_assets();
         parent::__construct('card', NULL);
 
         $this->body = new \k1lib\html\div('card-body');
@@ -68,8 +70,7 @@ class card extends \k1lib\html\div {
     public function set_header($content): static {
         $this->header = new \k1lib\html\div('card-header');
         $this->header->set_value($content);
-        $this->append_child($this->header);
-        $this->append_child($this->body);
+        $this->append_child_head($this->header);
         return $this;
     }
 

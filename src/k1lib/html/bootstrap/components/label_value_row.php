@@ -18,6 +18,7 @@ namespace k1lib\html\bootstrap\components;
 use k1lib\html\div;
 
 class label_value_row extends div {
+    use bootstrap_assets;
 
     use bootstrap_methods;
 
@@ -28,6 +29,7 @@ class label_value_row extends div {
      * @param mixed $value The value (can be a string or a k1lib HTML tag object)
      */
     public function __construct($label, $value) {
+        self::require_assets();
         parent::__construct();
         $this->general(12)->medium(6);
 

@@ -15,7 +15,10 @@ namespace k1lib\html\bootstrap\components;
  * @license Apache-2.0
  * @version 1.0.0
  */
-class list_group extends \k1lib\html\ul {
+class list_group extends \k1lib\html\div {
+    use bootstrap_assets;
+
+    use bootstrap_methods;
 
     /**
      * Whether to use flush (borderless) styling
@@ -34,7 +37,8 @@ class list_group extends \k1lib\html\ul {
      *   - 'variant' (string): Contextual color variant (primary, secondary, success, danger, warning, info, light, dark)
      * @param bool $flush Remove some borders and rounded corners for edge-to-edge styling
      */
-    public function __construct($items = [], $flush = FALSE) {
+    public function __construct($items = [], $flush = FALSE, $numbered = FALSE, $horizontal = FALSE) {
+        self::require_assets();
         $this->flush = $flush;
         $class = 'list-group';
         if ($flush) {
@@ -42,9 +46,48 @@ class list_group extends \k1lib\html\ul {
         }
         parent::__construct($class, NULL);
 
+        if ($numbered) {
+            $this->set_numbered(TRUE);
+        }
+        if ($horizontal) {
+            $this->set_horizontal(TRUE);
+        }
+
         if (!empty($items)) {
             $this->add_items($items);
         }
+    }
+
+    /**
+     * Sets the numbered variant (ol.list-group-numbered)
+     *
+     * @param bool $numbered Whether to use numbered items
+     * @return $this For method chaining
+     */
+    public function set_numbered($numbered = TRUE) {
+        if ($numbered) {
+            $this->set_tag_name('ol');
+            $this->set_class('list-group-numbered', TRUE);
+        } else {
+            $this->set_tag_name('div');
+            $this->remove_attribute_text('class', 'list-group-numbered');
+        }
+        return $this;
+    }
+
+    /**
+     * Sets the horizontal variant
+     *
+     * @param bool $horizontal Whether to use the horizontal layout
+     * @return $this For method chaining
+     */
+    public function set_horizontal($horizontal = TRUE) {
+        if ($horizontal) {
+            $this->set_class('list-group-horizontal', TRUE);
+        } else {
+            $this->remove_attribute_text('class', 'list-group-horizontal');
+        }
+        return $this;
     }
 
     /**
@@ -57,9 +100,15 @@ class list_group extends \k1lib\html\ul {
      * @param string|null $variant Contextual color variant
      * @return \k1lib\html\tag The created element (a or li)
      */
-    public function add_item($text = '', $href = NULL, $active = FALSE, $disabled = FALSE, $variant = NULL) {
+    public function add_item($text = '', $href = NULL, $active = FALSE, $disabled = FALSE, $variant = NULL, $badge = NULL, $content = NULL) {
+        $badge_tag = NULL;
+        if ($badge !== NULL) {
+            $badge_tag = new \k1lib\html\span('badge bg-primary rounded-pill');
+            $badge_tag->set_value($badge);
+        }
+
         if ($href !== NULL) {
-            $a = new \k1lib\html\a($href, $text);
+            $a = new \k1lib\html\a($href, ($content instanceof \k1lib\html\tag) ? '' : $text);
             $a->set_class('list-group-item list-group-item-action');
             if ($active) {
                 $a->set_class('active', TRUE);
@@ -73,23 +122,36 @@ class list_group extends \k1lib\html\ul {
             if ($variant) {
                 $a->set_class("list-group-item-{$variant}", TRUE);
             }
+            if ($content instanceof \k1lib\html\tag) {
+                $a->append_child($content);
+            }
+            if ($badge_tag !== NULL) {
+                $a->append_child($badge_tag);
+            }
             $this->append_child($a);
             return $a;
         } else {
-            $li = $this->append_li();
-            $li->set_class('list-group-item');
+            $item_div = new \k1lib\html\div('list-group-item');
             if ($active) {
-                $li->set_class('active', TRUE);
-                $li->set_attrib('aria-current', 'true');
+                $item_div->set_class('active', TRUE);
+                $item_div->set_attrib('aria-current', 'true');
             }
             if ($disabled) {
-                $li->set_class('disabled', TRUE);
+                $item_div->set_class('disabled', TRUE);
             }
             if ($variant) {
-                $li->set_class("list-group-item-{$variant}", TRUE);
+                $item_div->set_class("list-group-item-{$variant}", TRUE);
             }
-            $li->set_value($text);
-            return $li;
+            if ($content instanceof \k1lib\html\tag) {
+                $item_div->append_child($content);
+            } else {
+                $item_div->set_value($text);
+            }
+            if ($badge_tag !== NULL) {
+                $item_div->append_child($badge_tag);
+            }
+            $this->append_child($item_div);
+            return $item_div;
         }
     }
 
@@ -106,7 +168,9 @@ class list_group extends \k1lib\html\ul {
             $active = $item['active'] ?? FALSE;
             $disabled = $item['disabled'] ?? FALSE;
             $variant = $item['variant'] ?? NULL;
-            $this->add_item($text, $href, $active, $disabled, $variant);
+            $badge = $item['badge'] ?? NULL;
+            $content = $item['content'] ?? NULL;
+            $this->add_item($text, $href, $active, $disabled, $variant, $badge, $content);
         }
         return $this;
     }

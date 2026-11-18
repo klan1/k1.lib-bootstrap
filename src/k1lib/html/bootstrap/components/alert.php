@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class alert extends \k1lib\html\div {
+    use bootstrap_assets;
 
     use bootstrap_methods;
 
@@ -45,10 +46,12 @@ class alert extends \k1lib\html\div {
      * @param bool $dismissible Enable the close button to dismiss the alert
      */
     public function __construct($message, $type = 'primary', $dismissible = FALSE) {
+        self::require_assets();
         parent::__construct("alert alert-{$type}" . ($dismissible ? ' alert-dismissible fade show position-relative' : ''), NULL);
         $this->set_attrib('role', 'alert');
         $this->dismissible = $dismissible;
         $this->message = $message;
+        $this->set_value($message);
 
         if ($dismissible) {
             $close_btn = new \k1lib\html\button();
@@ -71,25 +74,7 @@ class alert extends \k1lib\html\div {
     public function set_heading($heading): static {
         $this->heading = new \k1lib\html\h4($heading, NULL);
         $this->heading->set_class('alert-heading');
-        $this->append_child($this->heading);
+        $this->append_child_head($this->heading);
         return $this;
-    }
-
-    /**
-     * Generates the complete alert HTML
-     *
-     * @param bool $with_childs Include child elements in output
-     * @param int $n_childs Number of children to include (0 = all)
-     * @return string The rendered HTML
-     */
-    public function generate($with_childs = \TRUE, $n_childs = 0): string {
-        if (!empty($this->heading)) {
-            $this->append_child($this->heading);
-            $p = new \k1lib\html\p($this->message);
-            $this->append_child($p);
-        } else {
-            $this->set_value($this->message);
-        }
-        return parent::generate($with_childs, $n_childs);
     }
 }

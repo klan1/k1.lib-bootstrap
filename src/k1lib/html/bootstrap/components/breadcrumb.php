@@ -17,6 +17,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class breadcrumb extends \k1lib\html\nav {
+    use bootstrap_assets;
 
     /**
      * Ordered list container for breadcrumb items
@@ -28,6 +29,7 @@ class breadcrumb extends \k1lib\html\nav {
      * Creates a new Breadcrumb instance
      */
     public function __construct() {
+        self::require_assets();
         parent::__construct('', NULL);
         $this->set_attrib('aria-label', 'breadcrumb');
 

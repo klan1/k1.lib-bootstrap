@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class badge extends \k1lib\html\span {
+    use bootstrap_assets;
 
     /**
      * Creates a new Badge instance
@@ -25,6 +26,7 @@ class badge extends \k1lib\html\span {
      * @param bool $pill Render as pill-shaped badge (rounded-pill class)
      */
     public function __construct($text, $type = 'primary', $pill = FALSE) {
+        self::require_assets();
         $class = $pill ? "badge rounded-pill text-bg-{$type}" : "badge text-bg-{$type}";
         parent::__construct($class, NULL);
         $this->set_value($text);

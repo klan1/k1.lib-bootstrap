@@ -10,4 +10,4 @@ PORT="${PORT:-6200}"
 
 cd "$(dirname "$0")"
 
-exec php -S "0.0.0.0:${PORT}" -t .
+exec php -S "0.0.0.0:${PORT}" -t . router.php

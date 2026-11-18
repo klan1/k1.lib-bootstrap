@@ -17,6 +17,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class button extends \k1lib\html\button {
+    use bootstrap_assets;
 
     /**
      * Primary button style (solid blue)
@@ -88,9 +89,11 @@ class button extends \k1lib\html\button {
      * @param string|null $href If provided, renders as an <a> tag instead of <button>
      */
     public function __construct($value = NULL, $variant = self::VARIANT_PRIMARY, $size = self::SIZE_MD, $outline = FALSE, $href = NULL) {
+        self::require_assets();
         if ($href !== NULL) {
             parent::__construct('', 'btn', NULL, 'button');
             $this->set_tag_name('a');
+            $this->remove_attrib('type');
             $this->set_attrib('href', $href);
             $this->set_attrib('role', 'button');
         } else {
@@ -151,14 +154,14 @@ class button extends \k1lib\html\button {
                 $this->set_attrib('tabindex', '-1');
             } else {
                 $this->set_class('disabled', FALSE);
-                $this->unset_attrib('aria-disabled');
-                $this->unset_attrib('tabindex');
+                $this->remove_attrib('aria-disabled');
+                $this->remove_attrib('tabindex');
             }
         } else {
             if ($disabled) {
                 $this->set_attrib('disabled', 'disabled');
             } else {
-                $this->unset_attrib('disabled');
+                $this->remove_attrib('disabled');
             }
         }
         return $this;
@@ -176,7 +179,7 @@ class button extends \k1lib\html\button {
             $this->set_attrib('aria-pressed', 'true');
         } else {
             $this->set_class('active', FALSE);
-            $this->unset_attrib('aria-pressed');
+            $this->remove_attrib('aria-pressed');
         }
         return $this;
     }
@@ -191,7 +194,7 @@ class button extends \k1lib\html\button {
         if ($toggle) {
             $this->set_attrib('data-bs-toggle', 'button');
         } else {
-            $this->unset_attrib('data-bs-toggle');
+            $this->remove_attrib('data-bs-toggle');
         }
         return $this;
     }
@@ -204,9 +207,9 @@ class button extends \k1lib\html\button {
      */
     public function set_block($block = TRUE) {
         if ($block) {
-            $this->set_class('d-grid gap-2', TRUE);
+            $this->set_class('w-100', TRUE);
         } else {
-            $this->set_class('d-grid gap-2', FALSE);
+            $this->remove_attribute_text('class', 'w-100');
         }
         return $this;
     }

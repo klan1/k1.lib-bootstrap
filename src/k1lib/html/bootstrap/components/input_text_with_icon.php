@@ -20,6 +20,7 @@ use k1lib\html\div;
 use k1lib\html\input as input_tag;
 
 class input_text_with_icon extends div {
+    use bootstrap_assets;
 
     use bootstrap_methods;
 
@@ -38,13 +39,26 @@ class input_text_with_icon extends div {
      * @param string $position Icon position: 'left' or 'right'
      */
     public function __construct($name, $value, $icon = null, $position = 'left') {
+        self::require_assets();
         parent::__construct('form-group position-relative has-icon-' . $position);
 
         $this->input = new input_tag('text', $name, $value, 'form-control');
+        // [Klan1-Developer IA] Reserve space so the overlaid icon does not hide the text
+        if ($position === 'right') {
+            $this->input->set_attrib('style', 'padding-right: 2.25rem;');
+        } else {
+            $this->input->set_attrib('style', 'padding-left: 2.25rem;');
+        }
         $this->input->append_to($this);
 
-        $this->append_div('form-control-icon')->append_i(NULL, $icon);
-        $this->link_value_obj($this->input);
+        // [Klan1-Developer IA] Overlay the icon inside the input
+        $icon_span = $this->append_span('form-control-icon');
+        $icon_style = 'position:absolute; top:50%; transform:translateY(-50%); pointer-events:none; ';
+        $icon_style .= ($position === 'right') ? 'right:.75rem;' : 'left:.75rem;';
+        $icon_span->set_attrib('style', $icon_style);
+        if (!empty($icon)) {
+            $icon_span->append_i(NULL, $icon);
+        }
     }
 
     /**

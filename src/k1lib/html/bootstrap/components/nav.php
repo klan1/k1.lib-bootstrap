@@ -21,6 +21,8 @@ use k1lib\html\button;
  */
 class nav extends \k1lib\html\ul {
 
+    use bootstrap_assets;
+
     /**
      * Tabs-style navigation (bordered tabs)
      */
@@ -92,6 +94,7 @@ class nav extends \k1lib\html\ul {
         $filled = false,
         $justified = false
     ) {
+        self::require_assets();
         parent::__construct('nav', NULL);
 
         $this->type = $type;
@@ -190,6 +193,7 @@ class nav extends \k1lib\html\ul {
 
         if ($disabled) {
             $a->set_class('disabled', TRUE);
+            $a->set_attrib('tabindex', '-1');
             $a->set_attrib('aria-disabled', 'true');
         }
 
@@ -219,7 +223,7 @@ class nav extends \k1lib\html\ul {
         foreach ($dropdown_items as $item) {
             if (isset($item['divider']) && $item['divider']) {
                 $li_dropdown = $ul->append_li();
-                $li_dropdown->set_class('dropdown-divider');
+                $li_dropdown->append_child((new \k1lib\html\hr())->set_class('dropdown-divider'));
             } else {
                 $li_dropdown = $ul->append_li();
                 $a_dropdown = $li_dropdown->append_a($item['href'] ?? '#', $item['text'] ?? '');
@@ -269,31 +273,31 @@ class nav extends \k1lib\html\ul {
             $tab_content = $tab['content'] ?? '';
             $is_active = $tab['active'] ?? $first;
 
+            $tab_button_id = $tab_pane_id . '-tab';
             $li = $nav->append_li(NULL, 'nav-item');
             $li->set_attrib('role', 'presentation');
 
-            $button_el = new button(NULL, 'nav-link' . ($is_active ? ' active' : ''));
-            $button_el->set_attrib('data-bs-toggle', 'tab');
-            $button_el->set_attrib('data-bs-target', '#' . $tab_pane_id);
-            $button_el->set_attrib('type', 'button');
-            $button_el->set_attrib('role', 'tab');
-            $button_el->set_attrib('aria-controls', $tab_pane_id);
-            $button_el->set_attrib('aria-selected', $is_active ? 'true' : 'false');
-            $button_el->set_value($label);
+            $link = $li->append_a('#', $label);
+            $link->set_class('nav-link' . ($is_active ? ' active' : ''));
+            $link->set_attrib('id', $tab_button_id);
+            $link->set_attrib('data-bs-toggle', 'tab');
+            $link->set_attrib('data-bs-target', '#' . $tab_pane_id);
+            $link->set_attrib('role', 'tab');
+            $link->set_attrib('aria-controls', $tab_pane_id);
+            $link->set_attrib('aria-selected', $is_active ? 'true' : 'false');
 
             if (isset($tab['disabled']) && $tab['disabled']) {
-                $button_el->set_class('disabled', TRUE);
-                $button_el->set_attrib('aria-disabled', 'true');
-                $button_el->remove_attrib('data-bs-toggle');
+                $link->set_class('disabled', TRUE);
+                $link->set_attrib('aria-disabled', 'true');
+                $link->set_attrib('tabindex', '-1');
+                $link->remove_attrib('data-bs-toggle');
             }
-
-            $li->append_child($button_el);
 
             $tab_pane = new div();
             $tab_pane->set_class('tab-pane fade' . ($is_active ? ' show active' : ''));
             $tab_pane->set_id($tab_pane_id);
             $tab_pane->set_attrib('role', 'tabpanel');
-            $tab_pane->set_attrib('aria-labelledby', $tab_pane_id . '-tab');
+            $tab_pane->set_attrib('aria-labelledby', $tab_button_id);
             $tab_pane->set_attrib('tabindex', '0');
             $tab_pane->set_value($tab_content);
 
@@ -335,29 +339,31 @@ class nav extends \k1lib\html\ul {
             $tab_content = $tab['content'] ?? '';
             $is_active = $tab['active'] ?? $first;
 
-            $button_el = new button(NULL, 'nav-link' . ($is_active ? ' active' : ''));
-            $button_el->set_attrib('id', $tab_pane_id . '-tab');
-            $button_el->set_attrib('data-bs-toggle', 'pill');
-            $button_el->set_attrib('data-bs-target', '#' . $tab_pane_id);
-            $button_el->set_attrib('type', 'button');
-            $button_el->set_attrib('role', 'tab');
-            $button_el->set_attrib('aria-controls', $tab_pane_id);
-            $button_el->set_attrib('aria-selected', $is_active ? 'true' : 'false');
-            $button_el->set_value($label);
+            $tab_button_id = $tab_pane_id . '-tab';
+            $li = $nav->append_li(NULL, 'nav-item');
+            $li->set_attrib('role', 'presentation');
+
+            $link = $li->append_a('#', $label);
+            $link->set_class('nav-link' . ($is_active ? ' active' : ''));
+            $link->set_attrib('id', $tab_button_id);
+            $link->set_attrib('data-bs-toggle', 'pill');
+            $link->set_attrib('data-bs-target', '#' . $tab_pane_id);
+            $link->set_attrib('role', 'tab');
+            $link->set_attrib('aria-controls', $tab_pane_id);
+            $link->set_attrib('aria-selected', $is_active ? 'true' : 'false');
 
             if (isset($tab['disabled']) && $tab['disabled']) {
-                $button_el->set_class('disabled', TRUE);
-                $button_el->set_attrib('aria-disabled', 'true');
-                $button_el->remove_attrib('data-bs-toggle');
+                $link->set_class('disabled', TRUE);
+                $link->set_attrib('aria-disabled', 'true');
+                $link->set_attrib('tabindex', '-1');
+                $link->remove_attrib('data-bs-toggle');
             }
-
-            $nav->append_child($button_el);
 
             $tab_pane = new div();
             $tab_pane->set_class('tab-pane fade' . ($is_active ? ' show active' : ''));
             $tab_pane->set_id($tab_pane_id);
             $tab_pane->set_attrib('role', 'tabpanel');
-            $tab_pane->set_attrib('aria-labelledby', $tab_pane_id . '-tab');
+            $tab_pane->set_attrib('aria-labelledby', $tab_button_id);
             $tab_pane->set_attrib('tabindex', '0');
             $tab_pane->set_value($tab_content);
 

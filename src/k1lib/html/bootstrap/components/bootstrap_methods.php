@@ -15,7 +15,6 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 
-use k1lib\html\button;
 use k1lib\html\div;
 
 trait bootstrap_methods {
@@ -101,12 +100,10 @@ trait bootstrap_methods {
     /**
      * Appends a Bootstrap close button to the element
      *
-     * @return \k1lib\html\button The created close button
+     * @return \k1lib\html\bootstrap\components\close_button The created close button
      */
-    public function append_close_button() {
-        $close_button = new button(NULL, "btn-close");
-        $close_button->set_attrib('data-bs-dismiss', 'alert');
-        $close_button->set_attrib("aria-label", "Close");
+    public function append_close_button($dismiss = 'alert') {
+        $close_button = new close_button($dismiss);
         $this->append_child_tail($close_button);
         return $close_button;
     }
@@ -117,7 +114,7 @@ trait bootstrap_methods {
      * @return $this For method chaining
      */
     public function align_center() {
-        $this->set_attrib("class", "align-center", TRUE);
+        $this->set_attrib("class", "text-center", TRUE);
         return $this;
     }
 
@@ -127,7 +124,7 @@ trait bootstrap_methods {
      * @return $this For method chaining
      */
     public function align_left() {
-        $this->set_attrib("class", "align-left", TRUE);
+        $this->set_attrib("class", "text-start", TRUE);
         return $this;
     }
 
@@ -137,7 +134,7 @@ trait bootstrap_methods {
      * @return $this For method chaining
      */
     public function align_right() {
-        $this->set_attrib("class", "align-right", TRUE);
+        $this->set_attrib("class", "text-end", TRUE);
         return $this;
     }
 
@@ -147,7 +144,7 @@ trait bootstrap_methods {
      * @return $this For method chaining
      */
     public function align_justify() {
-        $this->set_attrib("class", "align-justify", TRUE);
+        $this->set_attrib("class", "text-justify", TRUE);
         return $this;
     }
 

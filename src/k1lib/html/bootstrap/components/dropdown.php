@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class dropdown extends \k1lib\html\div {
+    use bootstrap_assets;
 
     /**
      * The dropdown menu ul element
@@ -40,34 +41,34 @@ class dropdown extends \k1lib\html\div {
      * @param string $direction Drop direction: 'down', 'up', 'start', or 'end'
      */
     public function __construct($label = 'Dropdown', $items = [], $direction = 'down') {
-        parent::__construct('dropdown', NULL);
+        self::require_assets();
+        $parent_classes = [
+            'down' => 'dropdown',
+            'up' => 'dropup',
+            'start' => 'dropstart',
+            'end' => 'dropend',
+        ];
+        $parent_class = $parent_classes[$direction] ?? 'dropdown';
+        parent::__construct($parent_class, NULL);
 
+        $toggle_id = 'dropdown-' . uniqid();
         $this->toggle = new \k1lib\html\button($label);
         $this->toggle->set_class('btn btn-secondary dropdown-toggle');
         $this->toggle->set_attrib('type', 'button');
         $this->toggle->set_attrib('data-bs-toggle', 'dropdown');
         $this->toggle->set_attrib('aria-expanded', 'false');
-        $this->toggle->set_attrib('id', 'mainDropdown');
+        $this->toggle->set_attrib('id', $toggle_id);
 
-        $direction_class = 'dropdown-menu';
-        if ($direction === 'up') {
-            $direction_class = 'dropup';
-        } elseif ($direction === 'start') {
-            $direction_class = 'dropstart';
-        } elseif ($direction === 'end') {
-            $direction_class = 'dropend';
-        }
-
-        $this->menu = new \k1lib\html\ul($direction_class);
-        $this->menu->set_attrib('aria-labelledby', 'mainDropdown');
+        $this->menu = new \k1lib\html\ul('dropdown-menu');
+        $this->menu->set_attrib('aria-labelledby', $toggle_id);
 
         foreach ($items as $item) {
+            $li = $this->menu->append_li();
             if (!empty($item['divider'])) {
-                $this->menu->append_li()->set_class('dropdown-divider');
+                $li->append_child((new \k1lib\html\hr())->set_class('dropdown-divider'));
             } else {
-                $li = $this->menu->append_li();
-                $li->append_a($item['href'] ?? '#', $item['text'] ?? '');
-                $li->set_class('dropdown-item');
+                $a = $li->append_a($item['href'] ?? '#', $item['text'] ?? '');
+                $a->set_class('dropdown-item');
             }
         }
 

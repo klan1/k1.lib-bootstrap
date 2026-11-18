@@ -15,6 +15,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class accordion extends \k1lib\html\div {
+    use bootstrap_assets;
 
     use bootstrap_methods;
 
@@ -71,6 +72,7 @@ class accordion extends \k1lib\html\div {
      * @param bool $flush Add accordion-flush class for edge-to-edge styling
      */
     public function __construct($id = 'accordion', $mode = self::MODE_DEFAULT, $flush = false) {
+        self::require_assets();
         $this->accordion_id = $id;
         $this->mode = $mode;
         $this->flush = $flush;
@@ -130,6 +132,7 @@ class accordion extends \k1lib\html\div {
             $collapse->set_class('show', TRUE);
         }
         $collapse->set_attrib('id', $collapse_id);
+        $collapse->set_attrib('aria-labelledby', $button_id);
         if ($this->mode === self::MODE_DEFAULT) {
             $collapse->set_attrib('data-bs-parent', '#' . $this->accordion_id);
         }
@@ -192,6 +195,14 @@ class accordion extends \k1lib\html\div {
             $item_ids = [$item_ids];
         }
         $this->default_open_items = $item_ids;
+
+        foreach ($this->items as $id => $item) {
+            $is_open = in_array($id, $item_ids);
+            $item['button']->set_class('accordion-button' . ($is_open ? '' : ' collapsed'), FALSE);
+            $item['button']->set_attrib('aria-expanded', $is_open ? 'true' : 'false');
+            $item['collapse']->set_class('accordion-collapse collapse' . ($is_open ? ' show' : ''), FALSE);
+        }
+
         return $this;
     }
 
@@ -281,6 +292,7 @@ class accordion extends \k1lib\html\div {
     public function remove_item($item_id): static {
         if (isset($this->items[$item_id])) {
             $this->items[$item_id]['item']->remove_from_parent();
+            $this->items[$item_id]['item']->decatalog();
             unset($this->items[$item_id]);
         }
         return $this;

@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class callout extends \k1lib\html\div {
+    use bootstrap_assets;
 
     use bootstrap_methods;
 
@@ -52,6 +53,7 @@ class callout extends \k1lib\html\div {
      * @param string $type Bootstrap color type (primary, secondary, success, danger, warning, info, light, dark)
      */
     function __construct($message = NULL, $title = NULL, $closable = TRUE, $type = "primary") {
+        self::require_assets();
         $this->message = $message;
         $this->title = $title;
 

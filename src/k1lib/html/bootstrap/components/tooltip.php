@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class tooltip extends \k1lib\html\span {
+    use bootstrap_assets;
 
     /**
      * Position tooltip above the element
@@ -37,6 +38,17 @@ class tooltip extends \k1lib\html\span {
      */
     const PLACEMENT_RIGHT = 'right';
 
+    public static function attach(\k1lib\html\tag $target, string $text, string $placement = 'top', bool $html = FALSE): \k1lib\html\tag {
+        // [Klan1-Developer IA] Added static tooltip helper
+        $target->set_attrib('data-bs-toggle', 'tooltip');
+        $target->set_attrib('data-bs-placement', $placement);
+        $target->set_attrib('title', $text);
+        if ($html) {
+            $target->set_attrib('data-bs-html', 'true');
+        }
+        return $target;
+    }
+
     /**
      * Creates a new Tooltip instance
      *
@@ -46,14 +58,8 @@ class tooltip extends \k1lib\html\span {
      * @param bool $html Allow HTML content in the tooltip text
      */
     public function __construct($target, $text, $placement = 'top', $html = FALSE) {
+        self::require_assets();
         parent::__construct('', NULL);
-
-        $target->set_attrib('data-bs-toggle', 'tooltip');
-        $target->set_attrib('data-bs-placement', $placement);
-        $target->set_attrib('title', $text);
-
-        if ($html) {
-            $target->set_attrib('data-bs-html', 'true');
-        }
+        self::attach($target, $text, $placement, $html);
     }
 }

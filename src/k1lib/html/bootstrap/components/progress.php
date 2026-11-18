@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class progress extends \k1lib\html\div {
+    use bootstrap_assets;
 
     /**
      * Creates a new Progress instance
@@ -29,6 +30,7 @@ class progress extends \k1lib\html\div {
      * @param int|null $height Fixed height in pixels
      */
     public function __construct($bars = [], $height = NULL) {
+        self::require_assets();
         parent::__construct('progress', NULL);
 
         if ($height) {
@@ -53,6 +55,9 @@ class progress extends \k1lib\html\div {
             if (!empty($bar['animated'])) {
                 $bar_div->set_class('progress-bar-striped', TRUE);
                 $bar_div->set_class('progress-bar-animated', TRUE);
+            }
+            if (!empty($bar['label'])) {
+                $bar_div->set_value($bar['label']);
             }
 
             $this->append_child($bar_div);

@@ -16,6 +16,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class offcanvas extends \k1lib\html\div {
+    use bootstrap_assets;
 
     /**
      * Creates a new Offcanvas instance
@@ -24,12 +25,16 @@ class offcanvas extends \k1lib\html\div {
      * @param string $title Title displayed in the offcanvas header
      * @param string $content Body HTML content
      */
-    public function __construct($placement = 'start', $title = 'Offcanvas', $content = '') {
-        parent::__construct("offcanvas offcanvas-{$placement}", "offcanvas-{$placement}");
+    public function __construct($placement = 'start', $title = 'Offcanvas', $content = '', $id = NULL) {
+        self::require_assets();
+        $id = $id ?? 'offcanvas-' . uniqid();
+        parent::__construct("offcanvas offcanvas-{$placement}", $id);
         $this->set_attrib('tabindex', '-1');
+        $this->set_attrib('aria-labelledby', $id . '-title');
 
         $header = new \k1lib\html\div('offcanvas-header');
         $h5 = $header->append_h5($title, 'offcanvas-title');
+        $h5->set_attrib('id', $id . '-title');
         $close_btn = new \k1lib\html\button('&times;', NULL);
         $close_btn->set_class('btn-close');
         $close_btn->set_attrib('data-bs-dismiss', 'offcanvas');

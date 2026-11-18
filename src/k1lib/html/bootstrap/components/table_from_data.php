@@ -23,6 +23,7 @@ use k1lib\html\tag;
 use k1lib\K1MAGIC;
 
 class table_from_data extends table {
+    use bootstrap_assets;
 
     /**
      * Default rounding precision for float values (class-wide)
@@ -81,11 +82,76 @@ class table_from_data extends table {
      * @param string $id Table element ID
      */
     function __construct($class = "table table-striped table-hover mb-0", $id = "") {
+        self::require_assets();
         parent::__construct($class, $id);
         $this->set_class($class);
         $this->set_id($id);
 
         $this->float_round = self::$float_round_default;
+    }
+
+    /**
+     * Toggles a Bootstrap table class
+     *
+     * @param string $class Table class
+     * @param bool $enable Whether to enable the class
+     * @return $this For method chaining
+     */
+    private function toggle_table_class($class, $enable) {
+        if ($enable) {
+            $this->set_class($class, TRUE);
+        } else {
+            $this->remove_attribute_text('class', $class);
+        }
+        return $this;
+    }
+
+    /**
+     * Sets the striped variant
+     * @return $this For method chaining
+     */
+    public function set_striped($striped = TRUE) {
+        return $this->toggle_table_class('table-striped', $striped);
+    }
+
+    /**
+     * Sets the hover variant
+     * @return $this For method chaining
+     */
+    public function set_hover($hover = TRUE) {
+        return $this->toggle_table_class('table-hover', $hover);
+    }
+
+    /**
+     * Sets the bordered variant
+     * @return $this For method chaining
+     */
+    public function set_bordered($bordered = TRUE) {
+        return $this->toggle_table_class('table-bordered', $bordered);
+    }
+
+    /**
+     * Sets the borderless variant
+     * @return $this For method chaining
+     */
+    public function set_borderless($borderless = TRUE) {
+        return $this->toggle_table_class('table-borderless', $borderless);
+    }
+
+    /**
+     * Sets the small variant
+     * @return $this For method chaining
+     */
+    public function set_small($small = TRUE) {
+        return $this->toggle_table_class('table-sm', $small);
+    }
+
+    /**
+     * Sets the dark variant
+     * @return $this For method chaining
+     */
+    public function set_dark($dark = TRUE) {
+        return $this->toggle_table_class('table-dark', $dark);
     }
 
     /**

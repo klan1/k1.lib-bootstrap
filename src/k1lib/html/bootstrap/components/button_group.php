@@ -15,6 +15,7 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class button_group extends \k1lib\html\div {
+    use bootstrap_assets;
 
     /**
      * @param string $size Size (sm, lg) - leave empty for default
@@ -22,6 +23,7 @@ class button_group extends \k1lib\html\div {
      * @param string $label Accessibility label
      */
     public function __construct($size = '', $vertical = FALSE, $label = 'Button group') {
+        self::require_assets();
         if ($vertical) {
             $class = 'btn-group-vertical';
         } else {
@@ -80,38 +82,5 @@ class button_group extends \k1lib\html\div {
      */
     public function count() {
         return count($this->get_childs());
-    }
-}
-
-/**
- * Bootstrap 5 Button Toolbar component
- *
- * Combines groups of button groups into button toolbars.
- */
-class button_toolbar extends \k1lib\html\div {
-
-    /**
-     * @param string $label Accessibility label
-     */
-    public function __construct($label = 'Button toolbar') {
-        parent::__construct('btn-toolbar', NULL);
-        $this->set_attrib('role', 'toolbar');
-        $this->set_attrib('aria-label', $label);
-    }
-
-    /**
-     * Add a button group to the toolbar
-     *
-     * @param \k1lib\html\bootstrap\components\button_group $group
-     * @param string $class Additional classes like 'me-2' for spacing
-     * @return $this
-     */
-    public function add_group(button_group $group, $class = ''): static {
-        $group_div = new \k1lib\html\div('btn-group ' . $class);
-        foreach ($group->get_childs() as $child) {
-            $group_div->append_child($child);
-        }
-        $this->append_child($group_div);
-        return $this;
     }
 }

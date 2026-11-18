@@ -1,0 +1,202 @@
+[
+  {
+    "name": "table",
+    "label": "Table",
+    "group": "Content"
+  },
+  {
+    "name": "grid",
+    "label": "Grid",
+    "group": "Layout"
+  },
+  {
+    "name": "form_control",
+    "label": "Form Control",
+    "group": "Forms"
+  },
+  {
+    "name": "form_select",
+    "label": "Form Select",
+    "group": "Forms"
+  },
+  {
+    "name": "form_check",
+    "label": "Form Check",
+    "group": "Forms"
+  },
+  {
+    "name": "range",
+    "label": "Range",
+    "group": "Forms"
+  },
+  {
+    "name": "input_group",
+    "label": "Input Group",
+    "group": "Forms"
+  },
+  {
+    "name": "floating_label",
+    "label": "Floating Label",
+    "group": "Forms"
+  },
+  {
+    "name": "form_layout",
+    "label": "Form Layout",
+    "group": "Forms"
+  },
+  {
+    "name": "form_textarea",
+    "label": "Form Textarea",
+    "group": "Forms"
+  },
+  {
+    "name": "form_text",
+    "label": "Form Text",
+    "group": "Forms"
+  },
+  {
+    "name": "validation",
+    "label": "Validation",
+    "group": "Forms"
+  },
+  {
+    "name": "button",
+    "label": "Button",
+    "group": "Components"
+  },
+  {
+    "name": "button_group",
+    "label": "Button Group",
+    "group": "Components"
+  },
+  {
+    "name": "button_toolbar",
+    "label": "Button Toolbar",
+    "group": "Components"
+  },
+  {
+    "name": "card",
+    "label": "Card",
+    "group": "Components"
+  },
+  {
+    "name": "accordion",
+    "label": "Accordion",
+    "group": "Components"
+  },
+  {
+    "name": "alert",
+    "label": "Alert",
+    "group": "Components"
+  },
+  {
+    "name": "badge",
+    "label": "Badge",
+    "group": "Components"
+  },
+  {
+    "name": "breadcrumb",
+    "label": "Breadcrumb",
+    "group": "Components"
+  },
+  {
+    "name": "carousel",
+    "label": "Carousel",
+    "group": "Components"
+  },
+  {
+    "name": "collapse",
+    "label": "Collapse",
+    "group": "Components"
+  },
+  {
+    "name": "close_button",
+    "label": "Close Button",
+    "group": "Components"
+  },
+  {
+    "name": "dropdown",
+    "label": "Dropdown",
+    "group": "Components"
+  },
+  {
+    "name": "list_group",
+    "label": "List Group",
+    "group": "Components"
+  },
+  {
+    "name": "modal",
+    "label": "Modal",
+    "group": "Components"
+  },
+  {
+    "name": "navbar",
+    "label": "Navbar",
+    "group": "Components"
+  },
+  {
+    "name": "nav",
+    "label": "Nav",
+    "group": "Components"
+  },
+  {
+    "name": "offcanvas",
+    "label": "Offcanvas",
+    "group": "Components"
+  },
+  {
+    "name": "pagination",
+    "label": "Pagination",
+    "group": "Components"
+  },
+  {
+    "name": "placeholder",
+    "label": "Placeholder",
+    "group": "Components"
+  },
+  {
+    "name": "popover",
+    "label": "Popover",
+    "group": "Components"
+  },
+  {
+    "name": "progress",
+    "label": "Progress",
+    "group": "Components"
+  },
+  {
+    "name": "scrollspy",
+    "label": "Scrollspy",
+    "group": "Components"
+  },
+  {
+    "name": "spinner",
+    "label": "Spinner",
+    "group": "Components"
+  },
+  {
+    "name": "toast",
+    "label": "Toast",
+    "group": "Components"
+  },
+  {
+    "name": "tooltip",
+    "label": "Tooltip",
+    "group": "Components"
+  },
+  {
+    "name": "callout",
+    "label": "Callout",
+    "group": "Extras"
+  },
+  {
+    "name": "title_bar",
+    "label": "Title Bar",
+    "group": "Extras"
+  },
+  {
+    "name": "group",
+    "label": "Kitchen Sink",
+    "group": "Examples"
+  }
+]

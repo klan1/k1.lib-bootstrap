@@ -119,7 +119,8 @@ class menu extends \k1lib\html\ul {
             $this->menu_class = $sub_class;
         }
         parent::__construct($this->menu_class, NULL);
-        if (empty($sub_class)) {
+        // [Klan1-Developer IA] Only set the data attribute when it is not empty
+        if (empty($sub_class) && !empty($this->data_attribute)) {
             $this->set_attrib($this->data_attribute, TRUE);
         }
     }
@@ -140,7 +141,10 @@ class menu extends \k1lib\html\ul {
         }
         if (empty($parent)) {
             $li = $this->append_li();
-            $li->set_id($id);
+            // [Klan1-Developer IA] Only set the id when provided (avoids attribute warning)
+            if (!empty($id)) {
+                $li->set_id($id);
+            }
             if (!empty($href)) {
                 $a = $li->append_a($href, $label);
                 $li->link_value_obj($a);

@@ -16,6 +16,9 @@ namespace k1lib\html\bootstrap\components;
  * @version 1.0.0
  */
 class pagination extends \k1lib\html\ul {
+    use bootstrap_assets;
+
+    use bootstrap_methods;
 
     /**
      * Creates a new Pagination instance
@@ -26,33 +29,73 @@ class pagination extends \k1lib\html\ul {
      * @param bool $show_prev_next Show Previous and Next navigation links
      */
     public function __construct($current_page = 1, $total_pages = 1, $base_url = '', $show_prev_next = TRUE) {
+        self::require_assets();
         parent::__construct('pagination', NULL);
 
         if ($show_prev_next) {
             $prev = $this->append_li();
-            $prev->set_class('page-item');
+            $prev->set_class('page-item' . ($current_page > 1 ? '' : ' disabled'));
             $prev_label = $current_page > 1 ? "&laquo;" : "<span aria-hidden='true'>&laquo;</span>";
-            $prev_class = $current_page > 1 ? '' : 'disabled';
             $prev_href = $current_page > 1 ? "{$base_url}?page=" . ($current_page - 1) : '#';
-            $prev->append_a($prev_href, $prev_label, 'page-link ' . $prev_class);
+            $prev_a = $prev->append_a($prev_href, $prev_label);
+            $prev_a->set_class('page-link');
+            if ($current_page <= 1) {
+                $prev_a->set_attrib('tabindex', '-1');
+                $prev_a->set_attrib('aria-disabled', 'true');
+            }
         }
 
         for ($i = 1; $i <= $total_pages; $i++) {
             $li = $this->append_li();
             $li->set_class('page-item' . ($i === $current_page ? ' active' : ''));
-            $li->append_a("{$base_url}?page={$i}", $i, 'page-link');
+            $page_a = $li->append_a("{$base_url}?page={$i}", $i);
+            $page_a->set_class('page-link');
             if ($i === $current_page) {
-                $li->append_span('sr-only')->set_value('(current)');
+                $li->append_span('visually-hidden')->set_value('(current)');
             }
         }
 
         if ($show_prev_next) {
             $next = $this->append_li();
-            $next->set_class('page-item');
+            $next->set_class('page-item' . ($current_page < $total_pages ? '' : ' disabled'));
             $next_label = $current_page < $total_pages ? "&raquo;" : "<span aria-hidden='true'>&raquo;</span>";
-            $next_class = $current_page < $total_pages ? '' : 'disabled';
             $next_href = $current_page < $total_pages ? "{$base_url}?page=" . ($current_page + 1) : '#';
-            $next->append_a($next_href, $next_label, 'page-link ' . $next_class);
+            $next_a = $next->append_a($next_href, $next_label);
+            $next_a->set_class('page-link');
+            if ($current_page >= $total_pages) {
+                $next_a->set_attrib('tabindex', '-1');
+                $next_a->set_attrib('aria-disabled', 'true');
+            }
         }
+    }
+
+    /**
+     * Sets the Bootstrap sizing class
+     *
+     * @param string $size lg or sm (empty clears the sizing class)
+     * @return $this For method chaining
+     */
+    public function set_size($size) {
+        $this->remove_attribute_text('class', 'pagination-lg');
+        $this->remove_attribute_text('class', 'pagination-sm');
+        if ($size === 'lg' || $size === 'sm') {
+            $this->set_class('pagination-' . $size, TRUE);
+        }
+        return $this;
+    }
+
+    /**
+     * Sets the horizontal alignment
+     *
+     * @param string $alignment center or end (empty clears the alignment)
+     * @return $this For method chaining
+     */
+    public function set_alignment($alignment) {
+        $this->remove_attribute_text('class', 'justify-content-center');
+        $this->remove_attribute_text('class', 'justify-content-end');
+        if ($alignment === 'center' || $alignment === 'end') {
+            $this->set_class('justify-content-' . $alignment, TRUE);
+        }
+        return $this;
     }
 }
